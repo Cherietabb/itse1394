@@ -3,7 +3,18 @@
  */
 function myTemp() {
     var x = document.getElementById('temp');
-    if (x >= 90) {
+    var err = 'invalid';
+
+    try {
+        if (x > 140);
+        if (x < -50);
+    }
+    catch(err) {
+        console.log("Input is " + err);
+    }
+
+    if (x > 90) {
+        console.log('foo');
         console.log('Hot!');
     } else if ((x < 90) && ( x > 80)) {
         console.log('Mighty Warm');
