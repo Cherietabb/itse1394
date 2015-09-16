@@ -2,35 +2,30 @@
  * Created by Cherie Tabb on 9/14/2015.
  */
 function myTemp() {
-    var x = document.getElementById('temp');
-    //var err = 'invalid';
-    //
-    //try {
-    //    if (x > 140);
-    //    if (x < -50);
-    //}
-    //catch(err) {
-    //    console.log("Input is " + err);
-    //}
-
+    var x,temp, message;
+    message = document.getElementById('temp');
+    message.innerHTML = "";
+    x = document.getElementById('temp').value;
     if (x > 90) {
         console.log('foo');
         console.log('Hot!');
-    } else if ((x < 90) && ( x > 80)) {
+    } else if ((x > 80) && (x < 90)) {
         console.log('Mighty Warm');
-    } else if ((x < 70) && (x > 60)) {
+    } else if ((x > 60) && (x < 70)) {
         console.log('Pleasant');
-    } else if ((x <= 60) && (x >= 40)) {
+    } else if ((x >= 40) && (x <= 60)) {
         console.log('Chilly');
+    } else if (x < 39) {
+        console.log('Burr!');
+    } else {
+        console.log(x + ' degrees');
     }
 }
+
 // Requirement 2
 
-
-
 function getMonth() {
-    var x;
-    var month;
+    var x, month, message;
     message = document.getElementById('month');
     message.innerHTML = "";
     month = [
@@ -43,7 +38,7 @@ function getMonth() {
                 month = 'January';
                 break;
             case 2:
-                b = 'Februrary';
+                month = 'Februrary';
                 break;
             case 3:
                 month = 'March';
@@ -83,7 +78,6 @@ function getMonth() {
         }
     catch (e) {
         message.innerHTML = e.message;
-
     }
     alert('You picked ' + month[x - 1]);
     return true;
