@@ -22,64 +22,69 @@ function myTemp() {
         console.log('Pleasant');
     } else if ((x <= 60) && (x >= 40)) {
         console.log('Chilly');
-    } 
+    }
 }
 // Requirement 2
 
 
 
 function getMonth() {
-    var x = document.getElementById('month');
-    var month = [
+    var x;
+    var month;
+    message = document.getElementById('month');
+    message.innerHTML = "";
+    month = [
         "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"];
-    var b = month[x];
-    var y = "";
+    x = document.getElementById('month').value;
     try {
-        x < 1;
-        x > 12;
-    }
-    catch (e) {
-        alert('Number must be 1 - 12!');
-    }
-    switch (x) {
-        case 1:
-            b = 'January';
-            break;
-        case 2:
-            b = 'Februrary';
-            break;
-        case 3:
-            b = 'March';
-            break;
-        case 4:
-            b = 'April';
-            break;
-        case 5:
-            b = 'May';
-            break;
-        case 6:
-            b = 'June';
-            break;
-        case 7:
-            b = 'July';
-            break;
-        case 8:
-            b = 'August';
-            break;
-        case 9:
-            b = 'September';
-            break;
-        case 10:
-            b = 'October';
-            break;
-        case 11:
-            b = 'November';
-            break;
-        case 12:
-            b = 'December';
-            break;
-    }
-    document.write('You picked ' + b);
+        switch (x) {
+            case 1:
+                month = 'January';
+                break;
+            case 2:
+                b = 'Februrary';
+                break;
+            case 3:
+                month = 'March';
+                break;
+            case 4:
+                month = 'April';
+                break;
+            case 5:
+                month = 'May';
+                break;
+            case 6:
+                month = 'June';
+                break;
+            case 7:
+                month = 'July';
+                break;
+            case 8:
+                month = 'August';
+                break;
+            case 9:
+                month = 'September';
+                break;
+            case 10:
+                month = 'October';
+                break;
+            case 11:
+                month = 'November';
+                break;
+            case 12:
+                month = 'December';
+                break;
 
-};
+        }
+        if (x < 1 || x > 12)
+            alert('Number must be 1 - 12!');
+        return false;
+        }
+    catch (e) {
+        message.innerHTML = e.message;
+
+    }
+    alert('You picked ' + month[x - 1]);
+    return true;
+}
