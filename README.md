@@ -27,6 +27,7 @@ name based on the number entered.
 User can enter a number between 1-12 ((error message otherwise – use
 try/catch to handle the error). Use “Common Code and Fall-Through” to
 display the following messages:
+
 * 12, 1, 2: “Winter”
 * 3, 4, 5: “Spring”
 * 6, 7, 8: “Summer”
