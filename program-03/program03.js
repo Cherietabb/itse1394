@@ -2,101 +2,100 @@
  * Created by Cherie Tabb on 9/14/2015.
  */
 function myTemp() {
-    var x,temp, message, e;
-    message = document.getElementById('temp');
-    message.innerHTML = "";
+    var x,temp;
     x = document.getElementById('temp').value;
-    e = "value outside accepted parameters";
     try {
-        if (x > 140) throw "invalid";
         if ((x > 90) && (x <= 140)) {
             console.log('foo');
             alert('Hot!');
         } else if ((x >= 80) && (x <= 90)) {
             alert('Mighty Warm!');
-        } else if ((x > 60) && (x <= 70)) {
+        } else if ((x > 60) && (x <= 79)) {
             alert('Pleasant!');
-        } else if ((x >= 40) && (x <= 60)) {
+        } else if ((x >= 40) && (x <= 59)) {
             alert('Chilly!');
-        } else if ((x <= 39) && (x > -50)) {
+        } else if ((x > -50) && (x <= 39)) {
             alert('freezing!');
-        } else {
-            alert(x + ' degrees');
         }
-        if (x < -50) throw "invalid";
+        if (x < -50) throw {message: "invalid input"}
+        if (x > 140) throw {message: "invalid input"}
     }
     catch(e) {
-        message.innerHTML = e.message;
+        alert("Error: "+e.message)
     }
 }
 
 // Requirement 2
 
 function getMonth() {
-    var message, x, text;
-    message = document.getElementById('message');
-
+    var x, month;
     x = document.getElementById('month').value;
     month = [
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"];
-
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', "August", 'September', 'October', 'November', 'December'];
     try {
         switch (x) {
             case 1:
-                text = 'You picked ' + month;
+                console.log('tree');
+                alert('January');
                 break;
             case 2:
-                text = 'You picked ' + month;
+                alert('February');
                 break;
             case 3:
-                text = 'You picked ' + month;
+                alert('March');
                 break;
             case 4:
-                text = 'You picked ' + month;
+                alert('April');
                 break;
             case 5:
-                text = 'You picked ' + month;
+                alert('May');
                 break;
             case 6:
-                text = 'You picked ' + month;
+                alert('June');
                 break;
             case 7:
-                text = 'You picked ' + month;
+                alert('July');
                 break;
             case 8:
-                text = 'You picked ' + month;
+                alert('August');
                 break;
             case 9:
-                text = 'You picked ' + month;
+                alert('September');
                 break;
             case 10:
-                text = 'You picked ' + month;
+                alert('October');
                 break;
             case 11:
-                text = 'You picked ' + month;
+                alert('November');
                 break;
             case 12:
-                text = 'You picked ' + month;
+                alert('December');
                 break;
             default:
+                alert('Strawberries')
                 break;
         }
         if (x < 1 || x > 12)
-            alert('Number must be 1 - 12!');
-        return false;
+            throw {message: 'Number must be 1 - 12!'}
+        if (isNaN(x))
+            throw {message: 'Must enter a number!'}
+        if (x = "")
+            throw {message: 'input is empty!'}
         }
     catch (e) {
-        message.innerHTML = e.message;
+        alert("Error: "+e.message)
     }
-    document.getElementById("demo").innerHTML = text;
 }
 
 // Requirement 3
 function getNum() {
     var x, num, message;
-    message = document.getElementById('num');
+    message = document.getElementById('message');
     message.innerHTML = "";
+    x = document.getElementById('num');
+
+
 
 }
 
