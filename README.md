@@ -67,3 +67,7 @@ Use an object constructor to create a player object with the following data memb
 ### Requirement 10 ###
 
 Use an HTML element event to call a function you wrote for the player object to update the yearInLeague data. Display the result (a confirmation of the update).
+
+### Requirement 11 ###
+
+Use the prototype property to add a new data member to the player prototype named team. Use the prototype property to add a function to the player prototype which changes the team data. Use an HTML element event to call that function and display the result (a confirmation of the update).
