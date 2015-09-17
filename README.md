@@ -47,3 +47,23 @@ Create a month array which contains the names of all months. Use an HTML
 element event to call a function you wrote named displaySelectMonths()
 that uses a while loop and the month array to display month names
 January, March, April, May, and December in an <h2> element.
+
+### Requirement 6 ###
+
+Use an HTML element event to call a function you wrote named changejQueryMessage() that uses a regular expression to replace a user entered string "JavaScript makes me cry" to "JavaScript makes me smile".  Display the modified string in an <h2> element with the font-weight set to bold and the color set to blue.
+
+### Requirement 7 ###
+
+Write and display an example that demonstrates Strict Mode.
+
+### Requirement 8 ###
+
+Create a JavaScript string containing JSON syntax. The array name within the string should be skiResorts and the keys should be: resortName and resortState. For example, Alta and Utah. There should be at least 3 key:value pairs in the array. Use JSON.parse() to convert the string into a JavaScript object. Use an HTML element event to call a function you wrote named displaySkiResorts() that uses a loop to display the contents name and state data of the JSON object.
+
+### Requirement 9 ###
+
+Use an object constructor to create a player object with the following data members: firstName, lastName, height, yearsInLeague. Use the keyword “this” to set the values. Include a function in the object to update the yearsInLeague data. Use an HTML element event to call a function you wrote named initializePlayer() that creates a new player instance and displays the new instance data.
+
+### Requirement 10 ###
+
+Use an HTML element event to call a function you wrote for the player object to update the yearInLeague data. Display the result (a confirmation of the update).
