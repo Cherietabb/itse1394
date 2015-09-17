@@ -6,20 +6,29 @@ function myTemp() {
     message = document.getElementById('temp');
     message.innerHTML = "";
     x = document.getElementById('temp').value;
-    if (x > 90) {
-        console.log('foo');
-        console.log('Hot!');
-    } else if ((x > 80) && (x < 90)) {
-        console.log('Mighty Warm');
-    } else if ((x > 60) && (x < 70)) {
-        console.log('Pleasant');
-    } else if ((x >= 40) && (x <= 60)) {
-        console.log('Chilly');
-    } else if (x < 39) {
-        console.log('Burr!');
-    } else {
-        console.log(x + ' degrees');
+    try {
+        if (x >= 90) {
+            console.log('foo');
+            alert('Hot!');
+        } else if ((x >= 80) && (x < 90)) {
+            alert('Mighty Warm');
+        } else if ((x > 60) && (x <= 70)) {
+            alert('Pleasant');
+        } else if ((x >= 40) && (x <= 60)) {
+            alert('Chilly');
+        } else if (x <= 39) {
+            alert('Burr!');
+        } else {
+            alert(x + ' degrees');
+        }
+        if (x < -50 || x > 140) throw "value outside accepted parameters";
+        return false;
     }
+    catch(e) {
+        message.innerHTML = e.message;
+    }
+    return true
+
 }
 
 // Requirement 2
