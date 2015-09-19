@@ -19,8 +19,8 @@ function myTemp() {
         } else if ((x > -50) && (x <= 39)) {
             alert('freezing!');
         }
-        if (x < -50) throw {message: "invalid input"};
-        if (x > 140) throw {message: "invalid input"};
+        if (x < -50) throw new Error('Temp is too low!');
+        if (x > 140) throw new Error('Temp is too high!');
 
     }
     catch (e) {
@@ -30,49 +30,84 @@ function myTemp() {
 
 // Requirement 2
 
-function getMonth() {
-    var x, month;
-    x = document.getElementById('month').value;
-    month = [
-        'January', 'February', 'March', 'April', 'May', 'June',
-        'July', "August", 'September', 'October', 'November', 'December'];
-    //alert('Strawberries');
+(function (doc) {
+    "use strict";
 
-    try {
-        if (x === 1) {
-            alert('January');
-        } else if (x === 2) {
-            alert('February');
-        } else if (x === 3) {
-            alert('March');
-        } else if (x === 4) {
-            alert('April');
-        } else if (x === 5) {
-            alert('May');
-        } else if (x === 6) {
-            alert('June');
-        } else if (x === 7) {
-            alert('July');
-        } else if (x === 8) {
-            alert('August');
-        } else if (x === 9) {
-            alert('September');
-        } else if (x === 10) {
-            alert('October');
-        } else if (x === 11) {
-            alert('November');
-        } else if (x === 12) {
-            alert('December');
+    var
+        names = doc.getElementById('names'),
+        myAnswer = doc.getElementById('myAnswer');
+    function getMonth() {
+        var month, names, myAnswer;
+        month = document.getElementById('month').value;
+        try {
+            switch (month) {
+                case 1:
+                    month = 'January';
+                    p.innerHTML = 'You picked ' + month;
+                    break;
+                case 2:
+                    month = 'February';
+                    p.innerHTML = 'You picked ' + month;
+                    break;
+                case 3:
+                    month = 'March';
+                    p.innerHTML = 'You picked ' + month;
+                    break;
+                case 4:
+                    month = 'April';
+                    p.innerHTML = 'You picked ' + month;
+                    break;
+                case 5:
+                    month = 'May';
+                    p.innerHTML = 'You picked ' + month;
+                    break;
+                case 6:
+                    month = 'June';
+                    p.innerHTML = 'You picked ' + month;
+                    break;
+                case 7:
+                    month = 'July';
+                    p.innerHTML = 'You picked ' + month;
+                    break;
+                case 8:
+                    month = 'August';
+                    p.innerHTML = 'You picked ' + month;
+                    break;
+                case 9:
+                    month = 'September';
+                    p.innerHTML = 'You picked ' + month;
+                    break;
+                case 10:
+                    month = 'October';
+                    p.innerHTML = 'You picked ' + month;
+                    break;
+                case 11:
+                    month = 'November';
+                    p.innerHTML = 'You picked ' + month;
+
+                    break;
+                case 12:
+                    month = 'December';
+                    p.innerHTML = 'You picked ' + month;
+
+                    break;
+            }
+            var p = doc.createElement('p');
+            p.innerHTML = 'You picked ' + month;
+            names.appendChild(month);
+
+            if (month < 1) throw new Error('Too Low!');
+            if (month > 12) throw new Error('Number must be 1 - 12!');
+            if (isNaN(month)) throw new Error('Must enter a number!');
+            if (month === "") throw new Error('input is empty!')
         }
-        if (x < 1) throw {message: 'Too low!'};
-        if (x > 12) throw {message: 'Number must be 1 - 12!'};
-        if (isNaN(x)) throw {message: 'Must enter a number!'};
-        if (x === "") throw {message: 'input is empty!'}
+        catch (e) {
+            alert("Error: " + e.message);
+        }
     }
-    catch (e) {
-        alert("Error: " + e.message);
-    }
-}
+
+    month.addEventListener('click', getMonth);
+})(document);
 
 // Requirement 3
 function getNum() {
@@ -105,7 +140,7 @@ function getNum() {
 
         }
         if (x < 1 || x > 12)
-            throw {message: 'Number must be 1 - 12!'};
+            throw {message: 'number must be 1 - 12!'};
         if (isNaN(x))
             throw {message: 'Must enter a number!'};
         if (x === "")
@@ -116,25 +151,42 @@ function getNum() {
     }
 }
 
-function displayBirthMonth(month) {
-     month = {
-         'January': 'Zion',
-         'February': 'Clarice',
-         'March': 'Mark',
-         'April': 'Glenda',
-         'May': 'Mary',
-         'June': 'Nicholas',
-         'July': 'Pat',
-         'August': 'Mary',
-         'September': 'Theresa',
-         'October': 'Heather',
-         'November': 'Cherie',
-         'December': 'Alicia'
-     };
-    var text = "";
-    for (var key in month) {
-        text += month[key] + '<br>'
+// Requirement 4
+(function (doc) {
+    "use strict";
 
+    var
+        birth = doc.getElementById('birth'),
+        name = doc.getElementById('name');
+
+    function displayBirthMonth() {
+        var key, month;
+        month = {
+            'January': 'Zion',
+            'February': 'Clarice',
+            'March': 'Mark',
+            'April': 'Glenda',
+            'May': 'Mary',
+            'June': 'Nicholas',
+            'July': 'Pat',
+            'August': 'Mary',
+            'September': 'Theresa',
+            'October': 'Heather',
+            'November': 'Cherie',
+            'December': 'Alicia'
+        };
+
+        for (key in month) {
+            if (month.hasOwnProperty(key)) {
+                var
+                    li = doc.createElement('li');
+
+                li.innerHTML = key + ': ' + month[key];
+                birth.appendChild(li);
+            }
+        }
     }
-    document.getElementById('birth').innerHTML = text;
-};
+
+    name.addEventListener('click', displayBirthMonth);
+
+})(document);

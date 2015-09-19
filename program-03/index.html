@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Program 3: Cherie Tabb</title>
     <link rel="stylesheet" href="program03.css"/>
-    <script src="program03.js"></script>
 </head>
 <body>
 <h1>Program 3 Requirements</h1>
@@ -21,21 +20,25 @@
     <h2>Requirement 2</h2>
     <p>Enter a month number</p>
     <input type="text" name="#" id="month"/>
-    <button onclick="getMonth()">Submit</button>
+    <button id="click">Submit</button>
+    <p id="names"></p>
 
     <!-- Requirement 3 -->
     <h2>Requirement 3</h2>
     <p>Please enter a number between 1 and 12</p>
     <input type="text" name="#" id="num"/>
-    <button type="submit" onclick="getMonth()">Submit</button>
+    <button type="submit" onclick="getNum()">Submit</button>
+    <p id="season"></p>
 
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
     <p>Click to display birth month</p>
-    <button id="birth" onclick="displayBirthMonth()">Click</button>
+    <button id="name">Click</button>
+    <ul id="birth"></ul>
 
 
 </div>
+<script src="program03.js"></script>
 
 </body>
 </html>
