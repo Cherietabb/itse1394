@@ -29,84 +29,69 @@ function myTemp() {
 }
 
 // Requirement 2
-
 (function (doc) {
     "use strict";
 
     var
         names = doc.getElementById('names'),
         myAnswer = doc.getElementById('myAnswer');
+
     function getMonth() {
-        var month, names, myAnswer;
-        month = document.getElementById('month').value;
+        var month, monthName;
+        month = parseInt(document.getElementById('month').value);
         try {
             switch (month) {
                 case 1:
-                    month = 'January';
-                    p.innerHTML = 'You picked ' + month;
+                    monthName = 'January';
                     break;
                 case 2:
-                    month = 'February';
-                    p.innerHTML = 'You picked ' + month;
+                    monthName = 'February';
                     break;
                 case 3:
-                    month = 'March';
-                    p.innerHTML = 'You picked ' + month;
+                    monthName = 'March';
                     break;
                 case 4:
-                    month = 'April';
-                    p.innerHTML = 'You picked ' + month;
+                    monthName = 'April';
                     break;
                 case 5:
-                    month = 'May';
-                    p.innerHTML = 'You picked ' + month;
+                    monthName = 'May';
                     break;
                 case 6:
-                    month = 'June';
-                    p.innerHTML = 'You picked ' + month;
+                    monthName = 'June';
                     break;
                 case 7:
-                    month = 'July';
-                    p.innerHTML = 'You picked ' + month;
+                    monthName = 'July';
                     break;
                 case 8:
-                    month = 'August';
-                    p.innerHTML = 'You picked ' + month;
+                    monthName = 'August';
                     break;
                 case 9:
-                    month = 'September';
-                    p.innerHTML = 'You picked ' + month;
+                    monthName = 'September';
                     break;
                 case 10:
-                    month = 'October';
-                    p.innerHTML = 'You picked ' + month;
+                    monthName = 'October';
                     break;
                 case 11:
-                    month = 'November';
-                    p.innerHTML = 'You picked ' + month;
-
+                    monthName = 'November';
                     break;
                 case 12:
-                    month = 'December';
-                    p.innerHTML = 'You picked ' + month;
-
+                    monthName = 'December';
                     break;
             }
             var p = doc.createElement('p');
-            p.innerHTML = 'You picked ' + month;
-            names.appendChild(month);
+            p.innerHTML = 'You picked ' + monthName;
+            names.appendChild(p);
 
             if (month < 1) throw new Error('Too Low!');
             if (month > 12) throw new Error('Number must be 1 - 12!');
             if (isNaN(month)) throw new Error('Must enter a number!');
             if (month === "") throw new Error('input is empty!')
-        }
-        catch (e) {
+        } catch (e) {
             alert("Error: " + e.message);
         }
     }
 
-    month.addEventListener('click', getMonth);
+    click.addEventListener('click', getMonth);
 })(document);
 
 // Requirement 3
@@ -195,8 +180,8 @@ function getNum() {
 // Requirement 5
 function displaySelectMonths() {
     var
-    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
-        'November', 'December'];
+        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+            'November', 'December'];
     var i = 0;
     while (i < 12) {
         result += months[i];
