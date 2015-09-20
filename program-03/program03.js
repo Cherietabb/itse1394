@@ -229,4 +229,17 @@ function changejQueryMessage() {
 
 // Requirement 9
 
+function player (first, last, height, years) {
+    this.firstName = first;
+    this.lastName = last;
+    this.height = height;
+    this.yearsInLeague = years;
+}
+function initializePlayer () {
+    var matt;
+    matt = new player('Matt', 'Forte', '6.2"', 6);
+    document.getElementById('newGuy').innerHTML = matt.firstName + ", " + matt.lastName + "<br>" + matt.height + ", " + matt.yearsInLeague + " years in the league";
+}
+function updateStats () {
 
+}

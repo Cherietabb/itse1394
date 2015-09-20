@@ -12,39 +12,39 @@
 
     <!-- Requirement 1 -->
     <h2>Requirement 1</h2>
-    <p>Please enter a temperature in Fahrenheit</p>
+    <label>Please enter a temperature in Fahrenheit</label>
     <input type="text" name="#" maxlength="4" id="temp"/>
     <button type="submit" onclick="myTemp()">Submit</button>
 
     <!-- Requirement 2 -->
     <h2>Requirement 2</h2>
-    <p>Enter a month number</p>
+    <label>Enter a month number</label>
     <input type="text" name="#" id="month"/>
     <button id="click">Submit</button>
     <p id="names"></p>
 
     <!-- Requirement 3 -->
     <h2>Requirement 3</h2>
-    <p>Please enter a number between 1 and 12</p>
+    <label>Please enter a number between 1 and 12</label>
     <input type="text" name="#" id="num"/>
     <button type="submit" id= "seasonName" onclick="getNum()">Submit</button>
     <p id="season"></p>
 
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
-    <p>Click to display birth month</p>
+    <label>Click to display birth month</label>
     <button id="name">Click</button>
     <ul id="birth"></ul>
 
     <!--Requirement 5 -->
     <h2>Requirement 5</h2>
-    <p>Click to display months:</p>
+    <label>Click to display months:</label>
     <button id="begin" onclick="displaySelectMonths()">Click</button>
     <h2 id="result"></h2>
 
     <!-- Requirement 6 -->
     <h2>Requirement 6</h2>
-    <h4>Enter the following message:</h4>
+    <label>Enter the following message:</label>
     <p>"JavaScript makes me cry"</p>
     <input type="text" name="#" id="enteredText"/>
     <button type="submit" id="textEval" onclick="changejQueryMessage()">Submit</button>
@@ -60,8 +60,16 @@
 
     <!--Requirement 9 -->
     <h2>Requirement 9</h2>
+    <h4>Display New Player</h4>
+    <button id="info" type="submit" onclick="initializePlayer()">Submit</button>
+    <p id="newGuy"></p>
 
-    <button type="reset" value="Reset">Reset</button>
+    <!-- Requirement 10 -->
+    <h2>Requirement 10</h2>
+    <p id="newStat" onclick="updateStats"></p>
+
+    <!-- Requirement 11 -->
+    <h2>Requirement 11</h2>
 
 </div>
 <script src="program03.js"></script>
