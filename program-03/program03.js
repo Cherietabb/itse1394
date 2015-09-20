@@ -111,43 +111,43 @@ function myTemp() {
 
 // Requirement 3
 function getNum() {
-    var x, num;
+    var seasons;
     x = document.getElementById('num').value;
-    num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-    try {
-        switch (x) {
-            case 12:
-            case 1:
-            case 2:
-                alert('Winter');
-                break;
-            case 3:
-            case 4:
-            case 5:
-                alert('Spring');
-                break;
-            case 6:
-            case 7:
-            case 8:
-                alert('Summer');
-                break;
-            case 9:
-            case 10:
-            case 11:
-                alert('Fall');
-                break;
-            default:
-
+    seasons = ['Winter', 'Spring', 'Summer', 'Fall'];
+    for (var x = 0; x < seasons.length; x++) {
+        try {
+            switch (x) {
+                case 12:
+                case 1:
+                case 2:
+                    document.getElementById('season').innerHTML = season[x];
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    document.getElementById('season').innerHTML = season[x];
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    document.getElementById('season').innerHTML = season[x];
+                    break;
+                case 9:
+                case 10:
+                case 11:
+                    document.getElementById('season').innerHTML = season[x];
+                    break;
+            }
+            if (x < 1 || x > 12)
+                throw {message: 'number must be 1 - 12!'};
+            if (isNaN(x))
+                throw {message: 'Must enter a number!'};
+            if (x === "")
+                throw {message: 'value is empty!'};
         }
-        if (x < 1 || x > 12)
-            throw {message: 'number must be 1 - 12!'};
-        if (isNaN(x))
-            throw {message: 'Must enter a number!'};
-        if (x === "")
-            throw {message: 'value is empty!'}
-    }
-    catch (e) {
-        alert('Error: ' + e.message)
+        catch (e) {
+            alert('Error: ' + e.message);
+        }
     }
 }
 
@@ -190,3 +190,20 @@ function getNum() {
     name.addEventListener('click', displayBirthMonth);
 
 })(document);
+
+
+// Requirement 5
+function displaySelectMonths() {
+    var
+    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+        'November', 'December'];
+    var i = 0;
+    while (i < 12) {
+        result += months[i];
+        document.getElementById('result').innerHTML = months[i] + "<br>";
+    }
+}
+
+// Requirement 6
+
+
