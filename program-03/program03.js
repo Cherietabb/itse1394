@@ -95,44 +95,44 @@ function myTemp() {
 })(document);
 
 // Requirement 3
+
 function getNum() {
-    var seasons;
-    x = document.getElementById('num').value;
+    var seasons, x;
+    x = parseInt(getElementById('num').value);
     seasons = ['Winter', 'Spring', 'Summer', 'Fall'];
-    for (var x = 0; x < seasons.length; x++) {
-        try {
-            switch (x) {
-                case 12:
-                case 1:
-                case 2:
-                    document.getElementById('season').innerHTML = season[x];
-                    break;
-                case 3:
-                case 4:
-                case 5:
-                    document.getElementById('season').innerHTML = season[x];
-                    break;
-                case 6:
-                case 7:
-                case 8:
-                    document.getElementById('season').innerHTML = season[x];
-                    break;
-                case 9:
-                case 10:
-                case 11:
-                    document.getElementById('season').innerHTML = season[x];
-                    break;
-            }
-            if (x < 1 || x > 12)
-                throw {message: 'number must be 1 - 12!'};
-            if (isNaN(x))
-                throw {message: 'Must enter a number!'};
-            if (x === "")
-                throw {message: 'value is empty!'};
+    console.log("foo");
+    try {
+        switch (x) {
+            case 12:
+            case 1:
+            case 2:
+                document.getElementById('season').innerHTML = "12, 1, 2: " + seasons[0];
+                break;
+            case 3:
+            case 4:
+            case 5:
+                document.getElementById('season').innerHTML = "3, 4, 5: " + seasons[1];
+                break;
+            case 6:
+            case 7:
+            case 8:
+                document.getElementById('season').innerHTML = "6, 7, 8: " + seasons[2];
+                break;
+            case 9:
+            case 10:
+            case 11:
+                document.getElementById('season').innerHTML = "9, 10, 11: " + seasons[3];
+                break;
         }
-        catch (e) {
-            alert('Error: ' + e.message);
-        }
+        if (x < 1 || x > 12)
+            throw new Error('number must be 1 - 12!');
+        if (isNaN(x))
+            throw new Error('Must enter a number!');
+        if (x === "")
+            throw new Error('value is empty!');
+    }
+    catch (e) {
+        alert('Error: ' + e.message);
     }
 }
 
@@ -183,12 +183,46 @@ function displaySelectMonths() {
         months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
             'November', 'December'];
     var i = 0;
-    while (i < 12) {
-        result += months[i];
-        document.getElementById('result').innerHTML = months[i] + "<br>";
+    while (i < months[i].length) {
+        i++;
+        var result = document.getElementById('result').innerHTML = months + "<br>";
     }
 }
 
 // Requirement 6
+function changejQueryMessage() {
+    var enteredText;
+    enteredText = document.getElementById('enteredText').value;
+    if (enteredText = true) {
+        document.getElementById('changedText').innerHTML = "JavaScript makes me smile."
+    }
+}
 
+// Requirement 7
 
+// Requirement 8
+(function(doc) {
+    "use strict";
+    var
+        resorts = doc.getElementById('resorts'),
+        dest = doc.getElementById('dest');
+
+    function myGetAway() {
+
+        var text = '{ "skiResorts" : [' +
+            '{ "resortName":"Telluride" , "resortState":"Colorado" },' +
+            '{ "resortName":"Vail" , "resortState":"Colorado" },' +
+            '{ "resortName":"Park City" , "resortState":"Utah" } ]}';
+        var obj;
+        obj = JSON.parse(text);
+        var i = 0;
+        while (i < text.length) {
+            i++;
+            var
+                p = doc.createElement('p');
+            p.innerHTML = obj.skiResorts[i].resortName + " " + obj.skiResorts[i].resortState;
+            dest.appendChild(p);
+        }
+    }
+    dest.addEventListener('click', myGetAway);
+})(document);
