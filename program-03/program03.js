@@ -185,7 +185,7 @@ function displaySelectMonths() {
     var i = 0;
     while (i < months[i].length) {
         i++;
-        var result = document.getElementById('result').innerHTML = months + "<br>";
+        var result = document.getElementById('result').innerHTML = " " + months + " ";
     }
 }
 
@@ -208,21 +208,25 @@ function changejQueryMessage() {
         dest = doc.getElementById('dest');
 
     function myGetAway() {
-
+        console.log("YabbaDabbaDo!");
         var text = '{ "skiResorts" : [' +
             '{ "resortName":"Telluride" , "resortState":"Colorado" },' +
             '{ "resortName":"Vail" , "resortState":"Colorado" },' +
             '{ "resortName":"Park City" , "resortState":"Utah" } ]}';
         var obj;
         obj = JSON.parse(text);
-        var i = 0;
+        var i = -1;
         while (i < text.length) {
             i++;
             var
                 p = doc.createElement('p');
-            p.innerHTML = obj.skiResorts[i].resortName + " " + obj.skiResorts[i].resortState;
+            p.innerHTML = obj.skiResorts[i].resortName + ", " + " " + obj.skiResorts[i].resortState;
             dest.appendChild(p);
         }
     }
-    dest.addEventListener('click', myGetAway);
+    resorts.addEventListener('click', myGetAway);
 })(document);
+
+// Requirement 9
+
+
