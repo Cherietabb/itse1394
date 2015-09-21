@@ -98,29 +98,29 @@ function myTemp() {
 
 function getNum() {
     var seasons, x;
-    x = parseInt(getElementById('num').value);
+    x = x = document.getElementById('num').value;
     seasons = ['Winter', 'Spring', 'Summer', 'Fall'];
     console.log("foo");
     try {
         switch (x) {
-            case 12:
-            case 1:
-            case 2:
+            case '12':
+            case '1':
+            case '2':
                 document.getElementById('season').innerHTML = "12, 1, 2: " + seasons[0];
                 break;
-            case 3:
-            case 4:
-            case 5:
+            case '3':
+            case '4':
+            case '5':
                 document.getElementById('season').innerHTML = "3, 4, 5: " + seasons[1];
                 break;
-            case 6:
-            case 7:
-            case 8:
+            case '6':
+            case '7':
+            case '8':
                 document.getElementById('season').innerHTML = "6, 7, 8: " + seasons[2];
                 break;
-            case 9:
-            case 10:
-            case 11:
+            case '9':
+            case '10':
+            case '11':
                 document.getElementById('season').innerHTML = "9, 10, 11: " + seasons[3];
                 break;
         }
@@ -176,7 +176,6 @@ function getNum() {
 
 })(document);
 
-
 // Requirement 5
 function displaySelectMonths() {
     var
@@ -191,14 +190,18 @@ function displaySelectMonths() {
 
 // Requirement 6
 function changejQueryMessage() {
-    var enteredText;
-    enteredText = document.getElementById('enteredText').value;
-    if (enteredText = true) {
-        document.getElementById('changedText').innerHTML = "JavaScript makes me smile."
-    }
+    var str, txt;
+    str = document.getElementById('changedText').innerHTML;
+    txt = str.replace(/JavaScript makes me cry/i, "JavaScript makes me smile.");
+    document.getElementById('changedText').innerHTML = txt;
 }
 
 // Requirement 7
+"use strict";
+function myMode() {
+    return 'I just used "strict mode"';
+}
+document.getElementById('eleven').innerHTML = myMode();
 
 // Requirement 8
 (function(doc) {
@@ -208,7 +211,6 @@ function changejQueryMessage() {
         dest = doc.getElementById('dest');
 
     function myGetAway() {
-        console.log("YabbaDabbaDo!");
         var text = '{ "skiResorts" : [' +
             '{ "resortName":"Telluride" , "resortState":"Colorado" },' +
             '{ "resortName":"Vail" , "resortState":"Colorado" },' +
@@ -227,19 +229,26 @@ function changejQueryMessage() {
     resorts.addEventListener('click', myGetAway);
 })(document);
 
-// Requirement 9
+// Requirement 9, 10, 11
 
-function player (first, last, height, years) {
-    this.firstName = first;
-    this.lastName = last;
+var player = function (first, last, height, years) {
+    this.first = first;
+    this.last = last;
     this.height = height;
-    this.yearsInLeague = years;
-}
-function initializePlayer () {
-    var matt;
-    matt = new player('Matt', 'Forte', '6.2"', 6);
-    document.getElementById('newGuy').innerHTML = matt.firstName + ", " + matt.lastName + "<br>" + matt.height + ", " + matt.yearsInLeague + " years in the league";
-}
-function updateStats () {
+    this.years = years;
+    this.update = function () {
+        return ++years;
+    };
+    function initializePlayer() {
+        var matt;
+        matt = new player('Matt', 'Forte', '6.2"', 6);
+        document.getElementById('newGuy').innerHTML = matt.first + " " + matt.last + "<br>" + matt.height + ", " + matt.years;
+        document.getElementById('newStat').innerHTML = matt.update();
+        document.getElementById('newData').innerHTML = matt.team();
 
-}
+    }
+    player.prototype.team = function () {
+        return "Chicago Bears";
+    };
+};
+
