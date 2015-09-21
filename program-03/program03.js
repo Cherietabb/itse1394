@@ -239,16 +239,17 @@ var player = function (first, last, height, years) {
     this.update = function () {
         return ++years;
     };
-    function initializePlayer() {
-        var matt;
-        matt = new player('Matt', 'Forte', '6.2"', 6);
-        document.getElementById('newGuy').innerHTML = matt.first + " " + matt.last + "<br>" + matt.height + ", " + matt.years;
-        document.getElementById('newStat').innerHTML = matt.update();
-        document.getElementById('newData').innerHTML = matt.team();
-
-    }
     player.prototype.team = function () {
         return "Chicago Bears";
     };
+
+    function initializePlayer() {
+        var matt, newInfo;
+        matt = new player('Matt', 'Forte', '6.2"', 6);
+        document.getElementById('newGuy').innerHTML = matt.first + " " + matt.last + "<br>" + matt.height + ", " + matt.years;
+        document.getElementById('newStat').innerHTML = matt.update();
+        newInfo = document.getElementById('newData').innerHTML = matt.first + " " + matt.last + "<br>" + matt.height + ", " + matt.years + " " + matt.team();
+
+    }
 };
 
