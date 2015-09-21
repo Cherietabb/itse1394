@@ -8,7 +8,7 @@
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-###Program 3 ###
+#Program 3 #
 -----------------------------------------------------------------------
 ## Requirement 1 ##
 
@@ -75,7 +75,7 @@ Use an HTML element event to call a function you wrote for the player object to 
 Use the prototype property to add a new data member to the player prototype named team. Use the prototype property to add a function to the player prototype which changes the team data. Use an HTML element event to call that function and display the result (a confirmation of the update).
 
 -----------------------------------------------------------------------------------------------
-### Program 4 ###
+# Program 4 #
 
 ## Requirement 1 ##
 
