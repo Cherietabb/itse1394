@@ -9,13 +9,15 @@ var findAverage = function(a, b, c ,d) {
     }
     return total / arguments.length;
 };
-document.getElementById('num').innerHTML = findAverage(50, 6, 5, -50);
+document.getElementById('num').addEventListener('click', findAverage(50, 6, 5, -40));
 
 //Requirement 2
+
+greeting.addEventListener('click', selfInvoke);
 var selfInvoke = function () {
-    return "#2 Hello from SelfInvoke";
+    alert(selfInvoke());
 };
-document.getElementById('greeting').innerHTML = selfInvoke();
+
 
 
 // Requirement 3
