@@ -3,29 +3,18 @@
  */
 
 //Requirement 1
-(function (doc) {
-
-    var
-        num = doc.getElementById('num'),
-        result = doc.getElementById('result');
-
-    var findAverage = function(a, b, c ,d) {
-        for (var i=0, total = 0, len=arguments.length; i<len; i++) {
-            total += arguments[i];
-        }
-        return total / arguments.length;
-        p = doc.createElement('p');
+var findAverage = function(a, b, c ,d) {
+    for (var i=0, total = 0, len=arguments.length; i<len; i++) {
+        total += arguments[i];
         var
-            p.innerHTML = 'The average is ' + len;
-
-    };
-    document.getElementById('num').addEventListener('click', findAverage(50, 6, 5, -40));
-
-})(document);
-
+            p = document.createElement('p');
+    }
+    return total / arguments.length;
+};
+document.getElementById('num').addEventListener('click', findAverage(), false);
+p = document.getElementById('result').innerHTML = findAverage(50, 6, 5, -40);
 
 //Requirement 2
-
 greeting.addEventListener('click', selfInvoke);
 var selfInvoke = function () {
     alert(selfInvoke());
