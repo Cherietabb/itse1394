@@ -21,7 +21,7 @@ var selfInvoke = function () {
         p = document.createElement('p');
     return selfInvoke();
 };
-document.addEventListener('click', function() {p = document.getElementById('greet').innerHTML =  '#2 Hello from selfInvoke'});
+document.getElementById('greeting').addEventListener('click', function() {p = document.getElementById('greet').innerHTML =  '#2 Hello from selfInvoke'});
 
 
 
