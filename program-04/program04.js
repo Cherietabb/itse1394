@@ -3,6 +3,7 @@
  */
 
 //Requirement 1
+
 var findAverage = function(a, b, c ,d) {
     for (var i=0, total = 0, len=arguments.length; i<len; i++) {
         total += arguments[i];
@@ -11,14 +12,16 @@ var findAverage = function(a, b, c ,d) {
     }
     return total / arguments.length;
 };
-document.getElementById('num').addEventListener('click', findAverage(), false);
-p = document.getElementById('result').innerHTML = findAverage(50, 6, 5, -40);
+document.getElementById('num').addEventListener('click', function() {p = document.getElementById('result').innerHTML = 'The average is: ' + findAverage(50, 6, 5, -40)});
+
 
 //Requirement 2
-greeting.addEventListener('click', selfInvoke);
 var selfInvoke = function () {
-    alert(selfInvoke());
+    var
+        p = document.createElement('p');
+    return selfInvoke();
 };
+document.addEventListener('click', function() {p = document.getElementById('greet').innerHTML =  '#2 Hello from selfInvoke'});
 
 
 
