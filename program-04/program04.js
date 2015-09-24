@@ -7,8 +7,6 @@
 var findAverage = function(a, b, c ,d) {
     for (var i=0, total = 0, len=arguments.length; i<len; i++) {
         total += arguments[i];
-        var
-            p = document.createElement('p');
     }
     return total / arguments.length;
 };
@@ -17,18 +15,30 @@ document.getElementById('num').addEventListener('click', function() {p = documen
 
 //Requirement 2
 var selfInvoke = function () {
-    var
-        p = document.createElement('p');
     return selfInvoke();
 };
 document.getElementById('greeting').addEventListener('click', function() {p = document.getElementById('greet').innerHTML =  '#2 Hello from selfInvoke'});
 
 
-
 // Requirement 3
-
+var divs = document.getElementsByTagName('div');
+(function() {
+    for (var i = 0, len= divs.length; i < len; i++) {
+        //(function())
+        divs[i].addEventListener('click', function() {
+            console.log('Div ' + i + 'got clicked');
+        });
+        console.log(i);
+    }
+})();
 
 // Requirement 4
+function colorChange() {
+    changeMyColor = document.getElementsByClassName('changeMyColor').style.backgroundColor = 'pink';
+}
+var p = document.getElementById('newColor');
+p.addEventListener('click', colorChange);
+
 
 
 // Requirement 5
