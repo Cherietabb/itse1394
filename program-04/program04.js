@@ -24,11 +24,10 @@ document.getElementById('greeting').addEventListener('click', function() {p = do
 var divs = document.getElementsByTagName('div');
 (function() {
     for (var i = 0, len= divs.length; i < len; i++) {
-        //(function())
         divs[i].addEventListener('click', function() {
             console.log('Div ' + i + 'got clicked');
         });
-        console.log(i);
+        document.getElementById('');
     }
 })();
 
