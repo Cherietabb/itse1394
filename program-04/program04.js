@@ -28,11 +28,14 @@ document.getElementById('greeting').addEventListener('click', function () {
 var divs = document.getElementsByTagName('div');
 (function() {
     for (var i = 0, len= divs.length; i < len; i++) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1011445d95b4d7928dfacf95ebbcb905bf661228
         divs[i].addEventListener('click', function() {
             console.log('Div ' + i + 'got clicked');
         });
-        console.log(i);
+        document.getElementById('');
     }
 })();
 
