@@ -25,15 +25,17 @@ document.getElementById('greeting').addEventListener('click', function () {
 
 
 // Requirement 3
-var divs = document.getElementsByTagName('div');
-(function() {
-    for (var i = 0, len= divs.length; i < len; i++) {
-        divs[i].addEventListener('click', function() {
-            console.log('Div ' + i + 'got clicked');
-        });
-        document.getElementById('');
+
+var closureExample = (function() {
+    var names = prompt('Please enter a name');
+    var namesArray = [];
+    if (names != null) {
+        return function () {
+            namesArray.push(newName)
+        }
     }
-})();
+
+})(document);
 
 // Requirement 4
 var div = document.getElementsByClassName('changeMyColor');
