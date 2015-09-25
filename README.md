@@ -97,7 +97,7 @@ Use an HTML element event to call a function you wrote named `colorChange()` tha
 
 ## Requirement 5 ##
 
-Use an HTML element event to call a function you wrote named `colorChange()` that changes the background-color of HTML elements with the CSS class changeMyColor.
+Use an HTML element event to call a function you wrote named `fontSizeChange()` that changes the font size of HTML elements based on their tag name.
 
 ## Requirement 6 ##
 
