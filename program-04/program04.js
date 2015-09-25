@@ -10,21 +10,25 @@ var findAverage = function(a, b, c ,d) {
     }
     return total / arguments.length;
 };
-document.getElementById('num').addEventListener('click', function() {p = document.getElementById('result').innerHTML = 'The average is: ' + findAverage(50, 6, 5, -40)});
+document.getElementById('num').addEventListener('click', function () {
+    p = document.getElementById('result').innerHTML = 'The average is: ' + findAverage(50, 6, 5, -40)
+});
 
 
 //Requirement 2
 var selfInvoke = function () {
     return selfInvoke();
 };
-document.getElementById('greeting').addEventListener('click', function() {p = document.getElementById('greet').innerHTML =  '#2 Hello from selfInvoke'});
+document.getElementById('greeting').addEventListener('click', function () {
+    p = document.getElementById('greet').innerHTML = '#2 Hello from selfInvoke'
+});
 
 
 // Requirement 3
 var divs = document.getElementsByTagName('div');
 (function() {
     for (var i = 0, len= divs.length; i < len; i++) {
-        //(function())
+
         divs[i].addEventListener('click', function() {
             console.log('Div ' + i + 'got clicked');
         });
@@ -33,13 +37,13 @@ var divs = document.getElementsByTagName('div');
 })();
 
 // Requirement 4
-function colorChange() {
-    changeMyColor = document.getElementsByClassName('changeMyColor').style.backgroundColor = 'pink';
-}
-var p = document.getElementById('newColor');
-p.addEventListener('click', colorChange);
-
-
+var div = document.getElementsByClassName('changeMyColor');
+var changeColor = function () {
+    document.getElementsByClassName('changeMyColor');
+};
+document.getElementById('change').addEventListener('click', function () {
+    div = document.getElementById('newColor').style.backgroundColor = 'pink'
+}, true);
 
 // Requirement 5
 
@@ -48,6 +52,14 @@ p.addEventListener('click', colorChange);
 
 
 // Requirement 7
+
+function myMouseOver(id) {
+    document.getElementById('id').src = 'img2.jpg';
+}
+function myMouseOut(id) {
+    document.getElementById('id').src = 'img1.jpg';
+}
+//img1.addEventListener('mouseover', 'mouseout', myMouseOver, myMouseOut);
 
 
 // Requirement 8
