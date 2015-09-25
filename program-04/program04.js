@@ -4,8 +4,8 @@
 
 //Requirement 1
 
-var findAverage = function(a, b, c ,d) {
-    for (var i=0, total = 0, len=arguments.length; i<len; i++) {
+var findAverage = function (a, b, c, d) {
+    for (var i = 0, total = 0, len = arguments.length; i < len; i++) {
         total += arguments[i];
     }
     return total / arguments.length;
@@ -26,15 +26,13 @@ document.getElementById('greeting').addEventListener('click', function () {
 
 // Requirement 3
 
-var closureExample = (function() {
-    var names = prompt('Please enter a name');
+var closureExample = (function () {
     var namesArray = [];
-    if (names != null) {
-        return function () {
-            namesArray.push(newName)
-        }
-    }
-
+    var result = document.getElementById('result');
+    return function () {
+        namesArray.push(newName)
+    };
+    results.addEventListener('click', closureExample);
 })(document);
 
 // Requirement 4
