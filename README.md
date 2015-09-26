@@ -123,7 +123,7 @@ uses it to reset the innerHTML of an `<h1>` element.
 
 ## Requirement 11 ##
 
-Use an HTML element event to call a function you wrote named `createNode()` which creates a `<p>` element with the content “This is a new paragraph element” and append that `<p>`` element to an existing `<div>` element.
+Use an HTML element event to call a function you wrote named `createNode()` which creates a `<p>` element with the content “This is a new paragraph element” and append that `<p>` element to an existing `<div>` element.
 
 ## Requirement 11 ##
 
