@@ -11,7 +11,7 @@ var findAverage = function (a, b, c, d) {
     return total / arguments.length;
 };
 document.getElementById('num').addEventListener('click', function () {
-    p = document.getElementById('result').innerHTML = 'The average is: ' + findAverage(50, 6, 5, -40)
+    p = document.getElementById('results').innerHTML = 'The average is: ' + findAverage(50, 6, 5, -40)
 });
 
 
@@ -25,23 +25,19 @@ document.getElementById('greeting').addEventListener('click', function () {
 
 
 // Requirement 3
-
 var closureExample = (function () {
     var namesArray = [];
     var names = document.getElementById('names');
     return function () {
         namesArray.push(newName);
-        var newName = document.getElementById('names').value;
+        names = document.getElementById('names').value;
     };
-    var btnclick;
-    btnclick.addEventListener('click', closureExample);
-
-})(document);
+})(document.getElementById('btnclick').addEventListener('click', function(){document.getElementById('names').innerHTML = 'Please enter a name: ';}, true));
 
 // Requirement 4
 var div = document.getElementsByClassName('changeMyColor');
-var changeColor = function () {
-    return changeColor();
+var colorChange = function () {
+    return colorChange();
 };
 document.getElementById('change').addEventListener('click', function () {
     div = document.getElementById('newColor').style.backgroundColor = 'pink'
@@ -49,12 +45,11 @@ document.getElementById('change').addEventListener('click', function () {
 
 // Requirement 5
 
+function changeFontSize() {
+    document.getElementById("myPara").style.fontSize = "x-large";
+}
 
 // Requirement 6
-
-
-// Requirement 7
-//var img = document.getElementById('img1');
 var myMouseOver = function (img) {
     img.src = 'img2.jpg';
     this.addEventListener('mouseover', myMouseOver, true);
@@ -65,6 +60,19 @@ var myMouseOut = function (img) {
 };
 
 
+// Requirement 7
+var myMouseDown = function (div) {
+    div = document.getElementById('mydemo');
+    p = document.getElementById('txtchng');
+    div.style.backgroundColor = 'green';
+    p.style.color = 'pink';
+    div.addEventListener('mousedown', myMouseDown, true);
+};
+function myMouseUp () {
+    mydemo.style.backgroundColor = 'black';
+    txtchng.style.color = 'white';
+    mydemo.addEventListener('mouseup', myMouseUp, true);
+}
 
 // Requirement 8
 

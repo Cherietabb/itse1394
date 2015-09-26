@@ -11,12 +11,14 @@
     <hr/>
     <!-- Requirement 1 -->
     <h2>Requirement 1</h2>
+
     <p>Find the Average of numbers: 50, 6, 5, -40</p>
     <button id="num">Submit</button>
     <p id="results"></p>
 
     <!-- Requirement 2 -->
     <h2>Requirement 2</h2>
+
     <p>Self-Invoking Functions</p>
     <button id="greeting">Submit</button>
     <p id="greet"></p>
@@ -24,12 +26,10 @@
     <!-- Requirement 3 -->
     <h2>Requirement 3</h2>
     <p>Closure example</p>
-
-        <label>Please enter a name:
-            <input type="text" id="names"/></label>
+    <label>Please enter a name:
+        <input type="text" id="names"/></label>
     <button id="btnclick">Submit</button>
     <p id="namesResult"></p>
-
 
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
@@ -41,19 +41,31 @@
     <br/>
     <button id="change">Submit</button>
 
-
     <!-- Requirement 5 -->
     <h2>Requirement 5</h2>
+    <h4>Changing Font Sizes</h4>
+
+    <div>
+        <button id="changeIt" onclick="changeFontSize()">Submit</button>
+        <h1 id="myPara">This font should be larger.</h1>
+    </div>
 
     <!-- Requirement 6 -->
     <h2>Requirement 6</h2>
+    <p>onmouseover and onmouseout events</p>
+
+    <div>
+        <img src="img1.jpg" id="img1" onmouseover="myMouseOver(this)" onmouseout="myMouseOut(this)" alt="Sunset"
+             width="400"
+             height="338"/>
+    </div>
 
     <!-- Requirement 7 -->
     <h2>Requirement 7</h2>
-    <p>onmouseover and onmouseout events</p>
-    <div>
-        ><img src="img1.jpg" id="img1" onmouseover="myMouseOver(this)" onmouseout="myMouseOut(this)" alt="Sunset" width="400"
-                         height="338"/>
+    <h4>onmousedown and onmouseup events</h4>
+    <p>Click the text to view demo</p>
+    <div id="mydemo" onmousedown="myMouseDown()" onmouseup="myMouseUp()">
+        <p id="txtchng">The background color of this div will change colors when the user left-clicks on it.</p>
     </div>
 
     <!-- Requirement 8 -->
