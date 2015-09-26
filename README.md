@@ -123,15 +123,15 @@ Use an HTML element event to call a function you wrote named `changeContent()` t
 
 Use an HTML element event to call a function you wrote named `createNode()` which creates a `<p>` element with the content “This is a new paragraph element” and append that `<p>` element to an existing `<div>` element.
 
-## Requirement 11 ##
+## Requirement 12 ##
 
 Use an HTML element event to call a function you wrote named `changeContent()`. that get the firstChild.nodeValue of a `<p>` element to an existing `<div>` element.
 
-## Requirement 12 ##
+## Requirement 13 ##
 
 Use an HTML element event to call a function you wrote named `removeNode()` to reverse the operation of requirement 12 by removing the new `<p>` element.
 
-## Requirement 13 ##
+## Requirement 14 ##
 
 Use an HTML element event to call a function you wrote named `changeNodeList()` to change the background-color of all `<div>` elements in a node list.
 
