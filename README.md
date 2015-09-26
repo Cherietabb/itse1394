@@ -77,7 +77,7 @@ Use the prototype property to add a new data member to the player prototype name
 
 ---------------------------------------------------------------------------
 
-# Program 4 #
+# **Program 4** #
 
 ## Requirement 1 ##
 
@@ -101,23 +101,29 @@ Use an HTML element event to call a function you wrote named `fontSizeChange()` 
 
 ## Requirement 6 ##
 
-Use an HTML element event to call a function you wrote named `fontSizeChange()` that changes the font size of HTML elements based on their tag name.
+Demonstrate the `onmouseover` and `onmouseout` events by changing an image source to display a different image.
 
 ## Requirement 7 ##
 
-Demonstrate the onmouseover and onmouseout events by changing an image source to display a different image.
+Demonstrate the onmousedown and onmouseup events by changing the text and color of a <div> element.
 
 ## Requirement 8 ##
 
-Demonstrate the onmousedown and onmouseup event by changing the text and color of a `<div>` element.
+Add an `eventlistener` to a `<div>` element for the click event that produces an alert. The listener should call a function that you write named `handleDivClick()`. Use bubbling propagation.
 
 ## Requirement 9 ##
 
-Add an eventlistener to a `<div>` element for the click event that produces an alert.  The listener should call a function that you write named `handleDivClick()`.  Use bubbling propagation.
+Use an HTML element event to call a function you wrote named domContent() that writes all of the HTML content to an alert.
 
 ## Requirement 10 ##
 
-Use an HTML element event to call a function you wrote named `domContent()` that writes all of the HTML to an alert.
+Use an HTML element event to call a function you wrote named
+`changeContent()` that gets the `firstChild.nodeValue` of a `<p>` element and
+uses it to reset the innerHTML of an `<h1>` element.
+
+## Requirement 11 ##
+
+Use an HTML element event to call a function you wrote named `createNode()` which creates a `<p>` element with the content “This is a new paragraph element” and append that `<p>`` element to an existing `<div>` element.
 
 ## Requirement 11 ##
 
@@ -125,14 +131,10 @@ Use an HTML element event to call a function you wrote named `changeContent()`. 
 
 ## Requirement 12 ##
 
-Use an HTML element event to call a function you wrote named `createNode()` which creates a `<p>` element with the content "This is a new paragraph element" and append that to an existing `<div>` element.
+Use an HTML element event to call a function you wrote named `removeNode()` to reverse the operation of requirement 12 by removing the new `<p>` element.
 
 ## Requirement 13 ##
 
-Use an HTML element event to call a function you wrote name `removeNode()` to reverse the operation of requirement 12 by removing the new `<p>` element.
-
-## Requirement 14 ##
-
 Use an HTML element event to call a function you wrote named `changeNodeList()` to change the background-color of all `<div>` elements in a node list.
 
--------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
