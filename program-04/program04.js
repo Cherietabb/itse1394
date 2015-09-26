@@ -25,20 +25,21 @@ document.getElementById('greeting').addEventListener('click', function () {
 
 
 // Requirement 3
-var divs = document.getElementsByTagName('div');
-(function() {
-    for (var i = 0, len= divs.length; i < len; i++) {
-        divs[i].addEventListener('click', function() {
-            console.log('Div ' + i + 'got clicked');
-        });
-        document.getElementById('');
-    }
-})();
+var closureExample = (function () {
+    var namesArray = [];
+    var names = document.getElementById('names');
+    return function () {
+        namesArray.push(newName);
+        var newName = document.getElementById('names').value;
+    };
+    var btnclick;
+    btnclick.addEventListener('click', closureExample);
+})(document);
 
 // Requirement 4
 var div = document.getElementsByClassName('changeMyColor');
 var changeColor = function () {
-    document.getElementsByClassName('changeMyColor');
+    return changeColor();
 };
 document.getElementById('change').addEventListener('click', function () {
     div = document.getElementById('newColor').style.backgroundColor = 'pink'
@@ -51,14 +52,16 @@ document.getElementById('change').addEventListener('click', function () {
 
 
 // Requirement 7
+//var img = document.getElementById('img1');
+var myMouseOver = function (img) {
+    img.src = 'img2.jpg';
+    this.addEventListener('mouseover', myMouseOver, true);
+};
+var myMouseOut = function (img) {
+    img.src = 'img1.jpg';
+    this.addEventListener('mouseout', myMouseOut, true);
+};
 
-function myMouseOver(id) {
-    document.getElementById('id').src = 'img2.jpg';
-}
-function myMouseOut(id) {
-    document.getElementById('id').src = 'img1.jpg';
-}
-//img1.addEventListener('mouseover', 'mouseout', myMouseOver, myMouseOut);
 
 
 // Requirement 8
