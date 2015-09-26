@@ -16,12 +16,9 @@ document.getElementById('num').addEventListener('click', function () {
 
 
 //Requirement 2
-var selfInvoke = function () {
-    return selfInvoke();
-};
-document.getElementById('greeting').addEventListener('click', function () {
-    p = document.getElementById('greet').innerHTML = '#2 Hello from selfInvoke'
-});
+var selfInvoke = (function () {
+    document.getElementById('greet').innerHTML = '#2 Hello from selfInvoke';
+})();
 
 
 // Requirement 3
@@ -78,12 +75,11 @@ function myMouseUp () {
 }
 
 // Requirement 8
-function handleDivClick() {
-    var div = document.getElementById('bubble');
-    var p = document.getElementById('nobubble');
-}
-nobubble.addEventListener('click', function() {alert('P is bubbling!');}, false);
-bubble.addEventListener('click', function() {alert('So is the div element!');}, false);
+var handleDivClick = (function () {
+    document.getElementById('bubble').addEventListener('click', function () {alert("So is the div element!");}, false);
+    document.getElementById('nobubble').addEventListener('click', function () {alert("The p element is bubbling!");}, false);
+})();
+
 // Requirement 9
 
 
