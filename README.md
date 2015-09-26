@@ -113,13 +113,11 @@ Add an `eventlistener` to a `<div>` element for the click event that produces an
 
 ## Requirement 9 ##
 
-Use an HTML element event to call a function you wrote named domContent() that writes all of the HTML content to an alert.
+Use an HTML element event to call a function you wrote named `domContent()` that writes all of the HTML content to an alert.
 
 ## Requirement 10 ##
 
-Use an HTML element event to call a function you wrote named
-`changeContent()` that gets the `firstChild.nodeValue` of a `<p>` element and
-uses it to reset the innerHTML of an `<h1>` element.
+Use an HTML element event to call a function you wrote named `changeContent()` that gets the `firstChild.nodeValue` of a `<p>` element and uses it to reset the innerHTML of an `<h1>` element.
 
 ## Requirement 11 ##
 
