@@ -20,8 +20,8 @@ h1 {
     text-align: center;
 }
 
-.changeMyColor, #mydemo, #bubble, #div1{
-    width: 200px;
+.changeMyColor, #mydemo, #div1{
+    width: 300px;
     height: 150px;
     background-color: #16e9ff;
 }
@@ -50,4 +50,11 @@ h1 {
 
 .newtxt {
     text-align: left;
+}
+#bubble, #div1, #blah, #final {
+    width: 300px;
+}
+
+#div1, #blah, #final {
+    text-align: center;
 }

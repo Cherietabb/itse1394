@@ -22,7 +22,46 @@ var selfInvoke = (function () {
 
 
 // Requirement 3
-function closureExample(names) {
+// Sample Closure Only
+function outer(x) {
+    var z = 10;
+    function inner(y) {
+        var var1 = (x + y + (++z));
+        return var1;
+    }
+    return inner(5);
+}
+var incrementStatic = (function() {
+    var counter = 0;
+    alert(counter);
+    return function() {
+        return ++counter;
+    }
+})();
+function Puppy(name) {
+    this.getName = function() {
+        return name;
+    };
+    this.setName = function(value) {
+        name = value;
+    }
+}
+function callClosure1() {
+    document.getElementById('display1').innerHTML = outer(5);
+}
+function callClosure2() {
+    document.getElementById('display2').innerHTML = incrementStatic();
+}
+var puppy = new Puppy('Sparky');
+function callClosure3(action) {
+    if (action == 'get') {
+        document.getElementById('display3').innerHTML = puppy.getName();
+    } else {
+        puppy.setName('Sal');
+        document.getElementById('display3').innerHTML = puppy.getName();
+    }
+}
+/*function closureExample(names) {
     this.getName = function () {
         return name;
     };
@@ -33,7 +72,7 @@ function closureExample(names) {
 function callClosure() {
     document.getElementById('names').innerHTML = 'Please enter a name: ';
 }
-
+*/
 // Requirement 4
 var div = document.getElementsByClassName('changeMyColor');
 var colorChange = function () {
@@ -91,9 +130,7 @@ var domContent = function () {
 
 // Requirement 10
 var changeContent = function () {
-    var myText = document.getElementById('foo').firstChild.nodeValue;
-    document.getElementById('bar').innerHTML = myText;
-    //document.getElementsByClassName('newTXT').innerHTML = document.getElementsByClassName("myTXT").firstChild.nodeValue;
+    document.getElementById('bar').innerHTML = document.getElementById('foo').firstChild.nodeValue;
 };
 
 // Requirement 11
@@ -104,10 +141,19 @@ var changeContent = function () {
     var element = document.getElementById('div1');
     element.appendChild(para);
 })();
-// Requirement 12
 
+// Requirement 12
+(function removeNode() {
+    var parent = document.getElementById('blah');
+    var child = document.getElementById('p1');
+    parent.removeChild(child);
+})();
 
 // Requirement 13
+function changeNodeList() {
+    var myNodeList = document.getElementsByClassName('divs');
+    for (var i = 0; i < myNodeList.length; i++) {
+        myNodeList[i].style.backgroundColor = 'pink';
+    }
+}
 
-
-// Requirement 14
