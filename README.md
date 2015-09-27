@@ -125,13 +125,9 @@ Use an HTML element event to call a function you wrote named `createNode()` whic
 
 ## Requirement 12 ##
 
-Use an HTML element event to call a function you wrote named `changeContent()`. that get the firstChild.nodeValue of a `<p>` element to an existing `<div>` element.
-
-## Requirement 13 ##
-
 Use an HTML element event to call a function you wrote named `removeNode()` to reverse the operation of requirement 12 by removing the new `<p>` element.
 
-## Requirement 14 ##
+## Requirement 13 ##
 
 Use an HTML element event to call a function you wrote named `changeNodeList()` to change the background-color of all `<div>` elements in a node list.
 
