@@ -44,7 +44,7 @@
     <h2>Requirement 5</h2>
     <h4>Changing Font Sizes</h4>
 
-    <div>
+    <div class="resize">
         <button id="changeIt" onclick="changeFontSize()">Submit</button>
         <h1 id="myPara">This font should be larger.</h1>
     </div>
@@ -53,7 +53,7 @@
     <h2>Requirement 6</h2>
     <p>onmouseover and onmouseout events</p>
 
-    <div>
+    <div class="resize">
         <img src="assets/img1.jpg" id="img1" onmouseover="myMouseOver(this)" onmouseout="myMouseOut(this)" alt="Sunset"
              width="400"
              height="338"/>
@@ -63,24 +63,37 @@
     <h2>Requirement 7</h2>
     <h4>onmousedown and onmouseup events</h4>
     <p>Click the text to view demo</p>
-    <div id="mydemo" onmousedown="myMouseDown()" onmouseup="myMouseUp()">
+    <div id="mydemo" onmousedown="myMouseDown(this)" onmouseup="myMouseUp(this)">
         <p id="txtchng">The background color of this div will change colors when the user left-clicks on it.</p>
     </div>
 
     <!-- Requirement 8 -->
     <h2>Requirement 8</h2>
+    <p>Bubbling Propagation</p>
     <div id="bubble">
         <p id="nobubble">#8 I'm bubbling!</p>
     </div>
 
     <!-- Requirement 9 -->
     <h2>Requirement 9</h2>
+    <button type="button" id="button" onclick="domContent()">Submit #9</button>
+    <p>Writing HTML content to an alert.</p>
 
     <!-- Requirement 10 -->
     <h2>Requirement 10</h2>
+    <p class="myTXT" id="foo">firstChild nodeValues
+    Click for solution to #10:</p>
+    <button class="clickhere" onclick="changeContent()">Submit</button>
+    <h1 class="newTXT" id="bar"></h1>
 
     <!-- Requirement 11 -->
     <h2>Requirement 11</h2>
+    <div id="div1">
+        <p id="para">This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <p id="place"></p>
+    </div>
+
 
     <!-- Requirement 12 -->
     <h2>Requirement 12</h2>

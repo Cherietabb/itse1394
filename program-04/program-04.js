@@ -25,12 +25,12 @@ var selfInvoke = (function () {
 function closureExample(names) {
     this.getName = function () {
         return name;
-    }
-    this.setName = function(value) {
+    };
+    this.setName = function (value) {
         name = value;
     }
 }
-function callClosure () {
+function callClosure() {
     document.getElementById('names').innerHTML = 'Please enter a name: ';
 }
 
@@ -46,7 +46,7 @@ document.getElementById('change').addEventListener('click', function () {
 // Requirement 5
 
 function changeFontSize() {
-    document.getElementById("myPara").style.fontSize = "x-large";
+    document.getElementById("myPara").style.fontSize = '40px';
 }
 
 // Requirement 6
@@ -68,27 +68,42 @@ var myMouseDown = function (div) {
     p.style.color = 'pink';
     div.addEventListener('mousedown', myMouseDown, true);
 };
-function myMouseUp () {
+function myMouseUp() {
     mydemo.style.backgroundColor = 'black';
     txtchng.style.color = 'white';
     mydemo.addEventListener('mouseup', myMouseUp, true);
 }
 
 // Requirement 8
-var handleDivClick = (function () {
-    document.getElementById('bubble').addEventListener('click', function () {alert("So is the div element!");}, false);
-    document.getElementById('nobubble').addEventListener('click', function () {alert("The p element is bubbling!");}, false);
+(function handleDivClick() {
+    document.getElementById('bubble').addEventListener('click', function () {
+        alert("So is the div element!");
+    }, false);
+    document.getElementById('nobubble').addEventListener('click', function () {
+        alert("The p element is bubbling!");
+    }, false);
 })();
 
 // Requirement 9
-
+var domContent = function () {
+    alert(document.documentElement.innerHTML);
+};
 
 // Requirement 10
-
+var changeContent = function () {
+    var myText = document.getElementById('foo').firstChild.nodeValue;
+    document.getElementById('bar').innerHTML = myText;
+    //document.getElementsByClassName('newTXT').innerHTML = document.getElementsByClassName("myTXT").firstChild.nodeValue;
+};
 
 // Requirement 11
-
-
+(function createNode() {
+    var para = document.createElement('p');
+    var node = document.createTextNode('This is a new paragraph element');
+    para.appendChild(node);
+    var element = document.getElementById('div1');
+    element.appendChild(para);
+})();
 // Requirement 12
 
 

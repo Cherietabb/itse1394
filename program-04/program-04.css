@@ -1,23 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/*body {
+    margin: 0;
+    padding: 0;
+    outline: 0 none;
+    border: 0 none;
+    font-family: "Anonymous Pro", sans-serif;
+    font-size: 100%;
+}
+*/
+div {
+    padding: .5em;
+    margin: .5em;
+    box-shadow: 0 0 10px 3px #ccc;
+    border-radius: 15px;
+}
+
 h1 {
     text-align: center;
 }
-.changeMyColor, #mydemo, #bubble{
+
+.changeMyColor, #mydemo, #bubble {
     width: 200px;
     height: 150px;
     background-color: #16e9ff;
 }
-#myPara {
-    font-size: 7pt;
+
+#myPara, #bar {
+    min-font-size: 14px;
     text-align: left;
 }
 
-#mydemo {
-    padding: 10px 0 10px 10px;
+.resize {
+    width : 405px;
 }
+
+#mydemo {
+    padding: 40px;
+}
+
 #bubble {
     background-color: cornflowerblue;
     text-align: center;
 }
+
 #nobuble {
     margin: auto 0;
+}
+
+.newtxt {
+    text-align: left;
 }
