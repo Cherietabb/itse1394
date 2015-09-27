@@ -20,14 +20,14 @@ h1 {
     text-align: center;
 }
 
-.changeMyColor, #mydemo, #bubble {
+.changeMyColor, #mydemo, #bubble, #div1{
     width: 200px;
     height: 150px;
     background-color: #16e9ff;
 }
 
-#myPara, #bar {
-    min-font-size: 14px;
+#myPara {
+    font-size: 10pt;
     text-align: left;
 }
 

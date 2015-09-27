@@ -46,7 +46,7 @@ document.getElementById('change').addEventListener('click', function () {
 // Requirement 5
 
 function changeFontSize() {
-    document.getElementById("myPara").style.fontSize = '40px';
+    document.getElementById("myPara").style.fontSize = '24pt';
 }
 
 // Requirement 6
