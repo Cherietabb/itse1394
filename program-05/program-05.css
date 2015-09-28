@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+
+div {
+    padding: .5em;
+    margin: .5em;
+    box-shadow: 0 0 5px 3px #ccc;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-/*body {
+body {
     margin: 0;
     padding: 0;
     outline: 0 none;
@@ -8,11 +8,11 @@
     font-family: "Anonymous Pro", sans-serif;
     font-size: 100%;
 }
-*/
+
 div {
     padding: .5em;
     margin: .5em;
-    box-shadow: 0 0 10px 3px #ccc;
+    box-shadow: 0 0 5px 3px #ccc;
     border-radius: 15px;
 }
 

@@ -22,57 +22,24 @@ var selfInvoke = (function () {
 
 
 // Requirement 3
-// Sample Closure Only
-function outer(x) {
-    var z = 10;
-    function inner(y) {
-        var var1 = (x + y + (++z));
-        return var1;
+var getName = document.getElementById('getName');
+var final = document.getElementById('namesResult');
+
+
+var closureExample = (function () {
+
+    var names = [];
+    return function () {
+        newName = prompt('please enter a name: ');
+        names.push(newName);
+        names.toString();
+        final.innerHTML = names.join(' ');
     }
-    return inner(5);
-}
-var incrementStatic = (function() {
-    var counter = 0;
-    alert(counter);
-    return function() {
-        return ++counter;
-    }
+
 })();
-function Puppy(name) {
-    this.getName = function() {
-        return name;
-    };
-    this.setName = function(value) {
-        name = value;
-    }
-}
-function callClosure1() {
-    document.getElementById('display1').innerHTML = outer(5);
-}
-function callClosure2() {
-    document.getElementById('display2').innerHTML = incrementStatic();
-}
-var puppy = new Puppy('Sparky');
-function callClosure3(action) {
-    if (action == 'get') {
-        document.getElementById('display3').innerHTML = puppy.getName();
-    } else {
-        puppy.setName('Sal');
-        document.getElementById('display3').innerHTML = puppy.getName();
-    }
-}
-/*function closureExample(names) {
-    this.getName = function () {
-        return name;
-    };
-    this.setName = function (value) {
-        name = value;
-    }
-}
-function callClosure() {
-    document.getElementById('names').innerHTML = 'Please enter a name: ';
-}
-*/
+getName.addEventListener('click', closureExample, true);
+
+
 // Requirement 4
 var div = document.getElementsByClassName('changeMyColor');
 var colorChange = function () {
