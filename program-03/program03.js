@@ -249,7 +249,7 @@ var player = function (first, last, height, years) {
         document.getElementById('newGuy').innerHTML = matt.first + " " + matt.last + "<br>" + matt.height + ", " + matt.years;
         document.getElementById('newStat').innerHTML = matt.update();
         newInfo = document.getElementById('newData').innerHTML = matt.first + " " + matt.last + "<br>" + matt.height + ", " + matt.years + " " + matt.team();
-
     }
+    document.getElementById('newGuy').innerHTML = player(matt);
 };
 
