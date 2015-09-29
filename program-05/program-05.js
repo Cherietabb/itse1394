@@ -2,13 +2,19 @@
  * Created by Cherie on 9/21/2015.
  */
 //Requirement 1
-
+function displaySize() {
+    document.getElementById('snausages').innerHTML = 'Screen Width is: ' + screen.width + '<br>' + 'Screen height is: ' + screen.height;
+}
 
 //Requirement 2
-
+function displayLocation () {
+    document.getElementById('cletus').innerHTML = 'The page location is ' + window.location.href;
+}
 
 // Requirement 3
-
+function changeLocation() {
+    location.replace('http://www.w3schools.com');
+}
 
 // Requirement 4
 
