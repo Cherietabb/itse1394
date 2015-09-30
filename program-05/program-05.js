@@ -73,18 +73,56 @@ function myTime() {
     var d = new Date();
     document.getElementById('rick').innerHTML = d.toLocaleTimeString();
 }
-// Requirement 10
-function strtStop() {
-    var str = document.getElementById('flare').innerHTML;
-   if(clearInterval(tic) === true) {
-       var res = str.replace('Stop');
-       document.getElementById("demo").innerHTML = res;
-   }
-    else {
-       document.getElementById('flare').innerHTML = 'Start';
 
-   }
+
+// Requirement 10
+var myTimer = setInterval(controlTime, 1000);
+var t, rep, str;
+var timer_is_on = 0;
+
+function controlTime() {
+    var d = new Date();
+    document.getElementById('woo').innerHTML = d.toLocaleTimeString();
+    str = document.getElementById('flair').innerHTML;
+    rep = str.replace(/Start/i, 'Stop');
+    document.getElementById('flair').innerHTML = rep;
+    t = setTimeout(function() {controlTime()}, 1000);
 }
+function believe() {
+    if(timer_is_on) {
+        clock += 1;
+        controlTime();
+    }
+}
+function clearTime() {
+    clearTimeout(t);
+    timer_is_on = 0;
+
+}
+/*
+var clock = 0;
+var t, res;
+var timer_on = 0;
+
+function startClock() {
+    document.getElementById('rick').value = clock;
+    clock += 1;
+    t = setTimeout(function() {startClock() }, 1000);
+    var str = document.getElementById('flair').innerHTML;
+}
+function start() {
+    if(timer_on) {
+        timer_on = 1;
+        startClock();
+    }
+}
+function stop() {
+    str.replace('Start');
+    clearTimeout(t);
+    timer_on = 0;
+}
+*/
+
 // Requirement 11
 
 
