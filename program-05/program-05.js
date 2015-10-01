@@ -67,7 +67,9 @@ var favBrowser = function () {
 };
 
 // Requirement 9
-setInterval(myTime, 1000);
+myVar = setInterval(function () {
+    myTime()
+}, 1000);
 
 function myTime() {
     var d = new Date();
@@ -75,74 +77,58 @@ function myTime() {
 }
 
 // Requirement 10
-/* var t, rep, str;
 var timer_is_on = 0;
-
-function controlTime() {
-    var d = new Date();
-    //document.getElementById('woo').innerHTML = d.toLocaleTimeString();
-    str = document.getElementById('flair').innerHTML;
-    rep = str.replace(/Start/i, 'Stop');
-
-var myTimer = setInterval(controlTime, 1000);
-//var t, rep, str;
-//var timer_is_on = 0;
-
-function controlTime() {
-    var d = new Date();
-    document.getElementById('woo').innerHTML = d.toLocaleTimeString();
-}
-/*    str = document.getElementById('flair').innerHTML;
-    rep = str.replace(/Stop/i, 'Start');
-}
-*/
-/*function believe() {
-    if(timer_is_on) {
-        console.log('Hey You!');
+var clock = 0;
+str = document.getElementById('flair').innerHTML;
+function startTime() {
+    if (timer_is_on) {
+        rep = str.replace(/Start/i, 'Stop');
+        document.getElementById('flair').innerHTML = rep;
         clock += 1;
-        //controlTime();
+    } else {
+        rep = str.replace(/Stop/i, 'Start');
+        document.getElementById('flair').innerHTML = rep;
     }
 }
-*/
+function stopTime() {
+    clearInterval(myVar);
+    clearTimeout(clock);
+    timer_on = 0;
 
-var intervalID;
-str = document.getElementById('flair').innerHTML;
+}
+flair.addEventListener('click', stopTime, true, 'click', startTime, true)
 
-intervalID = setInterval(myTime, 1000);
-function startClock() {
-    rep = str.replace(/Start/i, 'Stop');
-    document.getElementById('flair').innerHTML = rep;
-}
-function stopClock() {
-    clearInterval(intervalID);
-    rep = str.replace(/Stop/i, 'Start');
-    document.getElementById('flair').innerHTML = rep;
-    str.addEventListener('click', startClock, true);
-}
+/*function believe() {
+ if(timer_is_on) {
+ console.log('Hey You!');
+ //controlTime();
+ }
+ }
+ */
 
 /*
-var clock = 0;
-var t, res;
-var timer_on = 0;
+ var clock = 0;
+ var t, res;
+ var timer_on = 0;
 
-function startClock() {
+ function startClock() {
  if(timer_is_on) {
  clock += 1;
  //controlTime();
  }
-}
-function start() {
-    if(timer_on) {
-        timer_on = 1;
-        startClock();
-    }
-}
-function stop() {
-    str.replace('Start');
-    clearTimeout(t);
-    timer_on = 0;
-}
-*/
+ }
+ function start() {
+ if(timer_on) {
+ timer_on = 1;
+ startClock();
+ }
+ }
+ function stop() {
+ str.replace('Start');
+ clearTimeout(t);
+ timer_on = 0;
+ }
+ */
 
 // Requirement 11
 
