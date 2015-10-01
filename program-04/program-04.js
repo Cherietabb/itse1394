@@ -25,7 +25,6 @@ var selfInvoke = (function () {
 var getName = document.getElementById('getName');
 var final = document.getElementById('namesResult');
 
-
 var closureExample = (function () {
 
     var names = [];

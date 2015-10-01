@@ -78,9 +78,7 @@ function myTemp() {
                     monthName = 'December';
                     break;
             }
-            var p = doc.createElement('p');
-            p.innerHTML = 'You picked ' + monthName;
-            names.appendChild(p);
+            var names = document.getElementById('names').innerHTML = 'You picked: ' + monthName;
 
             if (month < 1) throw new Error('Too Low!');
             if (month > 12) throw new Error('Number must be 1 - 12!');
@@ -217,8 +215,8 @@ document.getElementById('eleven').innerHTML = myMode();
             '{ "resortName":"Park City" , "resortState":"Utah" } ]}';
         var obj;
         obj = JSON.parse(text);
-        var i = -1;
-        while (i < text.length) {
+        var i = 0;
+        while (i < text.length ) {
             i++;
             var
                 p = doc.createElement('p');
