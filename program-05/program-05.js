@@ -75,7 +75,6 @@ function myTime() {
 }
 
 // Requirement 10
-<<<<<<< HEAD
 /* var t, rep, str;
 var timer_is_on = 0;
 
@@ -84,7 +83,7 @@ function controlTime() {
     //document.getElementById('woo').innerHTML = d.toLocaleTimeString();
     str = document.getElementById('flair').innerHTML;
     rep = str.replace(/Start/i, 'Stop');
-=======
+
 var myTimer = setInterval(controlTime, 1000);
 //var t, rep, str;
 //var timer_is_on = 0;
@@ -95,8 +94,6 @@ function controlTime() {
 }
 /*    str = document.getElementById('flair').innerHTML;
     rep = str.replace(/Stop/i, 'Start');
->>>>>>> a49746cc9b333c06ba996f6f03a30e2fbc4f299e
-    document.getElementById('flair').innerHTML = rep;
 }
 */
 /*function believe() {
@@ -107,13 +104,6 @@ function controlTime() {
     }
 }
 */
-function clearTime() {
-    clearInterval(myTimer);
-    timer_is_on = 0;
-<<<<<<< HEAD
-    //t = setTimeout(function() {controlTime()}, 1000);
-}
- */
 
 var intervalID;
 str = document.getElementById('flair').innerHTML;
@@ -122,8 +112,6 @@ intervalID = setInterval(myTime, 1000);
 function startClock() {
     rep = str.replace(/Start/i, 'Stop');
     document.getElementById('flair').innerHTML = rep;
-=======
->>>>>>> a49746cc9b333c06ba996f6f03a30e2fbc4f299e
 }
 function stopClock() {
     clearInterval(intervalID);
