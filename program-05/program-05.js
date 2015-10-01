@@ -77,27 +77,29 @@ function myTime() {
 
 // Requirement 10
 var myTimer = setInterval(controlTime, 1000);
-var t, rep, str;
-var timer_is_on = 0;
+//var t, rep, str;
+//var timer_is_on = 0;
 
 function controlTime() {
     var d = new Date();
     document.getElementById('woo').innerHTML = d.toLocaleTimeString();
-    str = document.getElementById('flair').innerHTML;
-    rep = str.replace(/Start/i, 'Stop');
-    document.getElementById('flair').innerHTML = rep;
-    t = setTimeout(function() {controlTime()}, 1000);
 }
-function believe() {
+/*    str = document.getElementById('flair').innerHTML;
+    rep = str.replace(/Stop/i, 'Start');
+    document.getElementById('flair').innerHTML = rep;
+}
+*/
+/*function believe() {
     if(timer_is_on) {
+        console.log('Hey You!');
         clock += 1;
         controlTime();
     }
 }
+*/
 function clearTime() {
-    clearTimeout(t);
+    clearInterval(myTimer);
     timer_is_on = 0;
-
 }
 /*
 var clock = 0;
