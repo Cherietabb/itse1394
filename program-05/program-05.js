@@ -77,58 +77,36 @@ function myTime() {
 }
 
 // Requirement 10
-var timer_is_on = 0;
-var clock = 0;
+
+timer_is_on = 0;
+var t;
+var c;
 str = document.getElementById('flair').innerHTML;
-function startTime() {
-    if (timer_is_on) {
-        rep = str.replace(/Start/i, 'Stop');
-        document.getElementById('flair').innerHTML = rep;
-        clock += 1;
-    } else {
-        rep = str.replace(/Stop/i, 'Start');
-        document.getElementById('flair').innerHTML = rep;
-    }
+
+function timedCount() {
+    document.getElementById('rick').value = c;
+    c = c + 1;
+    t = setTimeout(function(){myTime()}, 1000);
 }
+function startTime() {
+    if (!timer_is_on) {
+        timer_is_on = 1;
+        myTime();
+    }
+    rep = str.replace(/Start/i, 'Stop');
+    document.getElementById('flair').innerHTML = rep;
+}
+flair.addEventListener('click', startTime, true);
+
 function stopTime() {
     clearInterval(myVar);
-    clearTimeout(clock);
-    timer_on = 0;
-
+    clearTimeout(t);
+    timer_is_on = 0;
+    rep = str.replace(/Stop/i, 'Start');
+    document.getElementById('flair').innerHTML = rep;
 }
-flair.addEventListener('click', stopTime, true, 'click', startTime, true)
+flair.addEventListener('click', stopTime, true);
 
-/*function believe() {
- if(timer_is_on) {
- console.log('Hey You!');
- //controlTime();
- }
- }
- */
-
-/*
- var clock = 0;
- var t, res;
- var timer_on = 0;
-
- function startClock() {
- if(timer_is_on) {
- clock += 1;
- //controlTime();
- }
- }
- function start() {
- if(timer_on) {
- timer_on = 1;
- startClock();
- }
- }
- function stop() {
- str.replace('Start');
- clearTimeout(t);
- timer_on = 0;
- }
- */
 
 // Requirement 11
 
