@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Program 5</h1>
-<div>
+<div onload="delayDisplay(); getCookie()">
     <!-- Requirement 1 -->
     <h2>Requirement 1</h2>
     <h4>Figuring screen dimensions</h4>
@@ -32,7 +32,7 @@
 
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
-    <h4>Changing the URL locationto previous page</h4>
+    <h4>Changing the URL location to previous page</h4>
     <p>Click to go back </p>
     <button onclick="goBack()">Back</button>
 
@@ -71,17 +71,36 @@
     <h2>Requirement 10</h2>
     <h4>Starting and Stopping Time</h4>
     <p>Click to stop and restart the time.</p>
-    <button id="flair">Start</button>
-    <p id="woo"></p>
+    <button id="flair">Stop</button>
+    <p id="itworks"></p>
 
     <!-- Requirement 11 -->
     <h2>Requirement 11</h2>
+     <div id="marco" style="visibility: hidden">
+            <img src="assets/baklava.JPEG" alt="Baklava"/>
+            <img src="assets/cheeseCake.jpg" alt="Cheesecake"/>
+            <img src="assets/chocoBrownie.jpg" alt="Chocolate Brownie"/>
+    </div>
 
     <!-- Requirement 12 -->
     <h2>Requirement 12</h2>
-
+    <h4>creating and deleting cookies</h4>
+    <div id="song">
+        <label>Name: <input type="text" id="we" class="labels"/></label>&nbsp;
+        <button onclick="deleteName()">Delete</button>
+        <br/>
+        <label>School: <input type="text" id="are" class="labels"/></label>&nbsp;
+        <button onclick="deleteSchool()">Delete</button>
+        <br/>
+        <label>Hobby: <input type="text" id="one" class="labels"/></label>&nbsp;
+        <button onclick="deleteHobby()">Delete</button>
+        <br/>
+    </div>
+    <button onclick="setCookie()">Create Cookie</button>
     <!-- Requirement 13 -->
     <h2>Requirement 13</h2>
+    <h4>Checking for Cookies</h4>
+    <p>Alert box should show presence of cookies. If no cookies exist, alert should display that.</p>
 </div>
 <script src="program-05.js"></script>
 </body>
