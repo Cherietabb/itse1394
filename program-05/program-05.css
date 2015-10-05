@@ -1,14 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
 
 body {
-    font-family: "Anonymous Pro", sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
+
 div {
     padding: .5em;
     margin: .5em;
     box-shadow: 0 0 5px 3px #ccc;
     border-radius: 15px;
-
 }
 
 h1 {
@@ -18,6 +18,7 @@ h1 {
 #marco, #song {
     width: 350px;
 }
+
 .labels {
     margin: 5px;
 }

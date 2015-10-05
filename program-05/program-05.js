@@ -3,7 +3,8 @@
  */
 //Requirement 1
 function displaySize() {
-    document.getElementById('snausages').innerHTML = 'Screen Width is: ' + screen.width + '<br>' + 'Screen height is: ' + screen.height;
+    document.getElementById('snausages').innerHTML = 'Screen Width is: ' + screen.width + '<br>' +
+        'Screen height is: ' + screen.height;
 }
 
 //Requirement 2
@@ -27,7 +28,7 @@ function goForward() {
     window.history.forward();
 }
 // Requirement 6
-var browserInformation = (function () {
+(function browserInformation() {
     document.getElementById('hercules').innerHTML = navigator.appName + '<br>' + navigator.appCodeName +
         '<br>' + navigator.product;
 }());
@@ -71,63 +72,58 @@ var favBrowser = function () {
 };
 
 // Requirement 9
-myVar = setInterval(function () {myTime()}, 1000);
+// Requirement 9
+var myTimeVar;
+window.onload = function() {
+    myTimeVar = setInterval(myTime, 1000);
+};
+window.onunload = function() {
+    clearInterval(myTimeVar);
+};
 
 function myTime() {
-    var d = new Date();
-    document.getElementById('rick').innerHTML = d.toLocaleTimeString();
+    //clearInterval(myTimeVar);
+    var clock = new Date();
+    var chours = clock.getHours();
+    var cminutes = clock.getMinutes();
+    var cseconds = clock.getSeconds();
+    var ap = 'AM';
+    if(chours >= 12) {
+        ap = 'PM';
+        chours -= 12;
+    }
+    if(chours < 10) {
+        chours = '0' + chours;
+    }
+    if(cminutes < 10) {
+        cminutes = '0' + cminutes;
+    }
+    if(cseconds < 10) {
+        cseconds = '0' + cseconds;
+    }
+    document.getElementById('ric').innerHTML = chours + ":" + cminutes + ":" + cseconds + " " + ap;
 }
 
 // Requirement 10
+timer_is_on = 1;
 
-timer_is_on = 0;
-var t, c, rep;
 str = document.getElementById('flair').innerHTML;
-
+//t = setTimeout(function(){myTime();}, 1000);
 function timedCount() {
     flair = document.getElementById('flair');
-    t = setTimeout(function(){myTime()}, 1000);
-    if (timer_is_on == false) {
-        timer_is_on = 1;
-        rep = str.replace(/Stop/i, 'Start');
-        document.getElementById('flair').innerHTML = rep;
-        myTime();
 
-    } else {
-        timer_is_on = 0;
-        clearTimeout(t);
-        clearInterval(myVar);
-        rep = str.replace(/Start/i, 'Stop');
-        document.getElementById('flair').innerHTML = rep;
-
-    }
-}
-flair.addEventListener('click', timedCount, false);
- /*function startTime() {
-    myTime();
     if (!timer_is_on) {
         timer_is_on = 1;
-        rep = str.replace(/Stop/i, 'Start');
-        document.getElementById('flair').innerHTML = rep;
-
+        document.getElementById('flair').innerHTML = 'Start';
+        myTimeVar = setInterval(myTime, 1000)
+    } else if(timer_is_on) {
+        timer_is_on = 0;
+        clearInterval(myTimeVar);
+        document.getElementById('flair').innerHTML = 'Stop';
     }
 }
-flair.addEventListener('click', startTime, true);
-
-function stopTime() {
-    myTime();
-    if(timer_is_on) {
-        clearInterval(myVar);
-        clearTimeout(t);
-        timer_is_on = 0;
-        rep = str.replace(/Start/i, 'Stop');
-        document.getElementById('flair').innerHTML = rep;
-    }
-}*/
-//flair.addEventListener('click', stopTime, true);
-
-
-
+// Click event
+flair.addEventListener('click', timedCount, true);
 
 // Requirement 11
 function delayTime() {
@@ -159,15 +155,15 @@ function deleteHobby() {
 
 function getCookie() {
     var cookiesArray = document.cookie.split('; ');
-    for(var i = 0; i < cookiesArray.length; i++) {
+    for (var i = 0; i < cookiesArray.length; i++) {
         var nameValArray = cookiesArray[i].split('=');
-        if(nameValArray[0] == 'name') {
+        if (nameValArray[0] == 'name') {
             document.getElementById('we').value = nameValArray[1];
-        }else if(nameValArray[0] == 'school') {
+        } else if (nameValArray[0] == 'school') {
             document.getElementById('are').value = nameValArray[1];
-        }else if(nameValArray[0] == 'hobby'){
+        } else if (nameValArray[0] == 'hobby') {
             document.getElementById('one').value = nameValArray[1];
-        }else {
+        } else {
             alert('No cookies Found');
             break;
         }
