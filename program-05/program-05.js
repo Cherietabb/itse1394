@@ -50,7 +50,7 @@ function seeInfo() {
 // Requirement 8
 var favBrowser = function () {
     var txt;
-    var b = prompt('What is your favorite browser?');
+    var b = prompt('What is your favorite browser?', 'Chrome');
     switch (b) {
         case 'Chrome':
         case 'chrome':
