@@ -12,16 +12,20 @@ $(document).ready(function() {
     });
     $('#hideBlue').click(function() {
         $(this).hide();
-    })
-});
+    });
+
 
 //Requirement 2
-$(document).ready(function() {
+
     $('tr:even').css('background-color', 'pink');
     $('tr:odd').css('background-color', '#99FF99');
-});
+
 
 // Requirement 3
+
+    $('button').click(function() {
+        $('.colorChange').css('background-color', '#99FF99');
+    });
 
 
 // Requirement 4
@@ -53,5 +57,5 @@ $(document).ready(function() {
 
 // Requirement 13
 
-
+});
 // Requirement 14
