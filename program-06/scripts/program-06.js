@@ -13,67 +13,52 @@ $(document).ready(function () {
     $('#hideBlue').click(function () {
         $(this).hide();
     });
-
+});
 
 //Requirement 2
-
+$(document).ready(function () {
     $('tr:even').css('background-color', 'pink');
     $('tr:odd').css('background-color', '#99FF99');
+});
 
 
 // Requirement 3
-    function changeColor() {
-        $('#sunny').click(function () {
-            $('p.colorChange').css('background-color', '#EFB3B3');
-        })
-    }
-    $(document).ready(changeColor);
+$(document).ready(function changeColor() {
+    $('#sunny').click(function () {
+        $('p.colorChange').css('background-color', '#EFB3B3');
+    })
+});
 
 
 // Requirement 4
-    function buttonImageToggle() {
-        $('.happy').click(function() {
-            $('.lucky').switchClass('lucky', 'go', 1000);
-            $('.go').switchClass('go', 'lucky', 1000);
-        })
-    }
-    $(document).ready(buttonImageToggle);
+$(document).ready(function buttonImageToggle() {
+    $('#happy').click(function () {
+        $('.lucky').addClass('go').removeClass('lucky');
+        $('.go').addClass('lucky').removeClass('go');
+
+    })
+});
+
 
 // Requirement 5
-    function changeFirstParagraph() {
-        $('.presto').click(function() {
-            $('div').children().first().css({'font-family': 'arial', 'font-size': '20px'});
-        })
-    }
-    $(document).ready(changeFirstParagraph);
+$(document).ready(function changeFirstParagraph() {
+    $('.presto').click(function () {
+        console.log('presto change-o!');
+        $('div').children('p.first').css({'font-family': 'arial', 'font-size': '20px'});
+    })
+});
+
+
 // Requirement 6
 
 
 // Requirement 7
-    $('nav').mouseenter(function () {
-        $(this).css('font-size', '25px');
-    });
-    $('nav').mouseleave(function () {
-        $(this).css('font-size', '16px');
-    });
-
-
-// Requirement 8
-
-
-// Requirement 9
-
-
-// Requirement 10
-
-
-// Requirement 11
-
-
-// Requirement 12
-
-
-// Requirement 13
-
+$('nav').mouseenter(function () {
+    $(this).css('font-size', '25px');
 });
-// Requirement 14
+$('nav').mouseleave(function () {
+    $(this).css('font-size', '16px');
+});
+
+
+

@@ -42,14 +42,16 @@ td {
     border-radius: 10px;
 }
 
-
 .lucky {
     background: url("../assets/baklavaSm.jpg") no-repeat;
-    width: 80px;
+    width: 100px;
     height: 40px;
     border-radius: 10px;
 }
 
+#change-o {
+    width: 350px;
+}
 
 nav {
     width: 200px;
