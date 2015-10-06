@@ -38,6 +38,9 @@ $(document).ready(function() {
 
 
 // Requirement 7
+    $('nav').children('a').mouseenter(function() {
+        $(this).css('font-size', '25px');
+    });
 
 
 // Requirement 8
