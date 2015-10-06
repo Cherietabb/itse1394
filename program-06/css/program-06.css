@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    text-align: center;
+}
+div, nav {
+    padding: .5em;
+    margin: .5em;
+    box-shadow: 0 0 5px 3px #ccc;
+    border-radius: 15px;
+}
+
+#hideRed, #hideGreen, #hideBlue {
+    width: 200px;
+    height: 100px;
+}
+
+#hideRed {
+    background-color: red;
+}
+
+#hideGreen {
+    background-color: green;
+}
+
+#hideBlue {
+    background-color: blue;
+}
+
+td {
+    padding: 20px;
+}
+
+.go {
+    background: url("../assets/bananas.jpg") no-repeat;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+.lucky {
+    background: url("../assets/baklavaSm.jpg") no-repeat;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+nav {
+    width: 200px;
+    height: 100px;
+    background-color: #C6D7EF;
+}
