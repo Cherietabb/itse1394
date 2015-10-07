@@ -15,6 +15,7 @@ $(document).ready(function () {
     });
 });
 
+
 //Requirement 2
 $(document).ready(function () {
     $('tr:even').css('background-color', 'pink');
@@ -23,7 +24,7 @@ $(document).ready(function () {
 
 
 // Requirement 3
-$(document).ready(function changeColor() {
+$(function changeColor() {
     $('#sunny').click(function () {
         $('p.colorChange').css('background-color', '#EFB3B3');
     })
@@ -33,33 +34,32 @@ $(document).ready(function changeColor() {
 // Requirement 4
 $(document).ready(function buttonImageToggle() {
     $('#happy').click(function () {
-        console.log('Hi there!');
-        $('.lucky').toggleClass('lucky');
-        $('.go').toggleClass('go');
-        console.log('What is happening!');
+        $('#gilmore').children('button').toggleClass('lucky', 'go');
     });
+    $('#happy').click(function () {
+        $('#gilmore').children('button').toggleClass('go', 'lucky');
+    })
 });
 
 
 // Requirement 5
 $(document).ready(function changeFirstParagraph() {
-    $('.presto').click(function () {
-        console.log('presto change-o!');
-        $('div').children('p.first').css({'font-family': 'arial', 'font-size': '20px'});
+    $('#presto').click(function () {
+        $('#change-o').children('p:first').css({'font-family': 'arial', 'font-size': '20px'});
     })
 });
 
 
-// Requirement 6
+//Requirement 6
 
 
-// Requirement 7
-$('nav').mouseenter(function () {
-    $(this).css('font-size', '25px');
+//Requirement 7
+$(document).ready(function () {
+    $('nav').mouseenter(function () {
+        $(this).toggleClass('bigNav', true);
+    });
+    $('nav').mouseleave(function () {
+        $(this).toggleClass('bigNav', false);
+    })
 });
-$('nav').mouseleave(function () {
-    $(this).css('font-size', '16px');
-});
-
-
 
