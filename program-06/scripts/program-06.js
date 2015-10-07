@@ -33,10 +33,11 @@ $(document).ready(function changeColor() {
 // Requirement 4
 $(document).ready(function buttonImageToggle() {
     $('#happy').click(function () {
-        $('.lucky').addClass('go').removeClass('lucky');
-        $('.go').addClass('lucky').removeClass('go');
-
-    })
+        console.log('Hi there!');
+        $('.lucky').toggleClass('lucky');
+        $('.go').toggleClass('go');
+        console.log('What is happening!');
+    });
 });
 
 
