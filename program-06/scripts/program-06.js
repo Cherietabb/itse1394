@@ -32,12 +32,24 @@ $(function changeColor() {
 
 
 // Requirement 4
+/*
 $(document).ready(function buttonImageToggle() {
     $('#happy').click(function () {
-        $('#gilmore').children('button').toggleClass('lucky', 'go');
+        $('#gilmore').children('button').removeClass('lucky').addClass('go');
     });
     $('#happy').click(function () {
-        $('#gilmore').children('button').toggleClass('go', 'lucky');
+        $('#gilmore').children('button').removeClass('go').addClass('lucky');
+    })
+});
+
+*/
+
+$(document).ready(function buttonImageToggle() {
+    $('#happy').click(function () {
+        $('#gilmore').children('button').css({"background:":"url(..assets/bananas.jpg","width": "100px","height": "60px", "border-radius": "10px"});
+    });
+    $('#happy').click(function () {
+        $('#gilmore').children('button').css({"background:":"url(..assets/baklava.jpg","width": "100px","height": "60px", "border-radius": "10px"});
     })
 });
 
@@ -59,7 +71,7 @@ $(document).ready(function () {
         $(this).toggleClass('bigNav', true);
     });
     $('nav').mouseleave(function () {
-        $(this).toggleClass('bigNav', false);
+        $(this).remove('.bigNav');
     })
 });
 
