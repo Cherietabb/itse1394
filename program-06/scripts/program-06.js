@@ -33,9 +33,12 @@ $(function changeColor() {
 
 // Requirement 4
 $(document).ready(function buttonImageToggle() {
+    //var classList = $('#gilmore').children('button').
+/*
     $('#happy').find('button').click(function () {
         $('#gilmore').find('button').addclass('lucky');
     });
+*/
 });
 
 
