@@ -32,25 +32,10 @@ $(function changeColor() {
 
 
 // Requirement 4
-/*
 $(document).ready(function buttonImageToggle() {
-    $('#happy').click(function () {
-        $('#gilmore').children('button').removeClass('lucky').addClass('go');
+    $('#happy').find('button').click(function () {
+        $('#gilmore').find('button').addclass('lucky');
     });
-    $('#happy').click(function () {
-        $('#gilmore').children('button').removeClass('go').addClass('lucky');
-    })
-});
-
-*/
-
-$(document).ready(function buttonImageToggle() {
-    $('#happy').click(function () {
-        $('#gilmore').children('button').css({"background:":"url(..assets/bananas.jpg","width": "100px","height": "60px", "border-radius": "10px"});
-    });
-    $('#happy').click(function () {
-        $('#gilmore').children('button').css({"background:":"url(..assets/baklava.jpg","width": "100px","height": "60px", "border-radius": "10px"});
-    })
 });
 
 
@@ -68,10 +53,10 @@ $(document).ready(function changeFirstParagraph() {
 //Requirement 7
 $(document).ready(function () {
     $('nav').mouseenter(function () {
-        $(this).toggleClass('bigNav', true);
+        $(this).css({'width': '300', 'height': '300'});
     });
-    $('nav').mouseleave(function () {
-        $(this).remove('.bigNav');
-    })
+    //$('nav').mouseleave(function() {
+    //    $(this).
+    //})
 });
 

@@ -42,6 +42,7 @@ td {
     padding: 20px;
 }
 
+
 .go {
     background: url("../assets/bananas.jpg");
     width: 100px;
@@ -54,6 +55,13 @@ td {
     width: 100px;
     height: 40px;
     border-radius: 10px;
+}
+
+#gilmore > button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+
 }
 
 #change-o, #gilmore {
