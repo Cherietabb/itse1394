@@ -30,17 +30,15 @@ $(function changeColor() {
     })
 });
 
-
 // Requirement 4
 $(document).ready(function buttonImageToggle() {
-    //var classList = $('#gilmore').children('button').
-/*
-    $('#happy').find('button').click(function () {
-        $('#gilmore').find('button').addclass('lucky');
+    $('button').mouseover(function () {
+        $(this).css('background', 'url("assets/bananas.jpg")');
     });
-*/
+    $('button').mouseout(function () {
+        $(this).css('background', 'url("assets/RedVelvetCake.jpg")');
+    });
 });
-
 
 // Requirement 5
 $(document).ready(function changeFirstParagraph() {
@@ -51,15 +49,22 @@ $(document).ready(function changeFirstParagraph() {
 
 
 //Requirement 6
-
+$(function() {
+    $('input').focus(function() {
+        $(this).css('background-color', '#FF9');
+    });
+    $('input').blur(function() {
+        $(this).css('background-color', '#ccc');
+    })
+});
 
 //Requirement 7
 $(document).ready(function () {
     $('nav').mouseenter(function () {
-        $(this).css({'width': '300', 'height': '300'});
+        $(this).css({'width': '500', 'height': '500'});
     });
-    //$('nav').mouseleave(function() {
-    //    $(this).
-    //})
+    $('nav').mouseleave(function() {
+        $(this).css({'width': '250', 'height': '250'});
+    })
 });
 

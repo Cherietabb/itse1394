@@ -10,7 +10,7 @@ h1 {
 
 button {
     width: 100px;
-    height: 40px;
+    height: 60px;
     border-radius: 10px;
 }
 
@@ -42,29 +42,15 @@ td {
     padding: 20px;
 }
 
-
-.go {
-    background: url("../assets/bananas.jpg");
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
-}
-
+/*
 .lucky {
-    background: url("../assets/baklavaSm.jpg");
     width: 100px;
     height: 40px;
     border-radius: 10px;
 }
+*/
 
-#gilmore > button {
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
-
-}
-
-#change-o, #gilmore {
+#change-o, {
     width: 350px;
 }
 
@@ -72,8 +58,4 @@ nav {
     width: 200px;
     height: 100px;
     background-color: #C6D7EF;
-}
-.bigNav {
-    width: 500px;
-    height: 500px;
 }
