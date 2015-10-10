@@ -53,7 +53,7 @@ January, March, April, May, and December in an <h2> element.
 
 ## Requirement 6 ##
 
-Use an HTML element event to call a function you wrote named `changejQueryMessage()` that uses a regular expression to replace a user entered string "JavaScript makes me cry" to "JavaScript makes me smile".  Display the modified string in an <h2> element with the font-weight set to bold and the color set to blue.
+Use an HTML element event to call a function you wrote named `changejQueryMessage()` that uses a regular expression to replace a user entered string "JavaScript makes me cry" to "JavaScript makes me smile".  Display the modified string in an `<h2>` element with the font-weight set to bold and the color set to blue.
 
 ## Requirement 7 ##
 
@@ -137,11 +137,11 @@ Use an HTML element event to call a function you wrote named `changeNodeList()` 
 
 ## Requirement 1 ##
 
-Use the jQuery `hide()` method to hide all three colored <div> when a hide button is clicked. Use the jQuery `show()` method to show all three colored <div> when a show button is clicked. Set the `hide()` and show() to occur over 300 milliseconds.
+Use the jQuery `hide()` method to hide all three colored <div> when a hide button is clicked. Use the jQuery `show()` method to show all three colored `<div>` when a show button is clicked. Set the `hide()` and `show()` to occur over 300 milliseconds.
 
 ## Requirement 2 ##
 
-Use the jQuery `toggle()` method to hide/show the three <div> from item 1.  Set the toggle() to occur over 700 milliseconds.
+Use the jQuery `toggle()` method to hide/show the three <div> from item 1.  Set the `toggle()` to occur over 700 milliseconds.
 
 ## Requirement 3 ##
 
