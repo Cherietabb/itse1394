@@ -14,3 +14,17 @@ div {
     box-shadow: 0 0 5px 3px #ccc;
     border-radius: 15px;
 }
+
+button {
+    width: 70px;
+    height: 40px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.hideDiv {
+    width: 150px;
+    height: 90px;
+    background-color: #fd131f;
+}
