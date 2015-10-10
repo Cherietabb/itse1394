@@ -133,7 +133,7 @@ Use an HTML element event to call a function you wrote named `changeNodeList()` 
 
 -------------------------------------------------------------------------------------
 
-# Program 7 #
+# **Program 7** #
 
 ## Requirement 1 ##
 
