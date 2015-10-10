@@ -27,44 +27,53 @@ $(document).ready(function () {
 $(function changeColor() {
     $('#sunny').click(function () {
         $('p.colorChange').css('background-color', '#EFB3B3');
-    })
+    });
 });
 
+
 // Requirement 4
-$(document).ready(function buttonImageToggle() {
-    $('button').mouseover(function () {
-        $(this).css('background', 'url("assets/bananas.jpg")');
-    });
-    $('button').mouseout(function () {
-        $(this).css('background', 'url("assets/RedVelvetCake.jpg")');
+$(document).ready(function () {
+    $('button').on({
+        mouseover: function buttonImageToggle() {
+            $('.lucky').css('background', 'url("assets/bananas.jpg")');
+            $('#sunny').css('background', 'url("assets/bananas.jpg")');
+            $('#presto').css('background', 'url("assets/bananas.jpg")');
+        },
+        mouseout: function () {
+            $('.lucky').css('background', 'url("assets/RedVelvetCake.jpg")');
+            $('#sunny').css('background', 'url("assets/RedVelvetCake.jpg")');
+            $('#presto').css('background', 'url("assets/RedVelvetCake.jpg")');
+        }
     });
 });
+
 
 // Requirement 5
 $(document).ready(function changeFirstParagraph() {
     $('#presto').click(function () {
-        $('#change-o').children('p:first').css({'font-family': 'arial', 'font-size': '20px'});
-    })
+        $('#changeO').children('p:first').css({'font-family': 'arial', 'font-size': '20px'});
+    });
 });
 
 
 //Requirement 6
-$(function() {
-    $('input').focus(function() {
+$(function () {
+    $('input').focus(function () {
         $(this).css('background-color', '#FF9');
     });
-    $('input').blur(function() {
-        $(this).css('background-color', '#ccc');
-    })
+    $('input').blur(function () {
+        $(this).css('background-color', '#ffffff');
+    });
 });
+
 
 //Requirement 7
 $(document).ready(function () {
     $('nav').mouseenter(function () {
-        $(this).css({'width': '500', 'height': '500'});
+        $(this).css({'width': '400', 'height': '250'});
     });
-    $('nav').mouseleave(function() {
-        $(this).css({'width': '250', 'height': '250'});
-    })
+    $('nav').mouseleave(function () {
+        $(this).css({'width': '200', 'height': '100'});
+    });
 });
 
