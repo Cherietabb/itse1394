@@ -35,14 +35,14 @@ $(function changeColor() {
 $(document).ready(function () {
     $('button').on({
         mouseover: function buttonImageToggle() {
-            $('.lucky').css('background', 'url("assets/bananas.jpg")');
-            $('#sunny').css('background', 'url("assets/bananas.jpg")');
-            $('#presto').css('background', 'url("assets/bananas.jpg")');
+            $('.lucky').css({'background': 'url("assets/bananas.jpg")', 'color': '#000000'});
+            $('#sunny').css({'background': 'url("assets/bananas.jpg")', 'color': '#000000'});
+            $('#presto').css({'background': 'url("assets/bananas.jpg")', 'color': '#000000'});
         },
         mouseout: function () {
-            $('.lucky').css('background', 'url("assets/RedVelvetCake.jpg")');
-            $('#sunny').css('background', 'url("assets/RedVelvetCake.jpg")');
-            $('#presto').css('background', 'url("assets/RedVelvetCake.jpg")');
+            $('.lucky').css({'background': 'url("assets/baklavaSm.jpg")', 'color': '#ffffff'});
+            $('#sunny').css({'background': 'url("assets/baklavaSm.jpg")', 'color': '#ffffff'});
+            $('#presto').css({'background': 'url("assets/baklavaSm.jpg")', 'color': '#ffffff'});
         }
     });
 });
