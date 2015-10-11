@@ -38,14 +38,29 @@ $(document).ready(function () {
 
 // Requirement 5
 $(document).ready(function () {
-    $('#bears').click(function() {
-        $('#play').fadeTo('slow', 0.20, function() {
-            $('p').fadeIn('slow', 100, function() {
-                $('p').html('Hello').css('color', '#FFFFFF');
-            });
-
+    $('#bears').click(function () {
+        $('#play').fadeTo('slow', 0.20, function () {
+            $('p').html('Hello').css('color', '#FBFAFA');
         });
     });
 });
 
 // Requirement 6
+$(document).ready(function() {
+    $('#chiefs').click(function() {
+        $('#sunday').slideToggle();
+    });
+    $('#sunday').click(function() {
+        $('#chiefs').slideToggle();
+    })
+});
+
+// Requirement 7
+$(document).ready(function() {
+
+});
+
+// Requirement 8
+$(document).ready(function() {
+
+});

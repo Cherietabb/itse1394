@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -39,8 +41,39 @@ footer {
     height: 125px;
 }
 #play > p {
-    font-size: 14pt;
+    font-size: 18pt;
     font-weight: 600;
     padding: 20px;
+}
+
+#chiefs, #sunday {
+    width: 100px;
+    height: 100px;
+    background-color: #c71e11;
+    margin: auto;
+    padding: 10px;
+}
+
+#leftDiv, #rightDiv {
+    width: 100px;
+    height: 100px;
+    background-color: #000fff;
+}
+
+.container {
+    height: 255px;
+    width: 600px;
+}
+
+#leftDiv {
+    /*float: left;*/
+}
+
+#rightDiv {
+    /*float: right;*/
+}
+
+.clearfix {
+    overflow: auto;
 }
 
