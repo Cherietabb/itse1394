@@ -39,8 +39,8 @@ $(document).ready(function () {
 // Requirement 5
 $(document).ready(function () {
     $('#bears').click(function () {
-        $('#play').fadeTo('slow', 0.20, function () {
-            $('p').html('Hello').css('color', '#FBFAFA');
+        $('#play').fadeTo(1000, 0.20, function () {
+            $('p').html('Hello').css({'color': '#FBFAFA', 'font-weight': '800', 'font-size': '25pt', 'text-align': 'center'});
         });
     });
 });
@@ -57,10 +57,19 @@ $(document).ready(function() {
 
 // Requirement 7
 $(document).ready(function() {
-
+    $('#forte').click(function() {
+        var ldiv = $('#leftDiv');
+        ldiv.animate({'marginLeft': '200px'});
+    });
+    $('#game').click(function() {
+        var rdiv = $('#rightDiv');
+        rdiv.animate({'marginLeft': '0'});
+    });
 });
 
 // Requirement 8
 $(document).ready(function() {
-
+    $('#winner').click(function() {
+        $('#summer').animate({'fontSize': '5em'}, 'slow')
+    })
 });
