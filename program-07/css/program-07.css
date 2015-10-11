@@ -28,3 +28,19 @@ button {
     height: 90px;
     background-color: #fd131f;
 }
+
+footer {
+    clear: both;
+}
+
+#play {
+    background-color: #000000;
+    width: 300px;
+    height: 125px;
+}
+#play > p {
+    font-size: 14pt;
+    font-weight: 600;
+    padding: 20px;
+}
+
