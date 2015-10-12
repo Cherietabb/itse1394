@@ -77,3 +77,8 @@ footer {
     width: 350px;
 }
 
+#lastreq {
+    height: 100px;
+    width: 100px;
+    background-color: #c71e11;
+}

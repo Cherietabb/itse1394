@@ -73,3 +73,12 @@ $(document).ready(function() {
         $('#summer').animate({'fontSize': '5em'}, 'slow')
     })
 });
+
+// Requirement 10
+$(document).ready(function() {
+    $('#btnclick').click(function() {
+        var div = $('#lastreq');
+        div.animate({'height': '400px'})
+            .hide(3000);
+    });
+});
