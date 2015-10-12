@@ -40,7 +40,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#bears').click(function () {
         $('#play').fadeTo(1000, 0.20, function () {
-            $('p').html('Hello').css({'color': '#FBFAFA', 'font-weight': '800', 'font-size': '25pt', 'text-align': 'center'});
+            $('#faded').html('Hello').css({'color': '#FBFAFA', 'font-weight': '800', 'font-size': '25pt', 'text-align': 'center'});
         });
     });
 });
