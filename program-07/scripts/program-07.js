@@ -83,8 +83,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('moveDiv').click(function() {
         var ltdiv = $('#leftDiv2');
-        ltdiv.animate({'marginLeft': '200px'});
-        alert('Left div moved!');
+        ltdiv.animate({'marginLeft': '200px'}, alert('Left div moved!'));
     });
 });
 
