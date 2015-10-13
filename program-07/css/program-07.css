@@ -19,7 +19,7 @@ div {
 
 button {
     width: 100px;
-    height: 40px;
+    height: 45px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -49,33 +49,43 @@ footer {
     margin: auto;
 }
 
-#chiefs, #sunday {
+#chiefs,
+#sunday {
     width: 100px;
     height: 100px;
     background-color: #c71e11;
+    font-weight: 800;
     margin: auto;
     padding: 10px;
-}
-
-#leftDiv, #rightDiv {
-    width: 100px;
-    height: 100px;
-    background-color: #000fff;
     text-align: center;
-    position: absolute;
-}
-
-#rightDiv {
-    margin-left: 200px;
-}
-#leftDiv {
-    margin-left: 0;
 }
 
 .container {
     height: 300px;
     width: 350px;
 }
+
+#leftDiv,
+#leftDiv2,
+#rightDiv,
+#rightDiv2 {
+    width: 100px;
+    height: 100px;
+    background-color: #000fff;
+    font-weight: 800;
+    text-align: center;
+    position: absolute;
+}
+
+#rightDiv,
+#rightDiv2 {
+    margin-left: 200px;
+}
+#leftDiv,
+#leftDiv2 {
+    margin-left: 0;
+}
+
 
 #lastreq {
     height: 100px;

@@ -32,7 +32,7 @@ $(document).ready(function () {
 // Requirement 4
 $(document).ready(function () {
     $('#do').click(function () {
-        $('footer').fadeToggle(1000);
+        $('footer').fadeToggle(1000)
     });
 });
 
@@ -40,43 +40,57 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#bears').click(function () {
         $('#play').fadeTo(1000, 0.20, function () {
-            $('#faded').html('Hello').css({'color': '#FBFAFA', 'font-weight': '800', 'font-size': '25pt', 'text-align': 'center'});
+            $('#faded').html('Hello').css({
+                'color': '#FBFAFA',
+                'font-weight': '800',
+                'font-size': '25pt',
+                'text-align': 'center'
+            });
         });
     });
 });
 
 // Requirement 6
-$(document).ready(function() {
-    $('#chiefs').click(function() {
+$(document).ready(function () {
+    $('#chiefs').click(function () {
         $('#sunday').slideToggle();
     });
-    $('#sunday').click(function() {
+    $('#sunday').click(function () {
         $('#chiefs').slideToggle();
     })
 });
 
 // Requirement 7
-$(document).ready(function() {
-    $('#forte').click(function() {
+$(document).ready(function () {
+    $('#forte').click(function () {
         var ldiv = $('#leftDiv');
         ldiv.animate({'marginLeft': '200px'});
     });
-    $('#game').click(function() {
+    $('#game').click(function () {
         var rdiv = $('#rightDiv');
         rdiv.animate({'marginLeft': '0'});
     });
 });
 
 // Requirement 8
-$(document).ready(function() {
-    $('#winner').click(function() {
+$(document).ready(function () {
+    $('#winner').click(function () {
         $('#summer').animate({'fontSize': '5em'}, 'slow')
-    })
+    });
+});
+
+// Requirement 9
+$(document).ready(function () {
+    $('moveDiv').click(function() {
+        var ltdiv = $('#leftDiv2');
+        ltdiv.animate({'marginLeft': '200px'});
+        alert('Left div moved!');
+    });
 });
 
 // Requirement 10
-$(document).ready(function() {
-    $('#btnclick').click(function() {
+$(document).ready(function () {
+    $('#btnclick').click(function () {
         var div = $('#lastreq');
         div.animate({'height': '400px'})
             .hide(3000);
