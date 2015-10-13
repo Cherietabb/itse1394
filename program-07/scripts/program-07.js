@@ -81,9 +81,9 @@ $(document).ready(function () {
 
 // Requirement 9
 $(document).ready(function () {
-    $('moveDiv').click(function() {
+    $('#moveDiv').click(function() {
         var ltdiv = $('#leftDiv2');
-        ltdiv.animate({'marginLeft': '200px'}, alert('Left div moved!'));
+        ltdiv.animate({'marginLeft': '200px'}, 'slow', alert('Left div moved!'));
     });
 });
 
