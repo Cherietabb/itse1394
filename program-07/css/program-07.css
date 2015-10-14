@@ -49,6 +49,10 @@ footer {
     margin: auto;
 }
 
+#winner {
+    width: 350px;
+}
+
 #chiefs,
 #sunday {
     width: 100px;
