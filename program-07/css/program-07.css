@@ -49,8 +49,11 @@ footer {
     margin: auto;
 }
 
-#chiefs,
-#sunday {
+#winner {
+    width: 350px;
+}
+
+#chiefs, #sunday {
     width: 100px;
     height: 100px;
     background-color: #c71e11;
@@ -65,10 +68,7 @@ footer {
     width: 340px;
 }
 
-#leftDiv,
-#leftDiv2,
-#rightDiv,
-#rightDiv2 {
+#leftDiv, #leftDiv2, #rightDiv, #rightDiv2 {
     width: 100px;
     height: 100px;
     background-color: #000fff;
@@ -77,12 +77,10 @@ footer {
     position: absolute;
 }
 
-#rightDiv,
-#rightDiv2 {
+#rightDiv, #rightDiv2 {
     margin-left: 200px;
 }
-#leftDiv,
-#leftDiv2 {
+#leftDiv, #leftDiv2 {
     margin-left: 0;
 }
 
