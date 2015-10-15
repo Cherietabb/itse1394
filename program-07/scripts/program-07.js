@@ -83,13 +83,17 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#moveDiv').click(function () {
         var ltdiv = $('#leftDiv2');
-        ltdiv.animate({'marginLeft': '200px'}, 'slow', alert('Divs moved!'));
+        var rtdiv = $('#rightDiv2');
+        ltdiv.animate({'marginLeft': '200px'}, 'slow', function () {
+            alert('Right div moves next.');
+            rtdiv.animate({'marginLeft': '0'}, 2000);
+        });
     });
-    $('#moveDiv').click(function () {
-        $('#rightDiv2').trigger('click')
-            .animate({'marginLeft': '0'}, 'slow');
-    })
 });
+
+
+//$('#moveDiv').click(function () {
+//})
 
 // Requirement 10
 $(document).ready(function () {
