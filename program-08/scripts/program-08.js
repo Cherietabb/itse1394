@@ -4,8 +4,11 @@
 // Requirement 1
 $(document).ready(function() {
     $('#showText').click(function() {
-        var txt = '';
-        txt = 'Show some txt';
-        $('p').html(txt);
+        var txt = $('p:first').text();
+        $('p:last').html(txt);
+    });
+    $('#showHtml').click(function() {
+        var code = ''
+        $('p').html();
     })
 });
