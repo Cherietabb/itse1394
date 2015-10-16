@@ -86,14 +86,10 @@ $(document).ready(function () {
         var rtdiv = $('#rightDiv2');
         ltdiv.animate({'marginLeft': '200px'}, 'slow', function () {
             alert('Right div moves next.');
-            rtdiv.animate({'marginLeft': '0'}, 2000);
+            rtdiv.animate({'marginLeft': '0'}, 2500);
         });
     });
 });
-
-
-//$('#moveDiv').click(function () {
-//})
 
 // Requirement 10
 $(document).ready(function () {

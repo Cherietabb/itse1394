@@ -8,7 +8,7 @@ $(document).ready(function() {
         $('p:last').html(txt);
     });
     $('#showHtml').click(function() {
-        var code = ''
+        var code = '';
         $('p').html();
     })
 });
