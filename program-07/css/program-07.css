@@ -40,13 +40,13 @@ footer {
     width: 300px;
     height: 125px;
     border-radius: 10px;
+    position: absolute;
 }
 
-#play > p {
-    font-size: 14pt;
+#faded {
+    font-size: 25pt;
     font-weight: 600;
-    padding: 30px;
-    margin: auto;
+    padding-left: 100px;
 }
 
 #winner {
@@ -83,7 +83,6 @@ footer {
 #leftDiv, #leftDiv2 {
     margin-left: 0;
 }
-
 
 #lastreq {
     height: 100px;

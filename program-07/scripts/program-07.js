@@ -39,14 +39,7 @@ $(document).ready(function () {
 // Requirement 5
 $(document).ready(function () {
     $('#bears').click(function () {
-        $('#play').fadeTo(1000, 0.20, function () {
-            $('#faded').html('Hello').css({
-                'color': '#FBFAFA',
-                'font-weight': '800',
-                'font-size': '25pt',
-                'text-align': 'center'
-            });
-        });
+        $('#play').fadeTo(1000, 0.20);
     });
 });
 
