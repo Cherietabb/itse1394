@@ -5,10 +5,10 @@
 $(document).ready(function() {
     $('#showText').click(function() {
         var txt = $('p:first').text();
-        $('p:last').html(txt);
+        $('code').html(txt);
     });
     $('#showHtml').click(function() {
-        var code = '';
-        $('p').html();
+        var txt2 = $('p:first').html();
+        $('code').html(txt2);
     })
 });
