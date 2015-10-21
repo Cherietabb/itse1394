@@ -65,7 +65,7 @@ footer {
 
 .container {
     height: 200px;
-    width: 340px;
+    width: 600px;
 }
 
 #leftDiv, #leftDiv2, #rightDiv, #rightDiv2 {
@@ -74,14 +74,17 @@ footer {
     background-color: #000fff;
     font-weight: 800;
     text-align: center;
+    padding: 0;
     position: absolute;
 }
 
 #rightDiv, #rightDiv2 {
     margin-left: 200px;
+    float: right;
 }
 #leftDiv, #leftDiv2 {
     margin-left: 0;
+    float: left;
 }
 
 #lastreq {

@@ -16,3 +16,7 @@ div {
     margin: .5em;
     padding: .5em;
 }
+
+p > span {
+    color: #16b127;
+}

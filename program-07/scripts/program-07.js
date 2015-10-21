@@ -57,11 +57,11 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#forte').click(function () {
         var ldiv = $('#leftDiv');
-        ldiv.animate({'marginLeft': '200px'});
+        ldiv.animate({'marginLeft': '+=200px'});
     });
     $('#game').click(function () {
         var rdiv = $('#rightDiv');
-        rdiv.animate({'marginLeft': '0'});
+        rdiv.animate({'marginLeft': '-=200px'});
     });
 });
 
@@ -77,9 +77,9 @@ $(document).ready(function () {
     $('#moveDiv').click(function () {
         var ltdiv = $('#leftDiv2');
         var rtdiv = $('#rightDiv2');
-        ltdiv.animate({'marginLeft': '200px'}, 'slow', function () {
+        ltdiv.animate({'marginLeft': '+=200px'}, 'slow', function () {
             alert('Right div moves next.');
-            rtdiv.animate({'marginLeft': '0'}, 2500);
+            rtdiv.animate({'marginLeft': '-=200px'}, 2500);
         });
     });
 });
