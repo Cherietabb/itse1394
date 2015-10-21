@@ -79,7 +79,7 @@ $(document).ready(function () {
         var rtdiv = $('#rightDiv2');
         ltdiv.animate({'marginLeft': '+=200px'}, 'slow', function () {
             alert('Right div moves next.');
-            rtdiv.animate({'marginLeft': '-=200px'}, 2500);
+            rtdiv.animate({'marginLeft': '-=200px'}, 2000);
         });
     });
 });

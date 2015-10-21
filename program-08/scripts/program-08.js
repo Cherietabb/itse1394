@@ -13,3 +13,10 @@ $(document).ready(function () {
         $('code').text(txt);
     });
 });
+
+// Requirement 2
+$('input').keyup(function() {
+    var value = $(this).val();
+    $('#reveal').text(value)
+        .css('color', 'blue');
+});
