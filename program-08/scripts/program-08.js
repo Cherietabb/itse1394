@@ -20,3 +20,8 @@ $('input').keyup(function() {
     $('#reveal').text(value)
         .css('color', 'blue');
 });
+
+$('.setup').blur(function() {
+    var value = $(this).val();
+
+});
