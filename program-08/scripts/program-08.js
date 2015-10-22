@@ -24,5 +24,8 @@ $('input').keyup(function() {
 $('#setVal').click(function() {
     var text = $(this).text();
     $('#setup').val(text)
-        .css('color', 'blue');
+        .css('color', 'blue')
+        .blur(function() {
+            $(this).css('background-color', '#fff');
+        });
 });

@@ -20,3 +20,7 @@ div {
 p > span {
     color: #16b127;
 }
+
+#setVal {
+    margin-bottom: 10px;
+}
