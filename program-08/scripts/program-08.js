@@ -21,7 +21,8 @@ $('input').keyup(function() {
         .css('color', 'blue');
 });
 
-$('.setup').blur(function() {
-    var value = $(this).val();
-
+$('#setVal').click(function() {
+    var text = $(this).text();
+    $('#setup').val(text)
+        .css('color', 'blue');
 });
