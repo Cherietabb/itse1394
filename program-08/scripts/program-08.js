@@ -37,6 +37,12 @@ $(document).ready(function() {
 });
 
 // Requirement 5
+$('#rockin').on('focus', function() {
+    var text1 = document.createElement('li');
+    var text2 = $('<li></li>').text(text3);
+    var text3 = $('#rockin').val();
+    $('body').append(text1,text2,text3);
+});
 
 
 // Requirement 6
