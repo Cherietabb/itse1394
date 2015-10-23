@@ -8,24 +8,36 @@ $(document).ready(function () {
         var txt = $('p:first').text();
         $('code').html(txt);
     });
-    $('#showHtml').click(function() {
+    $('#showHtml').click(function () {
         var txt = $('p:first').html();
         $('code').text(txt);
     });
 });
 
 // Requirement 2
-$('input').keyup(function() {
+$('input').keyup(function () {
     var value = $(this).val();
     $('#reveal').text(value)
         .css('color', 'blue');
 });
 
-$('#setVal').click(function() {
+// Requirement 3
+$('#setVal').click(function () {
     var text = $(this).text();
     $('#setup').val(text)
-        .css('color', 'blue')
-        .blur(function() {
-            $(this).css('background-color', '#fff');
-        });
+        .css({'background-color': '#EBE3E3', 'color': 'blue'})
 });
+
+// Requirement 4
+
+
+// Requirement 5
+
+
+// Requirement 6
+
+
+// Requirement 7
+
+
+// Requirement 8
