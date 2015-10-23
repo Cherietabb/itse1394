@@ -24,3 +24,10 @@ p > span {
 #setVal {
     margin-bottom: 10px;
 }
+
+#warrior {
+    height: 200px;
+    width: 200px;
+    background-color: #000fff;
+}
+

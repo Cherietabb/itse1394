@@ -29,7 +29,12 @@ $('#setVal').click(function () {
 });
 
 // Requirement 4
-
+$(document).ready(function() {
+    $('#weekend').click(function() {
+        alert('Color Change!');
+        $('#warrior').css('background-color', '#ff66cc');
+    });
+});
 
 // Requirement 5
 
