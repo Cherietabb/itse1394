@@ -48,21 +48,22 @@ $('#rockin').change(function () {
 // Requirement 6
 $(document).ready(function () {
     $('#forever').click(function () {
-        $('img').before('<img src="assets/buckingham_fountain.jpg"/>' + '<br>' +
-            '<img src="assets/tribune_bldg.jpg"/>' + '<br>');
+        $('.pics').before('<img src="assets/buckingham_fountain.jpg" alt="Buckingham Fountain"/>',
+            '<img src="assets/tribune_bldg.jpg" alt="Tribune Building"/>' + '<br>');
     });
     $('#home').click(function () {
-        $('#pics').after('<img src="assets/black_and_brown.jpg"/>' + '<br>' + '<img src="assets/corgi_puppy.jpg"/>' +
-            '<br>' + '<img src="assets/siberian_husky_puppy.jpg"/>' + '<br>')
+        $('.pics').after('<br>' + '<img src="assets/black_and_brown.jpg" alt="Black & Brown Puppies" class="puppies"/>',
+            '<img src="assets/corgi_puppy.jpg" alt="Corgi Puppies" class="puppies"/>',
+            '<img src="assets/siberian_husky_puppy.jpg" alt="Siberian Husky Puppies" class="puppies"/>' + '<br>')
     });
-    /*
-     var images = {'image1': 'assets/chicago_at_night.jpg', 'image2': 'assets/buckingham_fountain.jpg'};
-     $('img').before('images[0]' + '<br>' + 'images[1]' + '<br>');
-     */
 });
 
 // Requirement 7
-
+$(document).ready(function() {
+    $('#remove').click(function() {
+        $('img').remove('.puppies');
+    })
+});
 
 // Requirement 8
 $(document).ready(function () {
@@ -74,4 +75,26 @@ $(document).ready(function () {
             $('.toggleClass').css({'background-color': '', 'height': '', 'width': ''});
         }
     });
+});
+
+// Requirement 9
+$(document).ready(function() {
+    $('#changeUp').click(function() {
+        $(this).css({'color': 'blue', 'font-style': 'italic'})
+    })
+});
+
+// Requirement 10
+$(document).ready(function() {
+    $('#getDimensions').click(function() {
+        var txt = '';
+        txt += 'Width: ' + $('.toggleClass').width() + '<br>';
+        txt += 'Height: ' + $('.toggleClass').height() + '<br>';
+        txt += 'Inner width: ' + $('.toggleClass').innerWidth() + '<br>';
+        txt += 'Inner height: ' + $('.toggleClass').innerHeight() + '<br>';
+        txt += 'Outer width: ' + $('.toggleClass').outerWidth() + '<br>';
+        txt += 'Outer height: ' + $('.toggleClass').outerHeight() + '<br>';
+        $('#almstDone').text('Dimensions of div element in requirement #8: ')
+        $('#lastOne').html(txt)
+    })
 });

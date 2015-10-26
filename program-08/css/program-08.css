@@ -40,3 +40,7 @@ p > span {
     height: 20px;
     width: 20px;
 }
+
+#changeUp {
+    text-align: left;
+}
