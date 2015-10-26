@@ -10,3 +10,6 @@ h1 {
     text-align: center;
 }
 
+header, nav, section, article, footer {
+    border: 3px solid lightgrey;
+}
