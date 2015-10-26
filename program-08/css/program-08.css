@@ -31,3 +31,12 @@ p > span {
     background-color: #000fff;
 }
 
+#activateToggle {
+    width: 80px;
+}
+
+.toggleClass {
+    background-color: #1735c7;
+    height: 20px;
+    width: 20px;
+}
