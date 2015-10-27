@@ -12,4 +12,6 @@ h1 {
 
 header, nav, section, article, footer {
     border: 3px solid lightgrey;
+    padding: 10px;
+
 }
