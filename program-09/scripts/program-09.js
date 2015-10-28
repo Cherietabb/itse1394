@@ -3,10 +3,10 @@
  */
 // Requirement 2
 $(document).ready(function () {
-    $('#places').on('click', function() {
+    $('#places').click(function() {
         $('p, div').parent().css({'border-color': 'blue'});
     });
-    $('#places').on('click', function() {
+    $('#places').click(function() {
         $('p, div').parent().css({'border-color': ''})
     });
 });
