@@ -4,11 +4,13 @@
 // Requirement 2
 $(document).ready(function () {
     $('#places').click(function() {
-        $('p, div').parent().css({'border-color': 'blue'});
+        $('p, div').parent().addClass('blue');
     });
     $('#places').click(function() {
-        $('p, div').parent().css({'border-color': ''})
-    });
+        $('p, div').parent().removeClass('blue');
+    })
+
 });
+
 
 // Requirement 3
