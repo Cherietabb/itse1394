@@ -19,3 +19,19 @@ header, nav, section, article, footer {
     border: 3px solid #112dd3;
     padding: 10px;
 }
+
+.red {
+    border: 3px solid #c71e11;
+}
+
+.black {
+    border: 3px solid #000000;
+}
+
+.color {
+    border: 3px solid #90F;
+}
+
+.colors {
+    border: 3px solid #3C3;
+}
