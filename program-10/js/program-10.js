@@ -3,22 +3,21 @@
  */
 
 // Requirement 2
-/*
-$(document).ready(function() {
-    $('#bibbity').click(function() {
-        $.get('ajax/program-10.txt', function(data) {
-            $('p').html(data);
-            alert('load is success');
-        })
-    })
-});
-*/
 
 $(document).ready(function () {
     $('#bibbity').click(function () {
         $.get('program-10.txt', function (data) {
             alert(data);
             $('#p2').html(data);
+        })
+    })
+});
+
+// Requirement 4
+$(document).ready(function () {
+    $('#bobbity').click(function () {
+        $.get('program-10.php', function (data) {
+            //$('#boo').html(data);
         })
     })
 });
