@@ -6,10 +6,7 @@
 
 $(document).ready(function () {
     $('#bibbity').click(function () {
-        $.get('program-10.txt', function (data) {
-            alert(data);
-            $('#p2').html(data);
-        })
+        $('div').load('program-10.txt #p2');
     })
 });
 
