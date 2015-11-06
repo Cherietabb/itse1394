@@ -3,7 +3,6 @@
  */
 
 // Requirement 2
-
 $(document).ready(function () {
     $('#bibbity').click(function () {
         $('div').load('program-10.txt #p2');
@@ -13,8 +12,8 @@ $(document).ready(function () {
 // Requirement 4
 $(document).ready(function () {
     $('#bobbity').click(function () {
-        $.get('program-10.php', function (data) {
-            //$('#boo').html(data);
+        $.post('program-10.php', function (data) {
+            $('#boo').html(data);
         })
     })
 });
