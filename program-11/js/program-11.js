@@ -4,13 +4,23 @@
 
 // Requirement 1
 $(document).ready(function () {
-
+    $('#d2').draggable({
+        containment: '#d1'
+    });
 });
 
 // Requirement 2
+$(document).ready(function () {
+    $('#d4').draggable({
+        containment: '#d3', axis: 'x'
+    })
+});
 
 
 // Requirement 3
+$(document).ready(function () {
+    $('#d6').draggable({})
+})
 
 
 // Requirement 4
