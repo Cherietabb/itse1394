@@ -3,7 +3,9 @@
  */
 
 // Requirement 1
+$(document).ready(function () {
 
+});
 
 // Requirement 2
 
