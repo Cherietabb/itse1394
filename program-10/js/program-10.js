@@ -11,29 +11,15 @@ $(document).ready(function () {
 
 // Requirement 4
 $(document).ready(function () {
-    $('#bobbity').click(function (e) {
-        var vname = $('#boo').val();
-        var vcountry = $('#radley').val();
+    $('#bobbity').click(function () {
         $.post('program-10.php',
             {
-                name:vname,
-                country:vcountry
-            })
-            .done(function (data) {
-                alert(data + '\nStatus' + status)
-            })
-    })
+                name: 'Cherie Tabb',
+                country: 'USA'
+            },
+            function (data, status) {
+                alert('Data: ' + data + '\nStatus: ' + status);
+            });
+    });
 });
 
-/*
-$(document).ready(function () {
-    $('#bobbity').click(function () {
-        var name = $('boo').text();
-        var country = $('radley').text();
-        $.post('program-10.php', name, country,
-            function (data, status) {
-                alert('Data: ' + data + '\nStatus' + status);
-            })
-    })
-});
-*/

@@ -19,8 +19,10 @@ $(document).ready(function () {
 
 // Requirement 3
 $(document).ready(function () {
-    $('#d6').draggable({})
-})
+    $('#d6').draggable({
+
+    })
+});
 
 
 // Requirement 4
