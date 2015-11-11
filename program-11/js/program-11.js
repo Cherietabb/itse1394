@@ -19,8 +19,13 @@ $(document).ready(function () {
 
 // Requirement 3
 $(document).ready(function () {
+    var stopDrag = function () {
+        $('#d6').draggable('disable');
+    };
     $('#d6').draggable({
-
+        start: function (stopDrag, ui) {
+            setInterval(stopDrag, 4000);
+        }
     })
 });
 
