@@ -41,11 +41,13 @@ $(document).ready(function () {
 
 // Requirement 4
 $(document).ready(function () {
-    $('#L1, #L2').draggable({
-        start: function () {
-
+    $('#L1').draggable();
+    $('R1').droppable({
+        drop: function(event, ui) {
+            $(this)
+            .addClass('ui-state-highlight');
         }
-    })
+    });
 });
 
 // Requirement 5

@@ -40,7 +40,7 @@ div {
 #L1, #L2 {
     height: 50px;
     width: 50px;
-    background-color: #0544c7;
+    background-color: #6f9dc7;
     float: left;
     position: relative;
     font-size: 16pt;
@@ -49,7 +49,7 @@ div {
 #R1, #R2 {
     height: 100px;
     width: 100px;
-    background-color: #fd131f;
+    background-color: #fd8388;
     float: right;
     position: relative;
     font-size: 16pt;
