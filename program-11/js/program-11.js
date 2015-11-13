@@ -18,27 +18,28 @@ $(document).ready(function () {
 
 // Requirement 3
 $(document).ready(function () {
-    var $d = $('#d6'),
+    var $dragMe = $('#d6'),
         t,
-        inter;
-    var counter = 10;
+        inter,
+        p,
+    counter = 10;
     inter = setInterval(function () {
         counter--;
         if (counter < 0) {
             p = document.getElementById('timed').innerHTML = 'Dragging disabled.';
-            clearInterval(inter)
+            clearInterval(inter);
         } else {
             timed.innerHTML = 'You can drag this element for the next ' + counter.toString() + ' seconds.'
         }
     }, 1000);
-    $d.draggable({
+    $dragMe.draggable({
         containment: '#d5',
         start: function () {
             clearTimeout(t);
         },
         stop: function () {
             t = setTimeout(function () {
-                $d.draggable({
+                $dragMe.draggable({
                     destroy: true
                 });
             }, 1000)
@@ -47,7 +48,9 @@ $(document).ready(function () {
 });
 
 // Requirement 4
+$(document).ready(function () {
 
+});
 
 // Requirement 5
 
