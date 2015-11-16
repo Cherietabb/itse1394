@@ -41,26 +41,67 @@ $(document).ready(function () {
 
 // Requirement 4
 $(document).ready(function () {
-    $('#L1').draggable();
-    $('R1').droppable({
-        drop: function(event, ui) {
+    $('#L1').draggable({
+        containment: 'parent'
+    });
+    $('#L2').draggable({
+        containment: 'parent'
+    });
+    $('#R1').droppable({
+        accept: '#L1',
+        tolerance: 'touch',
+        hoverClass: 'ui-state-active',
+        drop: function (event, ui) {
             $(this)
-            .addClass('ui-state-highlight');
+                .find('p')
+                .html('Dropped!');
         }
     });
+    $('#R2').droppable({
+        tolerance: 'fit',
+        accept: '#L2',
+        hoverClass: 'ui-state-active',
+        drop: function (event, ui) {
+            $(this)
+                .find('p')
+                .html('Dropped!');
+        }
+    })
 });
 
 // Requirement 5
-
+$(document).ready(function () {
+    $('article').resizable({
+        ghost: true
+    })
+});
 
 // Requirement 6
-
+$(document).ready(function () {
+    $('nav').resizable({
+        containment: 'parent',
+        minHeight: 70,
+        minWidth: 70
+    })
+});
 
 // Requirement 7
-
+$(document).ready(function () {
+    $('.resize').resizable({
+        alsoResize: '.resize'
+    });
+});
 
 // Requirement 8
-
+$(document).ready(function () {
+    $('#select').selectable({
+        filter: 'li:first-child, li:last-child'
+    });
+});
 
 // Requirement 9
-
+$(document).ready(function () {
+    $('#sorted').sortable({
+        placeholder: 'highlight'
+    })
+});

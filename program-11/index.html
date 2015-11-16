@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Program 11</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/base/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/program-11.css"/>
 </head>
 <body>
 <h1>Program 11</h1>
+
 <div>
     <!-- Requirement 1 -->
     <h2>Requirement 1</h2>
+    <h4>Keeping div within its container.</h4>
 
     <div id="d1">
         <div id="d2">
@@ -21,6 +24,7 @@
 
     <!-- Requirement 2 -->
     <h2>Requirement 2</h2>
+    <h4>Dragging div horizonally</h4>
 
     <div id="d3">
         <div id="d4">
@@ -30,6 +34,7 @@
 
     <!-- Requirement 3 -->
     <h2>Requirement 3</h2>
+
     <p id="timed">You can drag the inner element for the next 10 seconds.</p>
 
     <div id="d5">
@@ -40,38 +45,79 @@
 
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
+    <h4>Dragging divs to specific locations.</h4>
+
     <div class="container">
         <div id="L1">
-            L1
+            <p>L1</p>
         </div>
         <div id="L2">
-            L2
+            <p>L2</p>
         </div>
         <div id="R1">
-            R1
+            <p>R1</p>
         </div>
         <div id="R2">
-            R2
+            <p>R2</p>
         </div>
-
     </div>
-
-
 
     <!-- Requirement 5 -->
     <h2>Requirement 5</h2>
+    <h4>Resizable elements</h4>
+    <article>
+
+    </article>
 
     <!-- Requirement 6 -->
     <h2>Requirement 6</h2>
+    <h4>Using containment, minHeight, and minWidth on nav element.</h4>
+    <section>
+        <nav class="ui-widget-content">
+            <a href="#">Home</a><br/>
+            <a href="#">About</a><br/>
+        </nav>
+    </section>
 
     <!-- Requirement 7 -->
     <h2>Requirement 7</h2>
+    <h4>Resizing Divs</h4>
+
+    <div class="resize"></div>
+    <div class="resize"></div>
+    <div class="resize"></div>
+    <div class="resize"></div>
 
     <!-- Requirement 8-->
     <h2>Requirement 8</h2>
+    <h4>Using Selectable</h4>
+    <div class="container">
+        <ol id="select">
+            <li class="ui-widget-content">Selectable 1</li>
+            <li class="ui-widget-content">Selectable 2</li>
+            <li class="ui-widget-content">Selectable 3</li>
+            <li class="ui-widget-content">Selectable 4</li>
+            <li class="ui-widget-content">Selectable 5</li>
+            <li class="ui-widget-content">Selectable 6</li>
+            <li class="ui-widget-content">Selectable 7</li>
+        </ol>
+
+    </div>
 
     <!-- Requirement 9-->
     <h2>Requirement 9</h2>
+    <h4>Using Sortable</h4>
+    <div class="container">
+        <ol id="sorted">
+            <li class="ui-widget-content">Sortable 1</li>
+            <li class="ui-widget-content">Sortable 2</li>
+            <li class="ui-widget-content">Sortable 3</li>
+            <li class="ui-widget-content">Sortable 4</li>
+            <li class="ui-widget-content">Sortable 5</li>
+            <li class="ui-widget-content">Sortable 6</li>
+            <li class="ui-widget-content">Sortable 7</li>
+        </ol>
+    </div>
 
 </div>
 <script src="scripts/program-11.js"></script>

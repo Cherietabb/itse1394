@@ -10,8 +10,7 @@ h1 {
 }
 
 div {
-    box-shadow: 0 0 5px 3px #cccccc;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: .5em;
     padding: .5em;
 }
@@ -33,25 +32,78 @@ div {
 }
 
 .container {
-    width: 550px;
-    height: 200px;
+    width: 500px;
+    height: 250px;
 }
 
 #L1, #L2 {
     height: 50px;
     width: 50px;
     background-color: #6f9dc7;
-    float: left;
-    position: relative;
     font-size: 16pt;
 }
 
 #R1, #R2 {
     height: 100px;
     width: 100px;
-    background-color: #fd8388;
-    float: right;
-    position: relative;
+    background-color: #fd131f;
     font-size: 16pt;
 }
 
+#L1, #L2, #R1, #R2 {
+    float: left;
+}
+
+#L1.hover {
+    background-color: #f9eefd;
+}
+
+article {
+    height: 150px;
+    width: 150px;
+    background-color: #0861fe;
+}
+
+section {
+    height: 200px;
+    width: 200px;
+}
+
+nav {
+    background-color: #0861fe;
+    color: #fefefe;
+}
+
+a:link {
+    font-size: 14pt;
+    color: #ffffff;
+}
+
+.resize {
+    background-color: #000fff;
+    height: 40px;
+    width: 70px;
+    display: inline-block;
+}
+
+li {
+    font-size: 15pt;
+    margin: 2px 0;
+}
+
+.ui-widget-content {
+    background: #0861fe;
+    border: 1px solid #DDDDDD;
+    color: #fefefe;
+}
+
+#select .ui-selected {
+    background: #EEEEEE;
+    color: #000000;
+}
+
+.highlight {
+    font-weight: bold;
+    background-color: #636579;
+    color: #000000;
+}
