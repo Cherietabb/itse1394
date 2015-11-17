@@ -3,10 +3,19 @@
  */
 
 // Requirement 1
-
+$(document).ready(function () {
+    $('#way').accordion({
+        heightStyle: 'content'
+    });
+});
 
 // Requirement 2
-
+$(document).ready(function () {
+    var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    $('#to').autocomplete({
+        source: daysOfWeek
+    })
+});
 
 // Requirement 3
 
