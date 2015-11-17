@@ -69,7 +69,7 @@ $(function() {
 
         },
         position: {
-            my: "left top", at: "left+5 top+5"
+            my: "right right", at: "left+5 top+5", of: 'target'
         }
     })
 });

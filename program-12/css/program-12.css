@@ -28,3 +28,14 @@ p {
 ul li {
     list-style-type: none;
 }*/
+
+#list {
+    margin: 10px;
+}
+
+footer {
+    padding: 5px;
+    margin: 10px;
+    clear: both;
+}
+
