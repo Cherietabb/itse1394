@@ -62,3 +62,14 @@ $(function(){
 });
 
 // Requirement 6
+$(function() {
+    $('#list').menu({
+        icons: {
+            submenu: 'ui-icon-circle-triangle-e icon'
+
+        },
+        position: {
+            my: "left top", at: "left+5 top+5"
+        }
+    })
+});
