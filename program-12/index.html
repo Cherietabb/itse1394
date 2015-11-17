@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Program 12</title>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/eggplant/jquery-ui.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/cupertino/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/program-12.css"/>
@@ -14,49 +14,37 @@
     <!-- Requirement 1 -->
     <h2>Requirement 1</h2>
     <h4>Using Accordion Widget</h4>
-
     <div id="way">
-
-        <h5>
-            US
-        </h5>
-        <div>
-        <p>
-            The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the extreme
-            Northwest and Hawaii extending the nation’s presence into the Pacific Ocean.
-        </p>
-        </div>
-        <h5>
-            Canada
-        </h5>
-
-        <div>
+        <h3>United States</h3>
+        <div class="dark">
             <p>
-                Canada, stretching from the U.S. in the south to the Arctic Circle in the north, is filled with vibrant
-                cities including massive, multicultural Toronto; predominantly French-speaking Montréal and Québec City;
-                Vancouver and Halifax on the Pacific and Atlantic coasts, respectively; and Ottawa, the capital.
+                The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the extreme
+                Northwest and Hawaii extending the nation’s presence into the Pacific Ocean.
             </p>
         </div>
-        <h5>
-            France
-        </h5>
-
-        <div>
+        <h3>France</h3>
+        <div class="dark">
             <p>
                 France, in Western Europe, encompasses medieval and port cities, tranquil villages, mountains and
                 Mediterranean beaches. Paris, its capital, is known worldwide for its couture fashion houses, classical
                 art museums including the Louvre and monuments like the Eiffel Tower.
             </p>
         </div>
-        <h5></h5>
+        <h3>Canada</h3>
+        <div class="dark">
+            <p>
+                Canada, stretching from the U.S. in the south to the Arctic Circle in the north, is filled with vibrant
+                cities including massive, multicultural Toronto; predominantly French-speaking Montréal and Québec City;
+                Vancouver and Halifax on the Pacific and Atlantic coasts, respectively; and Ottawa, the capital.
+            </p>
+
+        </div>
     </div>
-
-
     <!-- Requirement 2 -->
     <h2>Requirement 2</h2>
     <h4>Using the Autocomplete Widget</h4>
     <div class="ui-widget">
-        <p>Please type day of week.</p>
+        <p>Please enter day of week.</p>
         <label for="to">Day:</label>
         <input type="text" id="to"/>
     </div>
@@ -64,16 +52,55 @@
     <!-- Requirement 3 -->
     <h2>Requirement 3</h2>
     <h4>Using Buttons</h4>
-    <button id="btn-1">First button</button>
+    <button id="go">Simple button</button>
+    <input type="checkbox" id="holly"><label for="holly">Toggle</label>
+    <a href="#">Anchor</a>
+
+    <form>
+        <div>
+            <input type="checkbox" id="checkbox-1"/><label for="checkbox-1">Choice 1</label>
+            <input type="checkbox" id="checkbox-2"/><label for="checkbox-2">Choice 2</label>
+            <input type="checkbox" id="checkbox-3"/><label for="checkbox-3">Choice 3</label>
+        </div>
+    </form>
 
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
+    <h4>DatePicker</h4>
+    <label for="picker">Enter Date: <input type="text" id="picker"/> </label>
 
     <!-- Requirement 5 -->
     <h2>Requirement 5</h2>
+    <h4>Dialog</h4>
+    <div id="log" title="My Dialog">
+        <p>
+            You must agree to terms before progressing.
+        </p>
+        <div>
+            <label for="terms"><input type="checkbox" id="terms"/>I accept the terms.</label>
+        </div>
+    </div>
+    <button id="open">Open Dialog</button>
+
 
     <!-- Requirement 6 -->
     <h2>Requirement 6</h2>
+    <h4>Menu Widget</h4>
+    <ul>
+        <li>Network</li>
+        <li>Premium Cable</li>
+        <li>
+            <ul>
+                <li>HBO</li>
+                <li>Showtime</li>
+            </ul>
+        </li>
+        <li>Basic Cable</li>
+        <li>Internet</li>
+        <li>Audio</li>
+    </ul>
+
+
 
 
 </div>

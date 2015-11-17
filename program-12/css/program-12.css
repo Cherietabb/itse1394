@@ -10,12 +10,17 @@ h1 {
 }
 
 div {
-    /*box-shadow: 0 2px 3px #898989;*/
     border-radius: 5px;
     margin: .5em;
     padding: .5em;
 }
 
-h5 {
-    font-size: 14pt;
+p {
+    padding: 0;
+    margin: 0;
 }
+
+.dark {
+    padding: 0;
+}
+
