@@ -21,7 +21,7 @@ $(document).ready(function () {
 // Requirement 3
 $(document).ready(function () {
     $('input[type=submit], a, button').button();
-    $('checkbox').buttonset();
+    $('#btnSet').buttonset();
 });
 
 // Requirement 4
@@ -40,29 +40,29 @@ $(document).ready(function () {
 });
 
 // Requirement 5
-$(function(){
-    $( "#log" ).dialog({
+$(function () {
+    $("#log").dialog({
         autoOpen: false,
         buttons: {
-            OK: function() {
-                $( this ).dialog( "close" );
+            OK: function () {
+                $(this).dialog("close");
             }
         },
-        beforeClose: function( event, ui ) {
-            if ( !$( "#terms" ).prop( "checked" ) ) {
+        beforeClose: function (event, ui) {
+            if (!$("#terms").prop("checked")) {
                 event.preventDefault();
-                $( "[for=terms]" ).addClass( "invalid" );
+                $("[for=terms]").addClass("invalid");
             }
         },
         width: 400
     });
-    $( "#open" ).click(function() {
-        $( "#log" ).dialog( "open" );
+    $("#open").click(function () {
+        $("#log").dialog("open");
     });
 });
 
 // Requirement 6
-$(function() {
+$(function () {
     $('#list').menu({
         icons: {
             submenu: 'ui-icon-circle-triangle-e icon'
