@@ -24,6 +24,7 @@ $(document).ready(function () {
     $('#btnSet').buttonset();
 });
 
+
 // Requirement 4
 $(document).ready(function () {
     $('#picker').datepicker({
@@ -64,12 +65,11 @@ $(function () {
 // Requirement 6
 $(function () {
     $('#list').menu({
-        icons: {
-            submenu: 'ui-icon-circle-triangle-e icon'
-
-        },
-        position: {
-            my: "top right", at: "left+5 top+5", of: 'target'
+/*
+        icon: {
+            submenu: 'ui-icon-circle-triangle-e'
         }
-    })
+*/
+    });
+
 });

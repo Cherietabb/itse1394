@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>Program 12</title>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/program-12.css"/>
 </head>
 <body>
-<div>
-    <h1>Program 1</h1>
+<h1>Program 1</h1>
+
+<div class="container">
 
     <!-- Requirement 1 -->
     <h2>Requirement 1</h2>
@@ -59,11 +61,14 @@
     <!-- Requirement 3 -->
     <h2>Requirement 3</h2>
     <h4>Using Buttons</h4>
-    <button id="go">Simple button</button>
-    <input type="checkbox" id="holly"><label for="holly">Toggle</label>
-    <a href="#">Anchor</a>
+    <div class="ui-content">
+        <button id="go">Simple button</button>
+        <input type="checkbox" id="holly"><label for="holly"><span class="ui-btn ui-icon-power ui-btn-icon-left">Toggle</span></label>
+        <a href="#"><span class="ui-btn ui-icon-anchor ui-btn-icon-left">Anchor</span></a>
 
-    <form>
+    </div>
+    <br/>
+    <form class="ui-content">
         <div id="btnSet">
             <input type="radio" id="radio-1"/><label for="radio-1">Choice 1</label>
             <input type="radio" id="radio-2" checked="checked"/><label for="radio-2">Choice 2</label>
@@ -84,7 +89,7 @@
         <p>
             You must agree to terms before progressing.
         </p>
-
+        <hr/>
         <div>
             <label for="terms"><input type="checkbox" id="terms"/>I accept the terms.</label>
         </div>
@@ -94,19 +99,22 @@
     <!-- Requirement 6 -->
     <h2>Requirement 6</h2>
     <h4>Menu Widget</h4>
-    <ul id="list">
+    <ul id="list" class="ui-content">
         <li><a href="#">Network</a></li>
         <li><a href="#">Internet</a></li>
-        <li><a href="#">Smart TV</a>
-        </li>
-        <li><a href="#">Basic Cable</a></li>
-        <li><a href="#">Premium Cable</a>
-            <ul>
-                <li><a href="#">HBO</a></li>
+        <li><a href="#">Smart TV</a></li>
+        <li><span class="ui-icon-circle-triangle"><a href="#">Basic Cable</a>
+            <ul id="submenu">
+                 <li><a href="#">HBO</a></li>
                 <li><a href="#">Showtime</a></li>
             </ul>
-        </li>
+
+            </span></li>
+        <li><a href="#">Premium Cable</a></li>
+
     </ul>
+    <br/><br/>
+
     <div class="footer">
         <footer>
             <p>
