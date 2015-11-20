@@ -19,3 +19,16 @@ $(document).ready(function () {
     setTimeout(progress, 1000);
 });
 
+// Requirement 2
+$(document).ready(function () {
+    $('#slide2').slider({
+        range: true,
+        min: 0,
+        max: 100,
+        values: [275, 750],
+        slide: function() {
+            $('#slide1').val(ui.values[0] + '-' + ui.values[100]);
+        }
+    });
+    //$(this).val($(this).slider('values', 0) + '-' + $(this).slider('values', 1));
+});

@@ -6,21 +6,21 @@ body {
     padding: 0;
 }
 
-h1 {
-    text-align: center;
-}
-
-div {
-    box-shadow: 0 3px 5px #a5a5a5;
+.container {
+    box-shadow: 2px 2px 5px 3px #878787;
     border-radius: 5px;
     margin: .5em;
     padding: .5em;
 }
 
-#progbar {
-    background: #e6e7de;
-    border: 1px solid #DDDDDD;
-    color: #fd131f;
+h1 {
+    text-align: center;
+}
+
+.ui-widget-header {
+    background: #7c807e;
+    color: #c7c7c7;
     font-weight: bold;
+    border: 3px inset #bfbfbf;
 }
 
