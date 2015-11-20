@@ -4,8 +4,19 @@
 
 // Requirement 1
 $(document).ready(function () {
-    $('#way').accordion({
-        heightStyle: 'content'
+    $.fn.slideFadeToggle = function (speed, easing, callback) {
+        return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+    };
+
+    $('.accordion').accordion({
+        heightStyle: 'content',
+        speed: 'slow',
+        animateOpen: function (elem, opts) {
+            elem.next().stop(true, true).slideFadeToggle(opts.speed);
+        },
+        animateClose: function (elem, opts) {
+            elem.next().stop(true, true).slideFadeToggle(opts.speed);
+        }
     });
 });
 
