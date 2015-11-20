@@ -17,3 +17,10 @@ div {
     padding: .5em;
 }
 
+#progbar {
+    background: #e6e7de;
+    border: 1px solid #DDDDDD;
+    color: #fd131f;
+    font-weight: bold;
+}
+
