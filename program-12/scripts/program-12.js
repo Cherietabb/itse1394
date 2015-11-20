@@ -76,9 +76,5 @@ $(function () {
 // Requirement 6
 $(function () {
     $('#list').menu({
-        icon: {
-            submenu: 'ui-icon-circle-triangle-e'
-        }
     });
-
 });
