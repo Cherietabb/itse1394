@@ -4,19 +4,9 @@
 
 // Requirement 1
 $(document).ready(function () {
-    $.fn.slideFadeToggle = function (speed, easing, callback) {
-        return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
-    };
-
-    $('.accordion').accordion({
+    $('#way').accordion({
         heightStyle: 'content',
-        speed: 'slow',
-        animateOpen: function (elem, opts) {
-            elem.next().stop(true, true).slideFadeToggle(opts.speed);
-        },
-        animateClose: function (elem, opts) {
-            elem.next().stop(true, true).slideFadeToggle(opts.speed);
-        }
+        speed: 'slow'
     });
 });
 
@@ -33,6 +23,12 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('input[type=submit], a, button').button();
     $('#btnSet').buttonset();
+    $('#toggle').button({
+        icon: {
+            primary: 'ui-icon-power'
+        },
+        text: false
+    })
 });
 
 
@@ -76,5 +72,10 @@ $(function () {
 // Requirement 6
 $(function () {
     $('#list').menu({
+        icons: {submenu: 'ui-icon-circle-triangle-e'},
+        focus: function (event, ui) {
+            var message = $('#message');
+            message.append('Blur event<br>');
+        }
     });
 });

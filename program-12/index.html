@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Program 12</title>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/flick/jquery-ui.css">
+    <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/program-12.css"/>
@@ -13,192 +13,119 @@
 <h1>Program 1</h1>
 
 <div class="main-container">
+    <div id="way">
+        <h3 class="ui-widget-header">United States</h3>
 
-    <!-- Requirement 1 -->
-    <h2>Requirement 1</h2>
-    <h4>Using Accordion Widget</h4>
+        <div class="ui-widget-content">
+            <p>
+                The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the
+                extreme
+                Northwest and Hawaii extending the nation’s presence into the Pacific Ocean.
+            </p>
+        </div>
 
-    <!--
-        <div id="way" class="accordion">
-        <div class="container">
-            <div class="content">
-                <div>France</div>
-                <p>
-                    France, in Western Europe, encompasses medieval and port cities, tranquil villages, mountains and
-                    Mediterranean beaches. Paris, its capital, is known worldwide for its couture fashion houses, classical
-                    art museums including the Louvre and monuments like the Eiffel Tower.
-                </p>
-            </div>
-        </div>
-        </div>
-        <div id="out" class="accordion">
-        <div class="container">
-            <div class="content">
-                <div>Canada</div>
-                <p>
-                    Canada, stretching from the U.S. in the south to the Arctic Circle in the north, is filled with vibrant
-                    cities including massive, multicultural Toronto; predominantly French-speaking Montréal and Québec City;
-                    Vancouver and Halifax on the Pacific and Atlantic coasts, respectively; and Ottawa, the capital.
-                </p>
-            </div>
-        </div>
-        </div>
-        <div id="there" class="accordion">
-        <div class="container">
-            <div class="content">
-                <div>United States</div>
-                <p>
-                    The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the extreme
-                    Northwest and Hawaii extending the nation’s presence into the Pacific Ocean.
-                </p>
-            </div>
-        </div>
-        </div>
-    -->
+        <h3>France</h3>
 
-    <div id="way" class="accordion">
-        <div class="container">
-            <div class="content">
-                <div>United States</div>
-                <p>
-                    The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the
-                    extreme
-                    Northwest and Hawaii extending the nation’s presence into the Pacific Ocean.
-                </p>
-            </div>
+        <div class="content">
+            <p>
+                France, in Western Europe, encompasses medieval and port cities, tranquil villages, mountains
+                and
+                Mediterranean beaches. Paris, its capital, is known worldwide for its couture fashion houses,
+                classical
+                art museums including the Louvre and monuments like the Eiffel Tower.
+            </p>
+        </div>
+
+        <h3>Canada</h3>
+
+        <div class="content">
+            <p>
+                Canada, stretching from the U.S. in the south to the Arctic Circle in the north, is filled with
+                vibrant
+                cities including massive, multicultural Toronto; predominantly French-speaking Montréal and
+                Québec
+                City;
+                Vancouver and Halifax on the Pacific and Atlantic coasts, respectively; and Ottawa, the capital.
+            </p>
+
         </div>
     </div>
-    <div class="accordion">
-        <div class="container">
-            <div class="content">
-                <div>France</div>
-                <p>
-                    France, in Western Europe, encompasses medieval and port cities, tranquil villages, mountains and
-                    Mediterranean beaches. Paris, its capital, is known worldwide for its couture fashion houses,
-                    classical
-                    art museums including the Louvre and monuments like the Eiffel Tower.
-                </p>
-            </div>
+
+    <!-- Requirement 2 -->
+    <h2>Requirement 2</h2>
+    <h4>Using the Autocomplete Widget</h4>
+
+    <div class="ui-widget">
+        <p>Please enter day of week.</p>
+        <label for="to">Day:</label>
+        <input type="text" id="to"/>
+    </div>
+
+    <!-- Requirement 3 -->
+    <h2>Requirement 3</h2>
+    <h4>Using Buttons</h4>
+
+    <div class="ui-header">
+        <button id="go">Simple button</button>
+        <div id="toggle">
+            Toggle
         </div>
+        <a href="#">Anchor</a>
     </div>
-    <div class="accordion">
-        <div class="container">
-            <div class="content">
-                <div>Canada</div>
-                <p>
-                    Canada, stretching from the U.S. in the south to the Arctic Circle in the north, is filled with
-                    vibrant
-                    cities including massive, multicultural Toronto; predominantly French-speaking Montréal and Québec
-                    City;
-                    Vancouver and Halifax on the Pacific and Atlantic coasts, respectively; and Ottawa, the capital.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Requirement 2 -->
-<h2>Requirement 2</h2>
-<h4>Using the Autocomplete Widget</h4>
-
-<div class="ui-widget">
-    <p>Please enter day of week.</p>
-    <label for="to">Day:</label>
-    <input type="text" id="to"/>
-</div>
-
-<!-- Requirement 3 -->
-<h2>Requirement 3</h2>
-<h4>Using Buttons</h4>
-
-<div class="ui-content">
-    <button id="go">Simple button</button>
-    <input type="radio" id="holly"><label for="holly">Toggle</label>
-    <a href="#">Anchor</a>
-
-</div>
-<br/>
-
-<form class="ui-content">
-    <div id="btnSet">
-        <input type="radio" id="radio-1"/><label for="radio-1">Choice 1</label>
-        <input type="radio" id="radio-2" checked="checked"/><label for="radio-2">Choice 2</label>
-        <input type="radio" id="radio-3"/><label for="radio-3">Choice 3</label>
-    </div>
-</form>
-
-<!-- Requirement 4 -->
-<h2>Requirement 4</h2>
-<h4>DatePicker Widget</h4>
-<label for="picker">Enter Date: <input type="text" id="picker"/> </label>
-
-<!-- Requirement 5 -->
-<h2>Requirement 5</h2>
-<h4>Dialog Widget</h4>
-
-<div id="log" title="My Dialog">
-    <p>
-        You must agree to terms before progressing.
-    </p>
     <br/>
+
+    <form class="ui-content">
+        <div id="btnSet">
+            <input type="radio" id="radio-1"/><label for="radio-1">Choice 1</label>
+            <input type="radio" id="radio-2" checked="checked"/><label for="radio-2">Choice 2</label>
+            <input type="radio" id="radio-3"/><label for="radio-3">Choice 3</label>
+        </div>
+    </form>
+
+    <!-- Requirement 4 -->
+    <h2>Requirement 4</h2>
+    <h4>DatePicker Widget</h4>
+    <label for="picker">Enter Date: <input type="text" id="picker"/> </label>
+
+    <!-- Requirement 5 -->
+    <h2>Requirement 5</h2>
+    <h4>Dialog Widget</h4>
+
+    <div id="log" title="My Dialog">
+        <p>
+            You must agree to terms before progressing.
+        </p>
+        <br/>
         <label for="terms"><input type="checkbox" id="terms"/>I accept the terms.</label>
     </div>
 
-<button id="open">Open Dialog</button>
+    <button id="open">Open Dialog</button>
 
-<!-- Requirement 6 -->
-<h2>Requirement 6</h2>
-<h4>Menu Widget</h4>
-<ul id="list" class="ui-content">
+    <!-- Requirement 6 -->
+    <h2>Requirement 6</h2>
+    <h4>Menu Widget</h4>
+
+    <ul id="list" class="ui-widget-header">
     <li><a href="#">Network</a></li>
     <li><a href="#">Internet</a></li>
     <li><a href="#">Smart TV</a></li>
-    <li><a href="#">Basic Cable</a>
-        <ul id="submenu">
+    <li><a href="#">Basic Cable</a></li>
+    <li><a href="#">Premium Cable</a>
+        <ul class="ui-widget-header">
             <li><a href="#">HBO</a></li>
             <li><a href="#">Showtime</a></li>
         </ul>
     </li>
-    <li><a href="#">Premium Cable</a></li>
-
-</ul>
-
-<!--
-<ul id="menu">
-    <li><a href="#">Menu Item 1</a></li>
-    <li>
-        <a href="#">Menu Item 2</a>
-        <ul>
-            <li><a href="#">Sub Menu Item 1</a></li>
-            <li><a href="#">Sub Menu Item 2</a></li>
-            <li><a href="#">Sub Menu Item 3</a></li>
-        </ul>
-    </li>
-    <li>
-        <a href="#">Menu Item 3</a>
-        <ul>
-            <li><a href="#">Sub Menu Item 1</a></li>
-            <li><a href="#">Sub Menu Item 2</a></li>
-            <li><a href="#">Sub Menu Item 3</a></li>
-            <li><a href="#">Sub Menu Item 4</a></li>
-            <li><a href="#">Sub Menu Item 5</a></li>
-            <li><a href="#">Sub Menu Item 6</a></li>
-        </ul>
-    </li>
-</ul>
-
-
+    </ul>
+    <div class="footer">
+        <footer>
+            <p>
+                <small>Cherie Tabb</small>
+            </p>
+        </footer>
+    </div>
 </div>
--->
-<br/><br/>
 
-<div class="footer">
-    <footer>
-        <p>
-            <small>Cherie Tabb</small>
-        </p>
-    </footer>
-</div>
 <script src="scripts/program-12.js"></script>
 </body>
 </html>
