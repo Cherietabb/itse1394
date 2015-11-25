@@ -24,3 +24,8 @@ h1 {
     border: 3px inset #bfbfbf;
 }
 
+#slide1 {
+    border: 0;
+    color: #b9cd6d;
+    font-weight: bold;
+}

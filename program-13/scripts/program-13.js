@@ -22,20 +22,28 @@ $(document).ready(function () {
 
 // Requirement 2
 $(document).ready(function () {
-    $('#slide2').slider({
+    var imSlidin = $('#slide2');
+    imSlidin.slider({
         range: true,
         min: 0,
         max: 1000,
         values: [275, 750],
-        slide: function(ui, values) {
+        slide: function(event, ui) {
             $('#slide1').val(ui.values[0] + ' - ' + ui.values[1]);
         }
     });
-    $( "#slide1" ).val($( "#slide2" ).slider( "values", 0 ) + $( "#slide2" ).slider( "values", 1 ) );
+    $( "#slide1" ).val(imSlidin.slider( "values", 0 ) + imSlidin.slider( "values", 1 ) );
 
 });
 
 // Requirement 3
 $(document).ready(function () {
-    $('#spinners').spinner();
+    var imSpinning = $('#spinners');
+    imSpinning.spinner({
+        min: 0,
+        max: 10,
+        culture: 'us-US',
+        numberFormat: 'C'
+    });
+
 });
