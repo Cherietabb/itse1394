@@ -44,5 +44,4 @@ $(document).ready(function () {
         step: 1,
         numberFormat: 'C'
     });
-    //imSpinning.val('$' + imSpinning.spinner());
 });
