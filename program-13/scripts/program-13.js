@@ -38,12 +38,10 @@ $(document).ready(function () {
 
 // Requirement 3
 $(document).ready(function () {
-    var imSpinning = $('#spinners');
-    imSpinning.spinner({
+    $('#spinners').spinner({
         min: 0,
         max: 10,
         step: 1,
-        culture: 'en-US',
         numberFormat: 'C'
     });
     //imSpinning.val('$' + imSpinning.spinner());
