@@ -42,8 +42,7 @@ $(document).ready(function () {
     imSpinning.spinner({
         min: 0,
         max: 10,
-        culture: 'us-US',
+        culture: 'en-US',
         numberFormat: 'C'
     });
-
 });
