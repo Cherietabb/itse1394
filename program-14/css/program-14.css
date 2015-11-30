@@ -16,16 +16,3 @@ body {
 h1 {
     text-align: center;
 }
-
-.ui-widget-header {
-    background: #afb5b2;
-    color: #c7c7c7;
-    font-weight: bold;
-    border: 3px inset #bfbfbf;
-}
-
-#slide1 {
-    border: 0;
-    color: #eb356b;
-    font-weight: bold;
-}

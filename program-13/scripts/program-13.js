@@ -38,11 +38,14 @@ $(document).ready(function () {
 
 // Requirement 3
 $(document).ready(function () {
-    var imSpinning = $('#spinners');
-    imSpinning.spinner({
+    $('#spinners').spinner({
         min: 0,
         max: 10,
+<<<<<<< HEAD
         culture: 'en-US',
+=======
+        step: 1,
+>>>>>>> 63ab4b52c743c23d66497367b2470a4c4ef7ec74
         numberFormat: 'C'
     });
 });
