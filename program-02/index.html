@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Program 2: Cherie Tabb</title>
+    <link rel="stylesheet" href="program02.css">
+    <script src="program02.js"></script>
+</head>
+<body>
+<div class="mainContainer">
+    <div class="container">
+        <h1>Program 2</h1>
+    </div>
+
+    <!-- Requirement 1 -->
+    <h2>Requirement 1</h2>
+    <button id="press" onclick="myButton()">Press Here!</button>
+
+    <!-- Requirement 2 -->
+    <h2>Requirement 2</h2>
+    <p>Today's date is
+        <script>document.write(new Date());</script>
+    </p>
+
+    <!-- Requirement 3 -->
+    <h2>Requirement 3</h2>
+
+    <h3>My New Aircraft!</h3>
+    Try flying your aircraft with the following functionality:
+    <ul class="aircraft-list">
+        <li>Take off</li>
+        <li>Climb</li>
+        <li>Descend</li>
+        <li>Land</li>
+    </ul>
+
+    <!-- Requirement 4 -->
+    <h2>Requirement 4</h2>
+
+    <p>Enter the height of your aircraft</p>
+    <input type="text" id="range" maxlength="2" onblur="return takeOff(this.value)"/>
+    <button type="button">Press Here</button>
+    <p id="height"></p>
+
+
+
+    <!-- Requirement 7 -->
+    <h2>Requirement 7</h2>
+    <button type="button" onclick="takeOff()">take off</button>
+    <p id="take-off"></p>
+
+    <p>Enter a color</p>
+
+    <div id="color">
+        <button type="submit" onclick="myColor()">Submit</button>
+    </div>
+    <!-- Requirement 8 -->
+    <h2>Requirement 8</h2>
+
+    <p>Enter a number</p>
+    <input type="text" id="text"/>
+    <button type="submit" onclick="myNumber()">Submit</button>
+    <p id="number"></p>
+</div>
+</body>
+</html>

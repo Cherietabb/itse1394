@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    font-family: arial, sans-serif;
+}
+
+.container {
+    margin-top: 0;
+    padding: 10px;
+}
+
+.aircraft-list {
+    list-style-type: none;
+}
