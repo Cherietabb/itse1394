@@ -32,7 +32,7 @@ $(document).ready(function () {
             $('#slide1').val(ui.values[0] + ' - ' + ui.values[1]);
         }
     });
-    $( "#slide1" ).val(imSlidin.slider( "values", 0 ) + imSlidin.slider( "values", 1 ) );
+    $( "#slide1" ).val(imSlidin.slider( "values", 0 ) + ' - ' + imSlidin.slider( "values", 1 ) );
 
 });
 
@@ -45,6 +45,7 @@ $(document).ready(function () {
         step: 1,
         numberFormat: 'C'
     });
+
 });
 
 // Requirement 4
