@@ -42,7 +42,6 @@ $(document).ready(function () {
         min: 0,
         max: 10,
         culture: 'en-US',
-        step: 1,
         numberFormat: 'C'
     });
 
@@ -50,5 +49,7 @@ $(document).ready(function () {
 
 // Requirement 4
 $(document).ready(function () {
-    $('#tabs1').tabs();
+    $('#tabs1').tabs({
+        event: 'mouseover'
+    });
 });
