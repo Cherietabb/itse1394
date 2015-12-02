@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="">
+    <script src="scripts/globalize.js"></script>
     <link rel="stylesheet" href="css/program-13.css"/>
 </head>
 <body>
@@ -43,37 +43,47 @@
     <h4>Using Tabs Widget</h4>
     <div id="tabs1">
         <ul>
-            <li><a href="#tabs2"></a>Austin</li>
+            <li><a href="#tabs2" class="tab-color"></a>Austin</li>
             <li><a href="#tabs3"></a>Dallas</li>
             <li><a href="#tabs4"></a>Houston</li>
             <li><a href="#tabs5"></a>San Antonio</li>
         </ul>
         <div id="tabs2">
+            <img src="assets/Austin.jpg" alt="Austin Skyline"/>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                The self-proclaimed "Live Music Capital of the World".
             </p>
         </div>
         <div id="tabs3">
+            <img src="assets/Dallas.jpg" alt="Dallas Skyline"/>
             <p>
-                ed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-                ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                sunt explicabo.
+                Home of the Dallas Cowboys.
             </p>
         </div>
         <div id="tabs4">
-            <p>blah, blah, blah</p>
+            <img src="assets/Houston.jpg" alt="Houston Skyline"/>
+            <p>
+                Climate here is classified as humid subtropical.
+            </p>
         </div>
         <div id="tabs5">
-            <p>blah, blah, blah, blah</p>
+            <img src="assets/SanAntonio.jpg" alt="San Antonio Skyline"/>
+            <p>
+                Home of the San Antonio Spurs basketball team.
+            </p>
         </div>
     </div>
 
     <!-- Requirement 5 -->
     <h2>Requirement 5</h2>
+    <label for="name">First Name: </label>
+    <input type="text" id="name" title="Enter your first name"/><br/>
+
+    <label for="home">Home City: </label>
+    <input type="text" id="home" title="Enter your home city"/><br/>
+
+    <label for="sport">Favorite Sport: </label>
+    <input type="text" id="sport" title="Enter your favorite sport"/>
 
 </div>
 

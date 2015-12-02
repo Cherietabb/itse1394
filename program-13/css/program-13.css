@@ -16,10 +16,10 @@ h1 {
 }
 
 .ui-widget-header {
-    background: #afb5b2;
-    color: #c7c7c7;
+    background: #b8b5b8;
+    color: #eb356b;
     font-weight: bold;
-    border: 3px inset #bfbfbf;
+    /*border: 2px inset #bfbfbf;*/
 }
 
 #slide1 {
@@ -28,7 +28,20 @@ h1 {
     font-weight: bold;
 }
 
+.ui-button-text {
+    width: 2px;
+}
+
 #tabs1 {
     font-size: 14pt;
 }
 
+label {
+    display: inline-block;
+    width: 5em;
+}
+
+.ui-tooltip {
+    width: 100px;
+
+}
