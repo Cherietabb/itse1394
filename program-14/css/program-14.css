@@ -23,6 +23,11 @@ header {
     padding: 0;
 }
 
+#new-class {
+    text-align: center;
+    font-weight: bold;
+}
+
 .class1 {
     width:960px;
 }
@@ -41,6 +46,17 @@ header {
     width: 120px;
 }
 
+.content {
+    margin: auto;
+    padding: 0;
+}
+
 .class4 {
-    background-color: #0FF;
+    background-color: #95918c;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
 }
