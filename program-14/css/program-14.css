@@ -60,3 +60,7 @@ header {
     text-align: center;
     font-weight: bold;
 }
+
+.mainContent {
+    border: 5px solid #000000;
+}

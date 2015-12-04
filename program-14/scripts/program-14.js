@@ -45,7 +45,7 @@ $(document).ready(function () {
 
     function callback2() {
         setTimeout(function () {
-            $('#dropDiv').removeAttr('style').hide().fadeOut();
+            $('#dropDiv').removeAttr('style').show().fadeOut();
 
         }, 1000);
     }
@@ -65,13 +65,26 @@ $(document).ready(function () {
     }
     function callback3() {
         setTimeout(function () {
-            $('#puffDiv').removeAttr('style').hide().fadeOut();
+            $('#puffDiv').removeAttr('style').show().fadeOut();
         },1000);
     }
     $('#puffBtn').click(function () {
         runPuff();
         return false;
-    })
+    });
+    function runShake() {
+        $('#shakeDiv').hide('shake', {times: 5, distance: 100}, 1000, callback4);
+    }
+    function callback4() {
+        setTimeout(function() {
+            $('#shakeDiv').removeAttr('style').hide().fadeIn();
+        });
+        $('#shakeDiv').click(function () {
+            runShake();
+            return false;
+        })
+    }
+
 });
 
 // Requirement 4
