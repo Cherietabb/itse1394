@@ -15,7 +15,7 @@ $(document).ready(function () {
         $(this).animate(
             {
                 backgroundColor: '#0FF'
-            }
+            },2000
         )
     })
 });

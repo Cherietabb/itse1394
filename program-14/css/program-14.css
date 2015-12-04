@@ -69,4 +69,6 @@ header {
     background: url("../assets/water.jpg") no-repeat;
     background-size:cover;
     background-color: #000000;
+    background-attachment: fixed;
+    color: #ffffff;
 }
