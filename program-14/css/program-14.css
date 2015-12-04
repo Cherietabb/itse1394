@@ -64,3 +64,9 @@ header {
 .mainContent {
     border: 5px solid #000000;
 }
+
+.wallPaper {
+    background: url("../assets/water.jpg") no-repeat;
+    background-size:cover;
+    background-color: #000000;
+}

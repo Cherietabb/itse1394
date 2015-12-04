@@ -88,6 +88,14 @@ $(document).ready(function () {
 });
 
 // Requirement 4
+$(document).ready(function () {
+    $('#addPic').click(function () {
+       $('body').addClass('wallPaper');
+    });
+    $('#rmPic').click(function () {
+        $('body').removeClass('wallPaper')
+    })
+});
 
 
 // Requirement 5
