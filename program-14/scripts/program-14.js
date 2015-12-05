@@ -99,6 +99,12 @@ $(document).ready(function () {
 
 
 // Requirement 5
+$(document).ready(function () {
+    $('#bkgdChg').on('click',function () {
+        $('body').switchClass('no-wallpaper', 'new-wallpaper', 2000, 'easeInQuad');
+        return false;
+    })
+});
 
 
 // Requirement 6

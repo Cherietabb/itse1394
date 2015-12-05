@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    box-shadow: 2px 2px 5px 3px #878787;
+    /*box-shadow: 2px 2px 5px 3px #878787;*/
     border-radius: 5px;
     margin: .5em;
     padding: .5em;
@@ -62,13 +62,21 @@ header {
 }
 
 .mainContent {
-    border: 5px solid #000000;
+    border: 5px solid #ababab;
 }
 
 .wallPaper {
-    background: url("../assets/water.jpg") no-repeat;
     background-size:cover;
-    background-color: #000000;
-    background-attachment: fixed;
+    background: url("../assets/moraineLake.jpg") no-repeat fixed;
+    color: #ffffff;
+}
+
+.no-wallpaper {
+    background-color: #d0d0c4;
+}
+
+.new-wallpaper {
+    background-size:cover;
+    background: url("../assets/chicagoRiver.jpg") fixed;
     color: #ffffff;
 }
