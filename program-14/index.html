@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Program 14</title>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/flick/jquery-ui.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab:300'>
     <link rel="stylesheet" href="css/program-14.css"/>
 </head>
-<body>
+<body class="noWallpaper">
 <h1>Program 14</h1>
 
 <div class="container">
@@ -34,8 +34,8 @@
     <h4>Effects</h4>
     <button id="puffBtn">Puff</button>
     <button id="dropBtn">Drop</button>
-    <!--<button id="effect">Toggle Effect</button>-->
-    <div class="mainContent">
+    <br/><br/>
+    <div class="topContent">
         <div class="class4" id="blindDiv">
             Blind
         </div>
@@ -49,6 +49,8 @@
         <div class="class4" id="explodeDiv">
             Explode
         </div>
+    </div>
+    <div class="bottomContent">
         <div class="class4" id="foldDiv">
             Fold
         </div>
@@ -62,8 +64,8 @@
         <div class="class4" id="slideDiv">
             Slide
         </div>
-    </div>
 
+    </div>
 
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
@@ -74,13 +76,34 @@
     <!-- Requirement 5 -->
     <h2>Requirement 5</h2>
     <h4>Changing background with switchClass</h4>
-    <button id="bkgdChg">Change Background</button>
+    <input type="button" id="btnSwitch" value="Switch Class" />
 
     <!-- Requirement 6 -->
     <h2>Requirement 6</h2>
+    <h4>Toggle through effects</h4>
+
+    <div class="toggler">
+        <div id="effects">
+
+        </div>
+    </div>
+    <select name="effects" id="effectTypes">
+        <option value="explode">Explode</option>
+        <option value="puff">Puff</option>
+        <option value="slide">Slide</option>
+    </select>
+    <button id="switch" class="ui-state-default ui-corner-all">Toggle Effect</button>
 
     <!-- Requirement 7 -->
     <h2>Requirement 7</h2>
+    <h4>Changing effects using toggle</h4>
+
+    <div class="toggler">
+        <div id="effect" class="ui-widget-content ui-corner-all">
+            This is the last regular assignment.
+        </div>
+    </div>
+    <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
     <script src="scripts/program-14.js"></script>
 </div>
 </body>
