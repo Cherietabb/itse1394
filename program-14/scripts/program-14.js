@@ -15,7 +15,7 @@ $(document).ready(function () {
         $(this).animate(
             {
                 backgroundColor: '#0FF'
-            },2000
+            }, 2000
         )
     })
 });
@@ -55,6 +55,7 @@ $(document).ready(function () {
 
         }, 1000);
     }
+
     // Call Function
     $('#dropBtn').click(function () {
         runDrop();
@@ -88,15 +89,16 @@ $(document).ready(function () {
     function callback3() {
         setTimeout(function () {
             $('#puffDiv:visible').removeAttr('style').fadeOut();
-        },1000);
+        }, 1000);
     }
+
     // Call Function
     $('#puffBtn').click(function () {
         runPuff();
         return false;
     });
     // Hide Div
-    $( "#puffDiv" ).hide();
+    $("#puffDiv").hide();
 
     // Shake Effect
     $('#shakeDiv').click(function () {
@@ -120,32 +122,42 @@ $(document).ready(function () {
 
 // Requirement 4
 $(document).ready(function () {
-    $('#addPic').click(function () {
-       $('body').addClass('wallPaper', 1000);
+    $('body').removeClass('noWallpaper');
+    $("#addPic").click(function () {
+        $("body").addClass("wallPaper", "slow");
     });
-    $('#rmPic').click(function () {
-        $('body').removeClass('wallPaper')
-    })
+    $("#rmPic").click(function () {
+        $("body").removeClass("wallPaper");
+    });
 });
 
 // Requirement 5
 $(document).ready(function () {
     $('#btnSwitch').click(function () {
-        $('.noWallpaper').switchClass('noWallpaper', 'newWallpaper', 2000, 'easeOutQuad');
+        $('body').switchClass('noWallpaper', 'newWallpaper', 2000, 'easeOutQuad');
         $('.newWallpaper').switchClass('newWallpaper', 'noWallpaper', 2000, 'easeOutQuad');
+        return false;
     })
 });
 
 // Requirement 6
-$(document).ready(function () {
-    $('#switch').click(function () {
+$(function () {
+    // run the currently selected effect
+    function runEffect() {
+        var selectedEffect = $("#effectTypes").val();
+        var options = {};
+        // run the effect
+        $("#effects").toggle(selectedEffect, options, 500);
+    }
 
-    })
+    // set effect from select menu value
+    $("#switch").click(function () {
+        runEffect();
+    });
 });
-
 // Requirement 7
 $(document).ready(function () {
-    $('#button').click(function() {
-        $('#effect').toggleClass('newClass', 2000)
+    $('#button').click(function () {
+        $('body').toggleClass('newWallpaper', 2000)
     });
 });
