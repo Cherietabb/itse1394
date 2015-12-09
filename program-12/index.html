@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Program 12</title>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/flick/jquery-ui.css">
-    <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/themes/eggplant/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300">
@@ -68,9 +67,7 @@
 
     <div class="ui-header">
         <button id="go">Simple button</button>
-        <div id="toggle">
-            Toggle
-        </div>
+        <input type="checkbox" id="check"><label for="check">Toggle</label>
         <a href="#">Anchor</a>
     </div>
     <br/>
@@ -106,18 +103,20 @@
     <h2>Requirement 6</h2>
     <h4>Menu Widget</h4>
 
-    <ul id="list" class="ui-widget-header">
+    <ul id="list" class="ui-menu-header" title="This is a tooltip">
     <li><a href="#">Network</a></li>
     <li><a href="#">Internet</a></li>
     <li><a href="#">Smart TV</a></li>
     <li><a href="#">Basic Cable</a></li>
     <li><a href="#">Premium Cable</a>
-        <ul class="ui-widget-content">
+        <ul>
             <li><a href="#">HBO</a></li>
             <li><a href="#">Showtime</a></li>
         </ul>
     </li>
     </ul>
+
+    <!--Footer-->
     <div class="footer">
         <footer>
             <p>

@@ -21,14 +21,9 @@ $(document).ready(function () {
 
 // Requirement 3
 $(document).ready(function () {
+    $('#check').button();
     $('input[type=submit], a, button').button();
     $('#btnSet').buttonset();
-    $('#toggle').button({
-        icon: {
-            primary: 'ui-icon-power'
-        },
-        text: false
-    })
 });
 
 
@@ -42,7 +37,6 @@ $(document).ready(function () {
             } else {
                 return [true];
             }
-
         }
     });
 });
@@ -72,6 +66,12 @@ $(function () {
 // Requirement 6
 $(function () {
     $('#list').menu({
-        icons: {submenu: 'ui-icon-circle-triangle-e'}
+        icons: {submenu: "ui-icon-circle-triangle-e"}
+    });
+    $(this).tooltip({
+        position: {my: 'right top', at: 'right+5 top-5'},
+        show: 'fold'
+
     });
 });
+

@@ -104,22 +104,22 @@ function getNum() {
             case '12':
             case '1':
             case '2':
-                document.getElementById('season').innerHTML = "12, 1, 2: " + seasons[0];
+                document.getElementById('season').innerHTML = seasons[0];
                 break;
             case '3':
             case '4':
             case '5':
-                document.getElementById('season').innerHTML = "3, 4, 5: " + seasons[1];
+                document.getElementById('season').innerHTML = seasons[1];
                 break;
             case '6':
             case '7':
             case '8':
-                document.getElementById('season').innerHTML = "6, 7, 8: " + seasons[2];
+                document.getElementById('season').innerHTML = seasons[2];
                 break;
             case '9':
             case '10':
             case '11':
-                document.getElementById('season').innerHTML = "9, 10, 11: " + seasons[3];
+                document.getElementById('season').innerHTML = seasons[3];
                 break;
         }
         if (x < 1 || x > 12)

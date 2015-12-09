@@ -1,5 +1,4 @@
 
-
 body {
     font-family: 'Roboto Slab', serif;
     margin: 0;
@@ -25,14 +24,24 @@ h1 {
     background-color: #cccccc;
 }
 
-
 footer {
     padding: 5px;
     margin: 10px;
     clear: both;
 }
 
+.ui-menu-header {
+    width: 200px;
+}
+
+.ui-tooltip {
+    width: 150px;
+    height: 40px;
+    background-color: gold;
+}
+/*
 .ui-menu-item {
     float: left;
     width: 200px;
 }
+*/
