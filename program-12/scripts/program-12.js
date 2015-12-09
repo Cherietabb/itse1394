@@ -72,10 +72,6 @@ $(function () {
 // Requirement 6
 $(function () {
     $('#list').menu({
-        icons: {submenu: 'ui-icon-circle-triangle-e'},
-        focus: function (event, ui) {
-            var message = $('#message');
-            message.append('Blur event<br>');
-        }
+        icons: {submenu: 'ui-icon-circle-triangle-e'}
     });
 });
