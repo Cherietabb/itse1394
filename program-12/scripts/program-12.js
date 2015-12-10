@@ -6,7 +6,12 @@
 $(document).ready(function () {
     $('#way').accordion({
         heightStyle: 'content',
-        speed: 'slow'
+        speed: 'slow',
+        collapsible: true,
+        icons: {
+            header: "ui-icon-triangle-1-e",
+            activeHeader: "ui-icon-triangle-1-s"
+        }
     });
 });
 
@@ -21,7 +26,9 @@ $(document).ready(function () {
 
 // Requirement 3
 $(document).ready(function () {
-    $('#check').button();
+    $('#check').button({
+        icons: {primary: 'ui-icon-power'}
+    });
     $('input[type=submit], a, button').button();
     $('#btnSet').buttonset();
 });
@@ -46,7 +53,7 @@ $(function () {
     $("#log").dialog({
         autoOpen: false,
         buttons: {
-            OK: function () {
+            Ok: function () {
                 $(this).dialog("close");
             }
         },
@@ -66,12 +73,19 @@ $(function () {
 // Requirement 6
 $(function () {
     $('#list').menu({
-        icons: {submenu: "ui-icon-circle-triangle-e"}
+        icons: {
+            submenu: {
+                primary: 'ui-icon-blank',
+                secondary: 'ui-icon-circle-triangle-e'
+            }
+        }
     });
     $(this).tooltip({
-        position: {my: 'right top', at: 'right+5 top-5'},
-        show: 'fold'
-
+        position: {
+            my: 'right top',
+            at: 'right top+10',
+            collision: 'none'
+        }
     });
 });
 
