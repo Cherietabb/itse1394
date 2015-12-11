@@ -72,7 +72,8 @@ $(function () {
 
 // Requirement 6
 $(function () {
-    $('#list').menu({
+    $('#list').menu(
+        {
         icons: {
             submenu: {
                 primary: 'ui-icon-blank',
@@ -82,8 +83,8 @@ $(function () {
     });
     $(this).tooltip({
         position: {
-            my: 'right top',
-            at: 'right top+10',
+            my: 'right center',
+            at: 'right+10 center',
             collision: 'none'
         }
     });
