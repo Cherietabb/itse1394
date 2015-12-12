@@ -44,7 +44,6 @@ $(document).ready(function () {
         culture: 'en-US',
         numberFormat: 'C'
     });
-
 });
 
 // Requirement 4
