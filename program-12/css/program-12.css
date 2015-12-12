@@ -21,6 +21,9 @@ h1 {
     width: 600px;
 }
 
+.ui-accordion-header {
+
+}
 .ui-menu-header {
     width: 200px;
     background: transparent;

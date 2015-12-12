@@ -74,19 +74,12 @@ $(function () {
 $(function () {
     $('#list').menu(
         {
-        icons: {
-            submenu: {
-                primary: 'ui-icon-blank',
-                secondary: 'ui-icon-circle-triangle-e'
+            icons: {
+                submenu: 'ui-icon-circle-triangle-e'
+            },
+            focus: function (event, ui) {
+                $('#list').tooltip({track: true})
             }
-        }
-    });
-    $(this).tooltip({
-        position: {
-            my: 'right center',
-            at: 'right+10 center',
-            collision: 'none'
-        }
-    });
+        });
 });
 
