@@ -22,7 +22,7 @@ h1 {
 }
 
 .ui-accordion-header {
-    padding:0 0 0 20px;
+    padding: 0 0 0 20px;
 
 }
 
@@ -33,7 +33,7 @@ h1 {
 .ui-menu-header {
     width: 200px;
     background: transparent;
-    border:none;
+    border: none;
 }
 
 .ui-tooltip {

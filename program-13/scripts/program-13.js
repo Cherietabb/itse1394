@@ -55,8 +55,8 @@ $(document).ready(function () {
 
 // Requirement 5
 $(document).ready(function () {
-    $('#name').tooltip();
-    $('#home').tooltip();
-    $('#sport').tooltip();
+    $('#name').tooltip({track: true});
+    $('#home').tooltip({track: true});
+    $('#sport').tooltip({track: true});
 });
 
