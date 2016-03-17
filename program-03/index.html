@@ -12,90 +12,139 @@
 
     <!-- Requirement 1 -->
     <h2>Requirement 1</h2>
+    <h4>
+        User can enter a Fahrenheit temperature and the page displays a message based on the value entered. Use
+        if-else-if statements. Use reasonable judgment to determine if the appropriate message should be cold, chilly,
+        freezing, warm, hot, etc. Produce an error message if the value entered in less than -50 or greater than 140.
+        Use try/catch to handle the error.
+
+    </h4>
 
     <p>Please enter a temperature in Fahrenheit</p>
     <input type="text" name="#" maxlength="4" id="temp"/>
     <button type="submit" onclick="myTemp()">Submit</button>
-
+    <hr>
     <!-- Requirement 2 -->
     <h2>Requirement 2</h2>
+    <h4>
+        User can enter a number between 1-12 (error message otherwise – use try/catch to handle the error). Use a switch
+        statement to output the month name based on the number entered.
+    </h4>
 
     <p>Enter a month number</p>
     <input type="text" name="#" id="month"/>
     <button id="click">Submit</button>
     <p id="names"></p>
-
+    <hr>
     <!-- Requirement 3 -->
     <h2>Requirement 3</h2>
+
+    <h4>
+        User can enter a number between 1-12 ((error message otherwise – use try/catch to handle the error). Use “Common
+        Code and Fall-Through” to display the following messages:
+        <ul>
+            <li>12, 1, 2: “Winter”</li>
+            <li>3, 4, 5: “Spring”</li>
+            <li>6, 7, 8: “Summer”</li>
+            <li>9, 10, 11: “Fall”</li>
+        </ul>
+    </h4>
 
     <p>Please enter a number between 1 and 12</p>
     <input type="text" name="#" id="num"/>
     <button type="submit" id="seasonName" onclick="getNum()">Submit</button>
     <p id="season"></p>
-
+    <hr>
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
+
+    <h4>
+        Create a birthMonth object with the 12 month names for keys and person names for the value of each month. For
+        example, January: “Julia”. Use an HTML element event to call a function you wrote named <code>displayBirthMonth()</code> that
+        uses a for/in loop to display the month and person names.
+    </h4>
 
     <p>Click to display birth month</p>
     <button id="name">Click</button>
     <ul id="birth"></ul>
-
+    <hr>
     <!--Requirement 5 -->
     <h2>Requirement 5</h2>
+    <h4>
+        Create a month array which contains the names of all months. Use an HTML element event to call a function you
+        wrote named <code>displaySelectMonths()</code> that uses a while loop and the month array to display month names January,
+        March, April, May, and December in an element.
+    </h4>
 
     <p>Click to display months:</p>
     <button id="begin" onclick="displaySelectMonths()">Click</button>
     <h2 id="result"></h2>
-
+    <hr>
     <!-- Requirement 6 -->
     <h2>Requirement 6</h2>
+    <h4>
+        Use an HTML element event to call a function you wrote named <code>changejQueryMessage()</code> that uses a regular
+        expression to replace a user entered string "JavaScript makes me cry" to "JavaScript makes me smile". Display
+        the modified string in an h2 element with the font-weight set to bold and the color set to blue.
+    </h4>
 
     <p>Click to switch message:</p>
     <button onclick="changejQueryMessage()">Submit</button>
     <h2 id="changedText">JavaScript makes me cry</h2>
-
+    <hr>
     <!-- Requirement 7 -->
     <h2>Requirement 7</h2>
+    <h4>
+        Write and display an example that demonstrates Strict Mode.
+    </h4>
 
     <p id="eleven"></p>
+    <hr>
     <!-- Requirement 8 -->
     <h2>Requirement 8</h2>
+    <h4>
+        Create a JavaScript string containing JSON syntax. The array name within the string should be skiResorts and the
+        keys should be: resortName and resortState. For example, Alta and Utah. There should be at least 3 key:value
+        pairs in the array. Use JSON.parse() to convert the string into a JavaScript object. Use an HTML element event
+        to call a function you wrote named <code>displaySkiResorts()</code> that uses a loop to display the contents name and state
+        data of the JSON object.
+    </h4>
 
     <p>Click to view ski resorts</p>
     <button type="submit" id="resorts">Submit</button>
     <p id="dest"></p>
-
+    <hr>
     <!--Requirement 9 -->
     <h2>Requirement 9</h2>
 
-    <p>
+    <h4>
         Use an object constructor to create a player object with the following data members: firstName, lastName,
         height, yearsInLeague. Use the keyword “this” to set the values. Include a function in the object to update the
-        yearsInLeague data. Use an HTML element event to call a function you wrote named `initializePlayer()` that
+        yearsInLeague data. Use an HTML element event to call a function you wrote named <code>initializePlayer()</code> that
         creates a new player instance and displays the new instance data.
 
-    </p>
+    </h4>
     <button id="info" onclick="initializePlayer()">Submit</button>
     <p id="newGuy"></p>
-
+    <hr>
     <!-- Requirement 10 -->
     <h2>Requirement 10</h2>
 
-    <p>
+    <h5>
         Use an HTML element event to call a function you wrote for the player object to update the yearInLeague data.
         Display the result (a confirmation of the update).
-    </p>
+    </h5>
     <button onclick="updateStats()">Submit</button>
     <p id="newStat"></p>
-
+    <hr>
     <!-- Requirement 11 -->
     <h2>Requirement 11</h2>
 
-    <p>
+    <h5>
         Use the prototype property to add a new data member to the player prototype named team. Use the prototype
         property to add a function to the player prototype which changes the team data. Use an HTML element event to
         call that function and display the result (a confirmation of the update).
-    </p>
+    </h5>
 
     <p id="newData"></p>
 

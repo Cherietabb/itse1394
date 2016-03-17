@@ -12,44 +12,77 @@
     <hr/>
     <!-- Requirement 1 -->
     <h2>Requirement 1</h2>
+    <h5>
+        Use an HTML element event to call a function you wrote named <code>findAverage()</code> that uses the argument
+        object to
+        determine and display the average of numbers.
+    </h5>
 
     <p>Find the Average of numbers: 50, 6, 5, -40</p>
     <button id="num">Submit</button>
     <p id="results"></p>
-
+    <hr>
     <!-- Requirement 2 -->
     <h2>Requirement 2</h2>
+    <h5>
+        Write a function named <code>selfInvoke()</code> that uses a self-invoking function to display "#2 Hello from
+        selfInvoke".
+    </h5>
 
     <p>Self-Invoking Functions</p>
+
     <p id="greet"></p>
 
     <!-- Requirement 3 -->
     <h2>Requirement 3</h2>
+    <h5>
+        Use an HTML element event to call a function you wrote named <code>closureExample()</code> that uses a closure
+        to append
+        user-supplied names. Update/display the name list after each addition. For example, (first time: "Abe" is
+        displayed, second time: "Abe Bill" is displayed, third time: "Abe Bill Charlie" is displayed, etc.).
+    </h5>
+
     <p>Closure example</p>
     <button id="getName">submit</button>
     <p id="namesResult"></p>
-
+    <hr>
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
+    <h5>
+        Use an HTML element event to call a function you wrote named <code>colorChange()</code> that changes the
+        background-color of
+        HTML elements with the CSS class changeMyColor.
+    </h5>
+
     <p>Color Change</p>
+
     <p>Click for color change:</p>
+
     <div class="changeMyColor" id="newColor">
 
     </div>
     <br/>
     <button id="change">Submit</button>
-
+    <hr>
     <!-- Requirement 5 -->
     <h2>Requirement 5</h2>
-    <h4>Changing Font Sizes</h4>
+    <h5>
+        Use an HTML element event to call a function you wrote named <code>fontSizeChange()</code> that changes the font
+        size of HTML
+        elements based on their tag name.
+    </h5>
 
     <div class="resize">
         <button id="changeIt" onclick="changeFontSize()">Submit</button>
         <h1 id="myPara">This font should be larger.</h1>
     </div>
-
+    <hr>
     <!-- Requirement 6 -->
     <h2>Requirement 6</h2>
+    <h5>
+        Demonstrate the onmouseover and onmouseout events by changing an image source to display a different image.
+    </h5>
+
     <p>onmouseover and onmouseout events</p>
 
     <div class="resize">
@@ -57,56 +90,93 @@
              width="500"
              height="338"/>
     </div>
-
+    <hr>
     <!-- Requirement 7 -->
     <h2>Requirement 7</h2>
-    <h4>onmousedown and onmouseup events</h4>
+    <h4>
+        Demonstrate the onmousedown and onmouseup events by changing the text and color of an element.
+    </h4>
+
     <p>Click the text to view demo</p>
+
     <div id="mydemo" onmousedown="myMouseDown(this)" onmouseup="myMouseUp(this)">
         <p id="txtchng">The background color of this div will change colors when the user left-clicks on it.</p>
     </div>
-
+    <hr>
     <!-- Requirement 8 -->
     <h2>Requirement 8</h2>
-    <p>Bubbling Propagation</p>
+    <h5>
+        Add an eventlistener to a
+        <code>div</code> element for the click event that produces an alert. The listener should call a function that
+        you write
+        named handleDivClick(). Use bubbling propagation.
+    </h5>
+
+
     <div id="bubble">
         <p id="nobubble">#8 I'm bubbling!</p>
     </div>
-
+    <hr>
     <!-- Requirement 9 -->
     <h2>Requirement 9</h2>
+    <h5>
+        Use an HTML element event to call a function you wrote named <code>domContent()</code> that writes all of the
+        HTML content to an alert.
+    </h5>
     <button type="button" id="button" onclick="domContent()">Submit #9</button>
-    <p>Writing HTML content to an alert.</p>
-
+    <hr>
     <!-- Requirement 10 -->
     <h2>Requirement 10</h2>
+    <h5>
+        Use an HTML element event to call a function you wrote named <code>changeContent()</code> that gets the
+        firstChild.nodeValue
+        of a <code>p</code> element and uses it to reset the innerHTML of an element.
+
+    </h5>
+
     <p class="myTXT" id="foo">firstChild nodeValues
-    Click for solution to #10:</p>
+        Click for solution to #10:</p>
     <button class="clickhere" onclick="changeContent()">Submit</button>
     <h1 class="newTXT" id="bar"></h1>
-
+    <hr>
     <!-- Requirement 11 -->
     <h2>Requirement 11</h2>
-    <p>Creating Nodes</p>
+    <h5>
+        Use an HTML element event to call a function you wrote named <code>createNode()</code> which creates a
+        <code>p</code> element with the
+        content “This is a new paragraph element” and append that element to an existing element.
+    </h5>
+
     <div id="div1">
         <p id="para">This is a paragraph.</p>
+
         <p>This is another paragraph.</p>
+
         <p id="place"></p>
     </div>
-
-
+    <hr>
     <!-- Requirement 12 -->
     <h2>Requirement 12</h2>
-    <p>Removing Nodes</p>
+    <h5>
+        Use an HTML element event to call a function you wrote named <code>removeNode()</code> to reverse the operation
+        of
+        requirement 12 by removing the new <code>p</code> element.
+    </h5>
+
     <div id="blah">
         <p id="p1">This is a paragraph.</p>
+
         <p id="p2">This is another paragraph.</p>
+
         <p id="p3">This is yet another paragraph.</p>
     </div>
-
+    <hr>
     <!-- Requirement 13 -->
     <h2>Requirement 13</h2>
-    <p>Changing the Node List</p>
+    <h5>
+        Use an HTML element event to call a function you wrote named <code>changeNodeList()</code> to change the background-color of
+        all elements in a node list.
+    </h5>
     <button onclick="changeNodeList()">Click</button>
     <div id="final">
         <div class="divs">
