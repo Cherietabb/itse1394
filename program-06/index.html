@@ -9,18 +9,26 @@
 </head>
 <body>
 <h1>Program 6</h1>
+
 <div>
     <!-- Requirement 1 -->
     <h2>Requirement 1</h2>
-    <h4>Click on the div to hide it.</h4>
+    <h4>
+        Three div elements with background-colors red, green, and blue that become hidden when each is clicked. That is,
+        the red div is hidden when it is clicked, etc.
+    </h4>
 
     <div id="hideRed"></div>
     <div id="hideGreen"></div>
     <div id="hideBlue"></div>
+    <hr>
 
     <!-- Requirement 2 -->
     <h2>Requirement 2</h2>
-    <h4>Alternating table row colors</h4>
+    <h4>
+        A table with ten rows. Use jQuery to make the even rows one color and the odd rows another. It is best practice
+        to ensure text can be read easily with selected background colors.
+    </h4>
     <table>
         <tr>
             <td>Row 1</td>
@@ -81,10 +89,14 @@
 
         </tr>
     </table>
-
+    <hr>
     <!-- Requirement 3 -->
     <h2>Requirement 3</h2>
-    <h4>Change color of first three p elements.</h4>
+    <h4>
+        At least seven p elements, three of which have the class colorChange applied. Use an HTML element event to
+        call a function you wrote named changeColor() that uses jQuery to change the color of the p elements with the
+        colorChange class applied.
+    </h4>
     <button id="sunny">#3 Click</button>
 
     <p class="colorChange">
@@ -118,20 +130,31 @@
     <p>
         This is the last sentence.
     </p>
+    <hr>
 
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
 
-    <h4>Toggle Elements</h4>
+    <h4>
+        Implement a button image toggle feature. Include at least four button elements that employ background images for
+        the buttons (can be same image). Use an HTML element event to call a function you wrote named
+        buttonImageToggle() that uses jQuery to change the background images of
+        all buttons simultaneously on the page. When the event is fired again the images simultaneously revert back to
+        the default. Do not use toggleClass().
+    </h4>
 
     <button class="lucky">#4 Toggle</button>
     <button class="lucky">#4 Toggle</button>
     <button class="lucky">#4 Toggle</button>
     <button class="lucky">#4 Toggle</button>
+    <hr>
 
     <!-- Requirement 5 -->
     <h2>Requirement 5</h2>
-    <h4>Changing Paragraphs</h4>
+    <h4>
+        Use an HTML element event to call a function you wrote named changeFirstParagraph() that uses jQuery to select
+        the first p and change the font-family and increase the font-size.
+    </h4>
     <button id="presto">#5 Change</button>
     <div id="changeO">
         <p>A click event will change the first paragraph only.</p>
@@ -141,20 +164,28 @@
         <p>This is more blah, blah, text.</p>
 
     </div>
+    <hr>
 
     <!-- Requirement 6 -->
     <h2>Requirement 6</h2>
-    <h4>Change input boxes.</h4>
-     <label>First Name:
-    <input type="text" name="firstName"/>
-</label><br/>
-     <label>Last Name:
-    <input type="text" name="lastName"/>
-</label>
+    <h4>
+        At least two <input> text boxes that use jQuery to apply the color #FF9 when receiving the focus. The color
+        should return to #FFF or another default when the focus has left the text boxes.
+    </h4>
+    <label>First Name:
+        <input type="text" name="firstName"/>
+    </label><br/>
+    <label>Last Name:
+        <input type="text" name="lastName"/>
+    </label>
+    <hr>
 
     <!-- Requirement 7 -->
     <h2>Requirement 7</h2>
-    <h4>Change size with mouseenter</h4>
+    <h4>
+        Increase the size of a nav element when the mouse enters the element and return the size to the default when the
+        mouse leaves. Use color to identify the nav element.
+    </h4>
     <nav>
         <a href="#">Home</a>&nbsp; | <a href="#">About</a>&nbsp; | <a href="#">Contact Us</a>
     </nav>
