@@ -7,25 +7,36 @@
 </head>
 <body>
 <h1>Program 5</h1>
+
 <div onload="delayDisplay(); getCookie()">
     <!-- Requirement 1 -->
     <h2>Requirement 1</h2>
-    <h4>Figuring screen dimensions</h4>
+    <h4>
+        Use an HTML element event to call a function you wrote named displaySize() that displays the width and height of
+        the user’s screen.
+    </h4>
+
     <p>Click to get the height and width: </p>
     <button id="redrum" onclick="displaySize()">Submit</button>
     <p id="snausages"></p>
-
+    <hr>
 
     <!-- Requirement 2 -->
     <h2>Requirement 2</h2>
-    <h4>Displaying the current page location</h4>
+    <h4>
+        Use an HTML element event to call a function you wrote named displayLocation() that displays the URL location of
+        the current page.
+    </h4>
+
     <p>Click to get location of current page: </p>
     <button id="maceo" onclick="displayLocation()">Submit</button>
     <p id="cletus"></p>
+    <hr>
 
     <!-- Requirement 3 -->
     <h2>Requirement 3</h2>
     <h4>Changing the URL location</h4>
+
     <p>Click to switch the location: </p>
     <button id="moola" onclick="changeLocation()">Submit</button>
     <p id="swoosh"></p>
@@ -33,58 +44,107 @@
     <!-- Requirement 4 -->
     <h2>Requirement 4</h2>
     <h4>Load previous URL in the history list.</h4>
+
     <p>Click to go back </p>
     <button onclick="goBack()">Back</button>
 
     <!-- Requirement 5 -->
     <h2>Requirement 5</h2>
-    <h4>Load next URL in the history list.</h4>
+    <h4>
+        Use an HTML element event to call a function you wrote named changeLocation() that uses the assign method to
+        change the URL location and load a new document.
+    </h4>
+
     <p>Click to go forward</p>
     <button onclick="goForward()">Forward</button>
+    <hr>
 
     <!-- Requirement 6 -->
     <h2>Requirement 6</h2>
-    <h4>Browser Information</h4>
+    <h4>
+        Use an HTML element event to call a function you wrote named browserInformation() that uses the navigator object
+        to display the following information:
+    </h4>
+    <ul>
+        <li>appName</li>
+        <li>appCodeName</li>
+        <li>product (engine name)</li>
+    </ul>
+
     <p id="hercules"></p>
+    <hr>
 
     <!-- Requirement 7 -->
     <h2>Requirement 7</h2>
-    <h4>Confirming Browser Information</h4>
+    <h4>
+        Use a confirm box to ask the user if they would like to see the following information from the navigator object:
+    </h4>
+    <ul>
+        <li>appVersion</li>
+        <li>userAgent</li>
+        <li>platform</li>
+    </ul>
+
     <p>Click to run</p>
     <button onclick="seeInfo()">Click Here</button>
     <p id="nature"></p>
+    <hr>
 
     <!-- Requirement 8 -->
     <h2>Requirement 8</h2>
-    <h4>Favorite Browser</h4>
+    <h4>
+        Include a prompt box to ask the user to enter their favorite browser. Include the name of your personal favorite
+        browser as the default value. Display the results.
+    </h4>
+
     <p>Click to run</p>
     <button id="fav" onclick="favBrowser()">Click Here</button>
     <p id="boy"></p>
+    <hr>
 
     <!-- Requirement 9 -->
     <h2>Requirement 9</h2>
-    <h4>Clock</h4>
+    <h4>
+        Include a clock on your page that displays the current local time and advances each second.
+    </h4>
+
     <p>The clock is currently running...</p>
+
     <p id="ric"></p>
+    <hr>
 
     <!-- Requirement 10 -->
     <h2>Requirement 10</h2>
-    <h4>Starting and Stopping Time</h4>
+    <h4> Include a button on your page to stop/start the clock on your page. The text on the button should display
+        “Stop” when the clock is running and should display “Start” when the timer is stopped. The start/stop
+        functionality should be perpetual – meaning that the button can be clicked multiple times.
+    </h4>
+
     <p>Click to stop and restart the time.</p>
     <button id="flair">Stop</button>
     <p id="itworks"></p>
+    <hr>
 
     <!-- Requirement 11 -->
     <h2>Requirement 11</h2>
-     <div id="marco" style="visibility: hidden">
-            <img src="assets/baklava.JPEG" alt="Baklava"/>
-            <img src="assets/cheeseCake.jpg" alt="Cheesecake"/>
-            <img src="assets/chocoBrownie.jpg" alt="Chocolate Brownie"/>
+    <h5>
+        Display three images on the page five seconds after the page is opened.
+    </h5>
+
+    <div id="marco" style="visibility: hidden">
+        <img src="assets/baklava.JPEG" alt="Baklava"/>
+        <img src="assets/cheeseCake.jpg" alt="Cheesecake"/>
+        <img src="assets/chocoBrownie.jpg" alt="Chocolate Brownie"/>
     </div>
+    <hr>
 
     <!-- Requirement 12 -->
     <h2>Requirement 12</h2>
-    <h4>creating and deleting cookies</h4>
+    <h4>
+        Include three text boxes to enter values for the following cookies: name, school, and hobby. Include a button
+        that creates the three cookies (with values). Include three more buttons. Each button deletes a cookie.
+    </h4>
+
     <div id="song">
         <label>Name: <input type="text" id="we" class="labels"/></label>&nbsp;
         <button onclick="deleteName()">Delete</button>
@@ -98,9 +158,16 @@
         <br/>
     </div>
     <button onclick="setCookie()">Create Cookie</button>
+    <hr>
+
     <!-- Requirement 13 -->
     <h2>Requirement 13</h2>
-    <h4>Checking for Cookies</h4>
+    <h4>
+        Include a function that will check the existence of each cookie when the page is accessed. If one or more of the
+        cookies is not set, an alert box should notify the user to set the unset cookie(s). If all three cookies are
+        set, the alert box should display the contents of each cookie.
+    </h4>
+
     <p>Alert box should show presence of cookies. If no cookies exist, alert should display that.</p>
 </div>
 <script src="program-05.js"></script>
