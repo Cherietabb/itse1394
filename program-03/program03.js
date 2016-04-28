@@ -228,26 +228,23 @@ document.getElementById('eleven').innerHTML = myMode();
 })(document);
 
 // Requirement 9, 10, 11
-
-var player = function (first, last, height, years) {
+//constructor
+function Player (first, last, height, yearsInLeague) {
     this.first = first;
     this.last = last;
     this.height = height;
-    this.years = years;
-    this.update = function () {
-        return ++years;
-    };
-    player.prototype.team = function () {
-        return "Chicago Bears";
+    this.yearsInLeague = yearsInLeague;
+    this.getPlayerInfo = function () {
+        return "Chicago Bears" + this.first + this.last + '' + this.height + '' + this.yearsInLeague + '';
     };
 
     function initializePlayer() {
-        var matt, newInfo;
-        matt = new player('Matt', 'Forte', '6.2"', 6);
-        document.getElementById('newGuy').innerHTML = matt.first + " " + matt.last + "<br>" + matt.height + ", " + matt.years;
-        document.getElementById('newStat').innerHTML = matt.update();
-        newInfo = document.getElementById('newData').innerHTML = matt.first + " " + matt.last + "<br>" + matt.height + ", " + matt.years + " " + matt.team();
+        var matt = new Player('Matt', 'Forte', '6.2"', 6);
+        console.log("foo");
+        document.getElementById("newguy").innerHTML = matt.getPlayerInfo();
     }
-    document.getElementById('newGuy').innerHTML = player(matt);
-};
+    document.getElementById('info').addEventListener('click', initializePlayer);
+}
+
+
 
