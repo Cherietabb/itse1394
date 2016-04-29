@@ -206,20 +206,20 @@ document.getElementById('eleven').innerHTML = myMode();
     "use strict";
     var
         resorts = doc.getElementById('resorts'),
-        dest = doc.getElementById('dest');
+        dest = doc.getElementById('div');
 
     function myGetAway() {
-        var text = '{ "skiResorts" : [' +
-            '{ "resortName":"Telluride" , "resortState":"Colorado" },' +
-            '{ "resortName":"Vail" , "resortState":"Colorado" },' +
-            '{ "resortName":"Park City" , "resortState":"Utah" } ]}';
+        var text = '{ "skiResorts":[' +
+            '{"resortName":"Telluride","resortState":"Colorado" },' +
+            '{"resortName":"Vail","resortState":"Colorado" },' +
+            '{"resortName":"Park City","resortState":"Utah" }]}';
         var obj;
         obj = JSON.parse(text);
         var i = 0;
         while (i < text.length ) {
             i++;
-            var
-                p = doc.createElement('p');
+            var p;
+            p = doc.createElement('p');
             p.innerHTML = obj.skiResorts[i].resortName + ", " + " " + obj.skiResorts[i].resortState;
             dest.appendChild(p);
         }
@@ -237,14 +237,13 @@ function Player (first, last, height, yearsInLeague) {
     this.getPlayerInfo = function () {
         return "Chicago Bears" + this.first + this.last + '' + this.height + '' + this.yearsInLeague + '';
     };
-
-    function initializePlayer() {
-        var matt = new Player('Matt', 'Forte', '6.2"', 6);
-        console.log("foo");
-        document.getElementById("newguy").innerHTML = matt.getPlayerInfo();
-    }
-    document.getElementById('info').addEventListener('click', initializePlayer);
 }
+function initializePlayer() {
+    var matt = new Player('Matt', 'Forte', '6.2"', 6);
+    console.log("foo");
+    document.getElementById("newguy").innerHTML = matt;
+}
+document.getElementById('info').addEventListener('click', initializePlayer);
 
 
 
